@@ -23,10 +23,21 @@ module Untded
       "#{origin}/dataset/untded-2005"
     end
 
+    def scheme_iri
+      "#{origin}/ns/untded#CategoryScheme"
+    end
+
+    def category_iri(c)
+      "#{origin}/categories/#{c[:range]}"
+    end
+
     def graph
       {
         "@context" => context,
-        "@graph" => [dataset_node] + @elements.map { |e| element_node(e) },
+        "@graph" =>
+          vocabulary_nodes + [dataset_node, scheme_node] +
+          categories.map { |c| category_node(c) } +
+          @elements.map { |e| element_node(e) },
       }
     end
 
@@ -85,12 +96,88 @@ module Untded
       { "@type" => "DataDownload", "contentUrl" => url, "encodingFormat" => format }
     end
 
+    def scheme_node
+      {
+        "@id" => scheme_iri,
+        "@type" => "CategoryScheme",
+        "label" => "UNTDED tag-range category scheme",
+        "comment" => "The nine ordered tag ranges of the Trade Data Elements Directory (TDED section 4.2).",
+      }
+    end
+
+    # Parses Extractor::CATEGORY_BY_RANGE ("1000" => "4.2.1 (1000-1699) label")
+    # into ordered category records; the single category source for the graph.
+    def categories
+      @categories ||= Extractor::CATEGORY_BY_RANGE.map do |base, text|
+        section, range, label = text.match(/\A([\d.]+)\s+\(([\d-]+)\)\s+(.+)\z/)&.captures
+        { k: base.to_i / 1000, section:, range: range || "#{base}-#{base.to_i + 699}",
+          label: label ? label[0].upcase + label[1..] : text }
+      end
+    end
+
+    def category_of_tag(tag)
+      categories.find { |c| c[:k] == tag / 1000 }
+    end
+
+    def category_node(c)
+      in_range = @elements.select { |e| (e.tag / 1000) == c[:k] }
+      {
+        "@id" => category_iri(c),
+        "@type" => "Category",
+        "label" => c[:label],
+        "tagRange" => c[:range],
+        "position" => c[:k],
+        "inScheme" => { "@id" => scheme_iri },
+        "isPartOf" => { "@id" => dataset_iri },
+        "elementCount" => in_range.size,
+      }
+    end
+    # Self-describing vocabulary: the classes and properties of the utd:
+    # namespace, declared in the graph itself.
+    def vocabulary_nodes
+      ns = "https://www.untded.org/ns/untded#"
+      classes = {
+        "TradeDataElement" => "A data element of the Trade Data Elements Directory: a named, defined unit of trade information with a tag and a representation.",
+        "Category" => "One of the nine ordered tag ranges into which the directory groups its data elements.",
+        "CategoryScheme" => "The ordered scheme of the nine tag-range categories.",
+      }
+      properties = {
+        "tag" => ["TradeDataElement", "The four-digit unique identifier of the data element."],
+        "representation" => ["TradeDataElement", "The printed character representation notation, e.g. an..35."],
+        "charset" => ["TradeDataElement", "The character class of the representation: a, an or n."],
+        "minLength" => ["TradeDataElement", "Minimum number of characters in a value."],
+        "maxLength" => ["TradeDataElement", "Maximum number of characters in a value."],
+        "changeTag" => ["TradeDataElement", "The printed change indicator against the 1993 edition."],
+        "status" => ["TradeDataElement", "active or retired, per the printed change indicator."],
+        "oldName" => ["TradeDataElement", "The data element name in the 1993 edition."],
+        "businessTerm" => ["TradeDataElement", "The printed business term (synonym)."],
+        "bridges" => ["TradeDataElement", "Printed locations on aligned trade documents (UNLK, SAD, CIMP, CIM, MAR)."],
+        "sourcePage" => ["TradeDataElement", "Page of the source PDF the entry was transcribed from."],
+        "extractionConfidence" => ["TradeDataElement", "Transcription confidence: high, medium or low."],
+        "category" => ["TradeDataElement", "The tag-range category the element belongs to."],
+        "tagRange" => ["Category", "The tag interval of the category, e.g. 1000-1699."],
+        "elementCount" => "The number of member elements.",
+      }
+      class_nodes = classes.map do |name, comment|
+        { "@id" => "#{ns}#{name}", "@type" => "rdfs:Class", "comment" => comment }
+      end
+      prop_nodes = properties.map do |name, meta|
+        domain, comment = meta
+        node = { "@id" => "#{ns}#{name}", "@type" => "rdf:Property", "comment" => comment }
+        node["domain"] = { "@id" => "#{ns}#{domain}" } if domain.is_a?(String) && classes.key?(domain)
+        node
+      end
+      class_nodes + prop_nodes
+    end
+
     def element_node(e)
+      category = category_of_tag(e.tag)
       node = {
         "@id" => "#{origin}/elements/#{e.tag}",
         "@type" => "TradeDataElement",
         "tag" => e.tag,
         "isPartOf" => { "@id" => dataset_iri },
+        "category" => { "@id" => category_iri(category) },
         "changeTag" => e.change_tag,
         "status" => e.status,
         "sourcePage" => e.provenance.page,

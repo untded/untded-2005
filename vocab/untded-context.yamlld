@@ -1,12 +1,34 @@
 # YAML-LD context — the semantic SSOT of the UNTDED 2005 dataset.
 # Element IRIs are the live registry pages (https://www.untded.org/elements/NNNN),
-# so what you read in the data is what you can open in a browser.
+# category IRIs the live category pages (/categories/NNNN-NNNN), so what you
+# read in the data is what you can open in a browser.
 "@context":
   utd: https://www.untded.org/ns/untded#
   schema: https://schema.org/
   dct: http://purl.org/dc/terms/
+  skos: http://www.w3.org/2004/02/skos/core#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  owl: http://www.w3.org/2002/07/owl#
   xsd: http://www.w3.org/2001/XMLSchema#
+
+  # classes
   TradeDataElement: utd:TradeDataElement
+  Category: utd:Category
+  CategoryScheme: utd:CategoryScheme
+  Dataset: schema:Dataset
+  DataDownload: schema:DataDownload
+
+  # dataset-level
+  name: schema:name
+  description: schema:description
+  isPartOf: schema:isPartOf
+  isBasedOn: schema:isBasedOn
+  distribution: schema:distribution
+  encodingFormat: schema:encodingFormat
+  source: dct:source
+  elementCount: utd:elementCount
+
+  # element-level
   tag: utd:tag
   representation: utd:representation
   charset: utd:charset
@@ -19,13 +41,17 @@
   bridges: utd:bridges
   sourcePage: utd:sourcePage
   extractionConfidence: utd:extractionConfidence
-  elementCount: utd:elementCount
-  name: schema:name
-  description: schema:description
-  isPartOf: schema:isPartOf
-  isBasedOn: schema:isBasedOn
-  distribution: schema:distribution
-  DataDownload: schema:DataDownload
-  Dataset: schema:Dataset
-  encodingFormat: schema:encodingFormat
-  source: dct:source
+  category: utd:category
+
+  # category-level
+  tagRange: utd:tagRange
+  position: schema:position
+  member: skos:member
+  inScheme: skos:inScheme
+
+  # vocabulary definitions
+  label: rdfs:label
+  comment: rdfs:comment
+  domain: rdfs:domain
+  range: rdfs:range
+  subClassOf: rdfs:subClassOf
