@@ -38,7 +38,27 @@ module Untded
       require "rdf/turtle"
       require "json/ld"
       statements = JSON::LD::API.toRdf(graph)
-      RDF::Graph.new.insert(*statements).dump(:ttl, prefixes: ttl_prefixes)
+      RDF::Graph.new.insert(*statements).dump(:ttl, prefixes: ttl_prefixes, base: "#{origin}/")
+    end
+
+    # Per-element dereferenceable files: for each element IRI, a standalone
+    # JSON-LD document and a Turtle serialization of just that element's
+    # statements. The registry serves these at /elements/<tag>/data.*.
+    def write_element_files(dir)
+      require "fileutils"
+      require "rdf/turtle"
+      require "json/ld"
+      FileUtils.mkdir_p(dir)
+      statements = JSON::LD::API.toRdf(graph).group_by(&:subject)
+      @elements.each do |e|
+        iri = RDF::URI("#{origin}/elements/#{e.tag}")
+        node = element_node(e)
+        File.write(File.join(dir, "#{e.tag}.jsonld"),
+          JSON.pretty_generate({ "@context" => context }.merge(node)))
+        sub = RDF::Graph.new.insert(*(statements[iri] || []))
+        File.write(File.join(dir, "#{e.tag}.ttl"),
+          sub.dump(:ttl, prefixes: ttl_prefixes, base: "#{origin}/"))
+      end
     end
 
     private
@@ -92,7 +112,9 @@ module Untded
 
     def ttl_prefixes
       {
-        "utd" => "#{origin}/ns/untded#",
+        # the vocabulary namespace is minted once (it matches the context in
+        # vocab/) and is independent of the deployment origin
+        "utd" => "https://www.untded.org/ns/untded#",
         "schema" => "https://schema.org/",
         "dct" => "http://purl.org/dc/terms/",
       }

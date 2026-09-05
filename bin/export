@@ -18,4 +18,5 @@ end
 linked = Untded::LinkedData.new(elements: elements)
 File.write(File.join(out_dir, "untded.jsonld"), linked.to_jsonld)
 File.write(File.join(out_dir, "untded.ttl"), linked.to_ttl)
-puts "linked data: #{out_dir}/untded.jsonld, untded.ttl"
+linked.write_element_files(File.join(out_dir, "elements-rdf"))
+puts "linked data: #{out_dir}/untded.jsonld, untded.ttl, elements-rdf/*.{jsonld,ttl}"
