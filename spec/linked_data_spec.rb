@@ -20,10 +20,26 @@ RSpec.describe Untded::LinkedData do
   end
 
   it "emits one dataset node and one node per element" do
-    expect(graph["@graph"].size).to eq(1505)
+    expect(graph["@graph"].size).to eq(1533)
     dataset = by_id["https://example.untded.test/dataset/untded-2005"]
     expect(dataset["@type"]).to eq("Dataset")
     expect(dataset["elementCount"]).to eq(1504)
+  end
+
+  it "models categories as resources with belonging relations" do
+    cats = graph["@graph"].select { |n| n["@type"] == "Category" }
+    expect(cats.size).to eq(9)
+    first = by_id["https://example.untded.test/categories/1000-1699"]
+    expect(first).to include("tagRange" => "1000-1699", "position" => 1, "elementCount" => 144)
+    expect(first["inScheme"]["@id"]).to end_with("CategoryScheme")
+    expect(by_id["https://example.untded.test/elements/1001"]["category"]["@id"]).to eq("https://example.untded.test/categories/1000-1699")
+  end
+
+  it "declares the vocabulary classes and properties" do
+    defs = graph["@graph"]
+    expect(defs.count { |n| n["@type"] == "rdfs:Class" }).to eq(3)
+    expect(defs.count { |n| n["@type"] == "rdf:Property" }).to eq(15)
+    expect(by_id["https://www.untded.org/ns/untded#tag"]["domain"]["@id"]).to end_with("TradeDataElement")
   end
 
   it "shapes a known element faithfully" do
