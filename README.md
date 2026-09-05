@@ -43,6 +43,14 @@ UN/EDIFACT D.05B cross-check corpus live in the sibling
 [`untded/references`](https://github.com/untded/references) repository
 (default path `../references`, override with `UNTDED_REFERENCES_DIR`).
 
+## Linked Data
+
+`bin/export` also derives `untded.jsonld` (JSON-LD) and `untded.ttl`
+(RDF Turtle) from the same models. The semantic SSOT is the YAML-LD
+context in `vocab/untded-context.yamlld`; element IRIs are the live
+registry pages (`https://www.untded.org/elements/N`, override with
+`UNTDED_SITE_ORIGIN`). Serialization goes through the rdf/json-ld gems.
+
 ## Commands
 
 ```bash
