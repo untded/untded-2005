@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# Loads every YAML file through the lutaml-model classes and checks
+# cross-file invariants. Exits 1 on any error.
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+require "untded"
+
+data_dir = ARGV[0] || File.expand_path("../data", __dir__)
+
+result = Untded::Validator.new(data_dir).call
+result.summary.each { |k, v| puts "#{k}: #{v.is_a?(Hash) ? v.sort_by { |a, _| a }.to_h : v}" }
+if result.errors.any?
+  puts "FAILED:"
+  result.errors.each { |e| puts "  #{e}" }
+  exit 1
+end
+puts "OK"

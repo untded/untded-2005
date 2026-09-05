@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# Regenerates the YAML SSOT in data/ from the source PDF.
+# Usage: bin/extract [pdf] [data-dir]
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+require "untded"
+
+pdf = ARGV[0] || File.expand_path("../references/UNTDED2005_Redacted.pdf", __dir__)
+data_dir = ARGV[1] || File.expand_path("../data", __dir__)
+
+abort "PDF not found: #{pdf}" unless File.file?(pdf)
+
+extractor = Untded::Extractor.new(pdf: pdf, pages: 28..132)
+elements, reviews = extractor.extract
+extractor.write_data(data_dir, elements, reviews)
+
+stats = extractor.stats
+puts "source:     #{File.basename(pdf)} (pages 28-132)"
+puts "rows:       #{stats[:rows]}"
+puts "elements:   #{stats[:elements]}"
+puts "change tag: #{stats[:change_tags].sort_by { |k, _| k }.map { |k, v| "#{k}=#{v}" }.join(' ')}"
+puts "confidence: #{stats[:confidence].sort_by { |k, _| k }.map { |k, v| "#{k}=#{v}" }.join(' ')}"
+puts "review queue entries: #{stats[:reviews]}"
+puts "written:    #{data_dir}/elements/*.yaml, #{data_dir}/review-queue.yaml"

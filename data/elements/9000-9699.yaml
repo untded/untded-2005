@@ -1,0 +1,1588 @@
+---
+category: 4.2.9 (9000-9699) Other data elements (Customs, etc.)
+elements:
+- tag: 9003
+  name: Employment. Detail Function.Code
+  description: Code specifying the function of employment details.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Employment qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9004
+  name: Employment. Category.Text
+  description: Free form description of an employment category.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Employment category
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9005
+  name: Employment. Category.Code
+  description: Code specifying an employment category.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Employment category, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9006
+  name: Qualification . Class.Text
+  description: Free form description of a qualification class.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Qualification classification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9007
+  name: Qualification . Class.Code
+  description: Code specifying a qualification classification.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Qualification classification, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9008
+  name: Occupation. Text
+  description: Free form description of an occupation.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Occupation
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: high
+- tag: 9009
+  name: Occupation. Code
+  description: Code specifying an occupation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Occupation, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9011
+  change_tag: x
+  status: retired
+  old_name: Status event, coded
+  notes: DE to use instead - 4405
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9012
+  name: Status. Reason.Text
+  description: Free form description of a status reason.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Status reason
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9013
+  name: Status. Reason.Code
+  description: Code specifying a reason for a status.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Status reason, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9015
+  name: Status. Category.Code
+  description: Code specifying the category of a status.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Status type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9017
+  name: Attribute. Function.Code
+  description: Code qualifying an attribute function.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Attribute function qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9018
+  name: Attribute. Text
+  description: Free form description of an attribute.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Attribute
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: high
+- tag: 9019
+  name: Attribute. Code
+  description: Code specifying an attribute.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Attribute, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: medium
+- tag: 9020
+  name: Attribute. Type.Text
+  description: Free form description of an attribute type.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 128
+    confidence: high
+- tag: 9021
+  name: Attribute. Type.Code
+  description: Coded specifying an attribute type.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Attribute type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9023
+  name: Definition. Function.Code
+  description: Code specifying a function of a definition.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9025
+  name: Definition. Extent.Code
+  description: Code specifying the extent of a definition.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9026
+  name: Edit Mask. Format.Identifier
+  description: To identify the format of an edit mask.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9029
+  name: Value Definition. Function.Code
+  description: Code qualifying a value definition.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9031
+  name: Edit Mask. Representation.Code
+  description: Code specifying the representation of the edit mask.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9032
+  name: Customs. Previous Procedure.Text
+  description: Customs procedure, if any, which has been applied to the goods prior
+    to the application of a different Customs procedure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Previous Customs procedure
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9033
+  name: Customs. Previous Procedure.Code
+  description: Code specifying the Customs procedure, if any, which has been applied
+    to the goods prior to the application of a different Customs procedure.
+  representation:
+    raw: an..7
+    charset: an
+    min_length: 1
+    max_length: 7
+  change_tag: cndr
+  status: active
+  old_name: Previous Customs procedure, coded
+  bridges: 'SAD: (SAD 37)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9035
+  name: Qualification. Application Area.Code
+  description: Code specifying the application area of a qualification.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9037
+  name: Qualification. Type.Code
+  description: Code specifying a type of qualification.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9038
+  name: Facility. Type.Text
+  description: Free form description of the facility type.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9039
+  name: Facility. Type.Code
+  description: Code specifying a type of facility.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9040
+  name: Reservation. Identifier
+  description: To identify a reservation.
+  representation:
+    raw: an..20
+    charset: an
+    min_length: 1
+    max_length: 20
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9043
+  name: Reservation. Type.Code
+  description: Code qualifying a type of reservation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9045
+  name: Basis . Function.Code
+  description: Code qualifying a basis.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9046
+  name: Basis. Type.Text
+  description: Free form description of the basis type.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9047
+  name: Basis. Type.Code
+  description: Code specifying the type of basis.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9048
+  name: Applicability. Type.Text
+  description: Free form description of the type of applicability.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9049
+  name: Applicability. Type.Code
+  description: Code specifying the type of applicability.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9051
+  name: Applicability. Function.Code
+  description: Code qualifying the applicability.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9141
+  name: Relationship. Type.Code
+  description: Code qualifying a type of relationship.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Relationship qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9142
+  name: Relationship. Text
+  description: Free form description of a relationship.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Relationship
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9143
+  name: Relationship. Code
+  description: Code specifying a relationship.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Relationship, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9144
+  name: Party. Relationship.Indicator
+  description: Indication as to whether or not there is any relationship between two
+    parties such as financial relationship.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: cndr
+  status: active
+  old_name: Parties' relationship
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: medium
+- tag: 9146
+  name: Composite Data Element. Tag.Identifier
+  description: To identify the tag of a composite data element.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9148
+  name: Directory. Status.Identifier
+  description: To identify the status of a directory set.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9150
+  name: Simple Data Element. Tag.Identifier
+  description: To identify the tag of a simple data element.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9153
+  name: Simple Data Element. Character Representation.Code
+  description: Code specifying the character representation of a simple data element.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9160
+  name: Code. Set.Indicator
+  description: Code to indicate whether or not a data element has an associated code
+    set.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9162
+  name: Data Element. Tag.Identifier
+  description: To identify the tag of a data element.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 129
+    confidence: high
+- tag: 9164
+  name: Group. Identifier
+  description: To identify a group.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9166
+  name: Segment. Tag.Identifier
+  description: To identify the tag of a segment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9169
+  name: Data. Representation.Code
+  description: Code specifying a type of data representation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9170
+  name: Event. Type.Text
+  description: Textual description of an event type.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9171
+  name: Event. Type.Code
+  description: Code specifying an event type.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9172
+  name: Event. Text
+  description: Free form description of the event.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9173
+  name: Event. Code
+  description: Code specifying an event.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9175
+  name: Data Element. Function.Code
+  description: Code specifying the usage type of a data element.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9212
+  name: Tax. Regime Type.Text
+  description: A textual description of a regime according to which tax is assessed
+    such as preferential duty rate.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Type of duty regime
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9213
+  name: Tax. Regime Type.Code
+  description: Code specifying a regime according to which tax is assessed such as
+    preferential duty rate.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Type of duty regime, coded
+  bridges: 'SAD: (SAD 36)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9280
+  name: Validation. Result.Text
+  description: To specify the value of a validation result.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Validation result
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9282
+  name: Validation. Key.Identifier
+  description: To identify the cryptographic key used for the calculation of the validation.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Validation key identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9285
+  name: Validation. Criteria.Code
+  description: Code specifying the validation criteria to be applied.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9302
+  name: Transport Equipment. Sealing Party Type.Text
+  description: Textual description of the role of a sealing party.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Sealing party
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: high
+- tag: 9303
+  name: Seal. Sealing Party Type.Code
+  description: Code specifying the role of a sealing party.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sealing party, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9308
+  name: Transport Equipment. Seal.Identifier
+  description: The identification number of a seal affixed to a piece of transport
+    equipment.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Seal number
+  bridges: 'MAR: IMO/FAL 2, 7 SAD: (SAD D)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9321
+  name: Application. Error.Code
+  description: Code specifying an application error.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cndr
+  status: active
+  old_name: Application error, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9353
+  name: Government. Procedure.Code
+  description: Code specifying a government procedure.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Government procedure, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9380
+  name: Customs Party. Procedure.Text
+  description: Textual description of a procedure performed by Customs on goods which
+    are subject to Customs control.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Customs procedure
+  bridges: 'SAD: (SAD E)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9381
+  name: Customs Party. Procedure.Code
+  description: Code specifying a procedure performed by Customs on goods which are
+    subject to Customs control.
+  representation:
+    raw: an..7
+    charset: an
+    min_length: 1
+    max_length: 7
+  change_tag: cndr
+  status: active
+  old_name: Customs procedure, coded
+  bridges: 'SAD: (SAD 37)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9411
+  name: Government. Involvement.Code
+  description: Code specifying the requirement and status of governmental involvement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Government involvement, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9415
+  name: Government. Agency.Code
+  description: Code specifying a government agency.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Government agency, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 130
+    confidence: medium
+- tag: 9417
+  name: Government. Action.Code
+  description: Code specifying a type of government action such as inspection, detention,
+    fumigation, security.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Government action, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: medium
+- tag: 9419
+  name: Service. Layer.Code
+  description: Code specifying a service layer.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Service layer, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: medium
+- tag: 9421
+  name: Process. Stage.Code
+  description: Code specifying a stage in a process.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9422
+  name: Value. Value.Text
+  description: To specify a value.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9424
+  name: Array Cell. Data.Text
+  description: Free form description of the content of an array cell.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9426
+  name: Code. Value.Code
+  description: To specify a code value.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9428
+  name: Array Cell. Structure.Identifier
+  description: To identify an array cell structure.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9430
+  name: Foot Note. Set.Identifier
+  description: To identify a footnote set.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9432
+  name: Foot Note. Identifier
+  description: To identify a footnote.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9434
+  name: Code. Name.Text
+  description: Name of a code.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9436
+  name: Clinical Intervention. Text
+  description: Free form description of a clinical intervention.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9437
+  name: Clinical Intervention. Code
+  description: Code specifying a clinical intervention.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9441
+  name: Clinical Intervention. Type.Code
+  description: Code specifying a type of clinical intervention.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9443
+  name: Attendance. Function.Code
+  description: Code qualifying a type of attendance.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9444
+  name: Admission. Type.Text
+  description: Free form of a type of admission.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9445
+  name: Admission. Type.Code
+  description: Code specifying a type of admission.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9446
+  name: Discharge. Type.Text
+  description: Free form description of a type of discharge.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9447
+  name: Discharge. Type.Code
+  description: Code specifying a type of discharge.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9448
+  name: File. Generation Command.Text
+  description: Name of a file generation command.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9450
+  name: File. Compression Technique.Text
+  description: Name of a file compression technique.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9453
+  name: Code. Source.Code
+  description: Code specifying the source of a code value.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9501
+  name: Formula. Type.Code
+  description: Code specifying a type of formula.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9502
+  name: Formula. Name.Text
+  description: Name identifying a formula.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9505
+  name: Formula. Complexity.Code
+  description: Code specifying the complexity of a formula.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9507
+  name: Formula Sequence. Function.Code
+  description: Code giving specific meaning to a formula sequence.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9509
+  name: Formula Sequence. Operand.Code
+  description: Code specifying a specific type of operand within a formula sequence.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9510
+  name: Formula Sequence. Name.Text
+  description: Name identifying a formula sequence.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9605
+  name: Data. Type.Code
+  description: Code specifying a type of data.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9606
+  name: Response. Yes Or No.Indicator
+  description: Code specifying either a yes or no.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9619
+  name: Adjustment. Category.Code
+  description: Code specifying the general category of adjustment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9620
+  name: Policy. Limitation.Identifier
+  description: Code specifying a policy limitation.
+  representation:
+    raw: an..10
+    charset: an
+    min_length: 1
+    max_length: 10
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9623
+  name: Diagnosis. Type.Code
+  description: Code specifying the type of diagnosis.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9625
+  name: Related Cause. Code
+  description: Code specifying a related cause.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9627
+  name: Admission. Source.Code
+  description: Code specifying the source of admission.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9629
+  name: Procedure. Modification.Code
+  description: Code specifying the procedure modification.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9635
+  name: Event. Function.Code
+  description: Code qualifying event details.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9636
+  name: Event. Category.Text
+  description: Free form description of an event category.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9637
+  name: Event. Category.Code
+  description: Code specifying an event category.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 131
+    confidence: high
+- tag: 9639
+  name: Diagnosis. Category.Code
+  description: Code specifying a diagnosis category.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 132
+    confidence: high
+- tag: 9641
+  name: Service. Basis.Code
+  description: Code specifying the basis on which a service is performed.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 132
+    confidence: high
+- tag: 9643
+  name: Supporting Evidence. Type.Code
+  description: Code qualifying a type of supporting evidence.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 132
+    confidence: high
+- tag: 9647
+  name: Cavity. Zone.Code
+  description: Code specifying the zone of a cavity.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 132
+    confidence: high
+- tag: 9649
+  name: Process. Information Function.Code
+  description: Code qualifying processing information.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 132
+    confidence: high

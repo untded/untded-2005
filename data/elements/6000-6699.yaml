@@ -1,0 +1,1789 @@
+---
+category: 4.2.6 (6000-6699) Measure identifiers, quantities (other than monetary)
+elements:
+- tag: 6000
+  name: Geographical Coordinate. Latitude.Measure
+  description: The measure of the angular distance north or south from the Equator
+    meridan to the meridan of a specific place
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6002
+  name: Geographical Coordinate. Longitude.Measure
+  description: The measure of the angular distance east or west from the Greenwich
+    meridan to the meridan of a specific place
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6004
+  name: Humidity. Percentage.Measure
+  description: The measurement of the moisture in the air, measured as a percentage.
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6008
+  name: Height. Measure
+  description: To specify the value of a height dimension.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Height dimension
+  bridges: 'UNLK: L 36-64, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: medium
+- tag: 6012
+  name: Consignment. Gross Weight.Measure
+  description: Total gross weight (mass) of all goods items referred to as one consignment
+    including packaging but excluding any transport equipment.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: cndr
+  status: active
+  old_name: Consignment gross weight
+  business_term: Consignment gross weight; Total gross weight
+  bridges: 'AWB: n..7; L 46, P 13-19 CIMP: (600):n..7 MAR: IMO/FAL 2, 7 UNLK: L 34
+    P 64-71'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: medium
+- tag: 6014
+  name: Consignment. Net Weight.Measure
+  description: Total net weight (mass) of all the goods items referred to as one consignment
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6016
+  name: Goods Item. Net Weight.Measure
+  description: Weight (mass) of goods item excluding all packing
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 40-50 P 64-71'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6018
+  name: Line Item. Gross Weight.Measure
+  description: Weight (mass) of line item including packaging but excluding the transport
+    equipment
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 36-46 P 27-55'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6020
+  name: Line Item. Net Weight.Measure
+  description: Weight (mass) of a line item excluding all packaging
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 36-46 P 27-55'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6022
+  name: Package. Gross Weight.Measure
+  description: Weight (mass) of a package excluding all packing
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6024
+  name: Order Document. Quantity
+  description: The quantity which has been ordered.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Quantity ordered
+  bridges: 'UNLK: L 36-46 P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: medium
+- tag: 6026
+  name: Package. Net Weight.Measure
+  description: Weight (mass) of a package excluding all packing
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6028
+  name: Package. Gross Volume.Measure
+  description: Weight (mass) of a package excluding all packing
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: high
+- tag: 6030
+  name: Chargeable Weight. Basis.Measure
+  description: Gross weight (mass) on which a charge is to be based
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Chargeable weight, Kg
+  bridges: 'AWB: L 33-44, P 31-37 CIM: L 44-45, P 51-58 and L 50-51, P 51-58 and L
+    56-57,P 51-58 (also on reverse) (CIM 60) CIMP: (600):n..7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 101
+    confidence: medium
+- tag: 6032
+  name: Customs Tariff. Quantity Deduction.Quantity
+  description: Quantity to be deducted from the tariff quantity to calculate the duty/tax/fee
+    assessment basis for Customs.
+  representation:
+    raw: n..18
+    charset: "n"
+    min_length: 1
+    max_length: 18
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6036
+  name: Consolidation. Gross Weight.Measure
+  description: Total gross weight (mass) of all goods items referred to as one consignment
+    including packaging but excluding the transport equipment.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6038
+  name: Consolidation. Gross Volume.Measure
+  description: Total gross volume of all consignments referred to as one consolidation.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6040
+  name: Consolidation. Net Weight.Measure
+  description: Total net weight (mass) of all consignments referred to as one consolidation
+    excluding both packaging and transport equipment
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6042
+  name: Consolidation. Loading Length.Measure
+  description: Total length in a means of transport or a piece of transport equipment
+    whereby the complete width and height over that length is needed for loading all
+    the consignments referred to as one consolidation.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6044
+  name: Consignment. Loading Length.Measure
+  description: Total length in a means of transport or a piece of transport equipment
+    over which the complete width and height is needed for loading all the goods items
+    referred to as one consignment.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6046
+  name: Transport Equipment. Loading Length.Measure
+  description: Total length in a piece of transport equipment over which the complete
+    width and height is needed for loading goods items or consignments.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6048
+  name: Net Net Weight. Measure
+  description: Weight (mass) of goods without any packaging.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Net net weight
+  business_term: Customs weight
+  bridges: 'SAD: (SAD 38)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6052
+  name: Transport Means. Tare Weight.Measure
+  description: Weight (mass) of transport means including permanent equipment but
+    excluding goods and loose accessories.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Vehicle tare
+  business_term: Vehicle tare
+  bridges: 'CIM: L 13-14, P 69-73 (CIM 20)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6054
+  name: Consolidation. Consignment.Quantity
+  description: Count of the total number of consignments referred to as one consolidation.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6056
+  name: Consolidation. Goods Item.Quantity
+  description: Count of the total number of goods items across the consignments that
+    make up a consolidation.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6060
+  name: Quantity. Quantity.Text
+  description: Textual representation of a quantity in figures and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Quantity
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6061
+  name: Quantity. Quantity
+  description: Numeric representation of a quantity value.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 36-46 P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: high
+- tag: 6063
+  name: Quantity. Type.Code
+  description: Code qualifying the type of quantity.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Quantity qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6064
+  name: Quantity. Variation.Quantity
+  description: To specify the value of a quantity variance.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Quantity difference
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6066
+  name: Document. Control Total.Numeric
+  description: Value obtained by summing values specified throughout a document.
+  representation:
+    raw: n..18
+    charset: "n"
+    min_length: 1
+    max_length: 18
+  change_tag: cnd
+  status: active
+  old_name: Control value
+  business_term: Hash total, Control total
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6069
+  name: Control Total. Type.Code
+  description: Code qualifying a type of hash total.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Control qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6071
+  name: Frequency. Type.Code
+  description: Code qualifying the frequency.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Frequency qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 102
+    confidence: medium
+- tag: 6072
+  name: Frequency. Quantity
+  description: The number of repetitions in a given time.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Frequency value
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6074
+  name: Confidence. Percentage.Numeric
+  description: To specify the confidence that a true value falls within a certain
+    confidence interval expressed as a percentage.
+  representation:
+    raw: n..6
+    charset: "n"
+    min_length: 1
+    max_length: 6
+  change_tag: cnd
+  status: active
+  old_name: Confidence limit
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6077
+  name: Result. Representation.Code
+  description: Code specifying the representation of a result.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6079
+  name: Result. Normalcy.Code
+  description: Code specifying the degree of conformance to a standard.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6080
+  name: Transport Equipment. Maximum Load Weight.Measure
+  description: Maximum load imposed for transport purposes under applicable regulations.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: cnd
+  status: active
+  old_name: Vehicle load limit, t
+  business_term: CSC Weight, Container Safety Convention Maximum Weight
+  bridges: 'CIM: L 13-14, P 75-79 (CIM 44)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6082
+  name: Dosage. Text
+  description: Free form description of a dosage.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6083
+  name: Dosage. Identifier
+  description: Code identifying a dosage.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6085
+  name: Dosage. Administration Type.Code
+  description: Code qualifying the administration of a dosage.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6087
+  name: Result. Type.Code
+  description: Code qualifying the type of a result value.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6090
+  name: Tax Or Fee. Assessment Basis.Quantity
+  description: To specify the quantity on which a duty or tax or fee will be assessed.
+  representation:
+    raw: n..18
+    charset: "n"
+    min_length: 1
+    max_length: 18
+  change_tag: add
+  status: active
+  bridges: 'SAD: (SAD 47)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6092
+  name: Document Declared Gross Weight. Measure
+  description: Weight (mass) of all goods including packing but excluding carrier's
+    equipment as declared in a document.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6094
+  name: Consolidation. Package.Quantity
+  description: Count of the total number of packages in all of the consignments referred
+    to as one consolidation.
+  representation:
+    raw: n..16
+    charset: "n"
+    min_length: 1
+    max_length: 16
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6096
+  name: Package. Length.Measure
+  description: To specify the length of a package
+  representation:
+    raw: n..7
+    charset: "n"
+    min_length: 1
+    max_length: 7
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6098
+  name: Package. Width.Measure
+  description: To specify the width of a package
+  representation:
+    raw: n..7
+    charset: "n"
+    min_length: 1
+    max_length: 7
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6102
+  name: Goods Item. Customs Tariff.Quantity
+  description: Quantity of the goods in the unit as required by Customs for tariff,
+    statistical or fiscal purposes
+  representation:
+    raw: n..13
+    charset: "n"
+    min_length: 1
+    max_length: 13
+  change_tag: cnd
+  status: active
+  old_name: Supplementary quantity
+  business_term: Supplementary quantity
+  bridges: 'SAD: (SAD 41)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6104
+  name: Transport Means. Onboard Person.Quantity
+  description: Total number of persons (passengers and crew, including the captain/master)
+    on board of a means of transport.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6106
+  name: Crew. Quantity
+  description: Total number of the members of the crew, including the captain/master,
+    of a means of transport.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6110
+  name: Chargeable Distance. Measure
+  description: The distance between two points for which a specific tariff applies.
+  representation:
+    raw: n..7
+    charset: "n"
+    min_length: 1
+    max_length: 7
+  change_tag: cnd
+  status: active
+  old_name: Tariff distance, km
+  bridges: 'CIM: L 47, P 14-19 and L 53, P 13-19 and L 59, P 13-19 (also on reverse)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6113
+  name: Length. Type.Code
+  description: Code specifying the type of length.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6114
+  name: Simple Data Element. Maximum Character Length.Quantity
+  description: To specify the value of the maximum length of a simple data element.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6116
+  name: Simple Data Element. Minimum Character Length.Quantity
+  description: To specify the value of the minimum length of a simple data element.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: high
+- tag: 6130
+  name: Freight Charge. Basis.Text
+  description: Unit of quantity for the calculation of freight charges and other charges
+    expressed as free text.
+  representation:
+    raw: an..10
+    charset: an
+    min_length: 1
+    max_length: 10
+  change_tag: cnd
+  status: active
+  old_name: Freight rate basis
+  bridges: 'UNLK: L 52-66 P 27-54'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 103
+    confidence: medium
+- tag: 6131
+  name: Freight Charge. Quantity Unit Basis.Code
+  description: Unit of quantity for the calculation of freight charges and other charges.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Freight rate basis, coded
+  bridges: 'UNLK: L 52-66 P 27-54'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6140
+  name: Width. Measure
+  description: To specify the value of a width dimension.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Width dimension
+  bridges: 'UNLK: L 36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6142
+  change_tag: x
+  status: retired
+  old_name: Exchangeable equipment, measurement
+  notes: DE to use instead - 6322
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6145
+  name: Dimension. Type.Code
+  description: Code qualifying the type of the dimension.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Dimension qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6146
+  name: Legal Weight. Measure
+  description: Weight (mass) of goods which may include such packing as prescribed
+    by law in some countries (may be equal to the net weight (mass)).
+  representation:
+    raw: n..8
+    charset: "n"
+    min_length: 1
+    max_length: 8
+  change_tag: cn
+  status: active
+  old_name: Legal weight
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: high
+- tag: 6150
+  change_tag: x
+  status: retired
+  old_name: Weight
+  notes: mfd in TDED 1993. Use one of the other specific weight DEs.
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6152
+  name: Range. Maximum Value.Measure
+  description: To specify the maximum value of a range.
+  representation:
+    raw: n..18
+    charset: "n"
+    min_length: 1
+    max_length: 18
+  change_tag: cnd
+  status: active
+  old_name: Range maximum
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6154
+  name: Non-discrete Measurement. Name.Text
+  description: Name of a non-discrete measurement.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: high
+- tag: 6155
+  name: Non-discrete Measurement. Code
+  description: Code specifying the name of a non-discrete measurement.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Measurement attribute, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6156
+  name: Transport Equipment. Tare Weight.Measure
+  description: Weight (mass) of transport equipment including permanent equipment
+    but excluding goods and loose accessories.
+  representation:
+    raw: n..5
+    charset: "n"
+    min_length: 1
+    max_length: 5
+  change_tag: cnd
+  status: active
+  old_name: Container tare weight
+  bridges: 'AWB: L 33-44, P 13-19'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6158
+  change_tag: x
+  status: retired
+  old_name: Exchangeable equipment, weight
+  notes: DE to use instead - 6294
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6160
+  name: Net Weight. Measure
+  description: Weight (mass) of goods including any packaging that normally going
+    with the goods.
+  representation:
+    raw: n..11
+    charset: "n"
+    min_length: 1
+    max_length: 11
+  change_tag: cnd
+  status: active
+  old_name: Net weight
+  bridges: 'SAD: SAD: L 32, P 63-74 (SAD 38) UNLK: L 28-34, P 63-71 MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6162
+  name: Range. Minimum Value.Measure
+  description: To specify the minimum value of a range.
+  representation:
+    raw: n..18
+    charset: "n"
+    min_length: 1
+    max_length: 18
+  change_tag: cnd
+  status: active
+  old_name: Range minimum
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 104
+    confidence: medium
+- tag: 6165
+  change_tag: x
+  status: retired
+  old_name: Weight qualifier
+  notes: mfd in TDED 1993 No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6167
+  name: Range. Type.Code
+  description: Code qualifying a type of range.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Range tag qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6168
+  name: Length. Measure
+  description: To specify the value of a length dimension.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Length dimension
+  bridges: 'UNLK: L 36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6170
+  change_tag: x
+  status: retired
+  old_name: Number of pricing units
+  notes: mfd in TDED 1993 No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6173
+  name: Size. Type.Code
+  description: Code specifying a type of size.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Size qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: high
+- tag: 6174
+  name: Size. Measure
+  description: To specify a value of magnitude.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Size
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: high
+- tag: 6176
+  name: Occurrence. Maximum Value.Quantity
+  description: To specify the maximum number of occurrences.
+  representation:
+    raw: n..7
+    charset: "n"
+    min_length: 1
+    max_length: 7
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: high
+- tag: 6178
+  name: Edit Field. Character Length.Quantity
+  description: To specify the value of the length of a field for editing.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: high
+- tag: 6180
+  name: Payment. Currency.Text
+  description: Name of the monetary unit in which payment is made, or is to be made.
+  representation:
+    raw: an..26
+    charset: an
+    min_length: 1
+    max_length: 26
+  change_tag: cnd
+  status: active
+  old_name: Payment currency
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6181
+  name: Payment. Currency.Identifier
+  description: The identifier of the monetary unit in which payment is made, or is
+    to be made.
+  representation:
+    raw: a3
+    charset: a
+    min_length: 3
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment currency, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6190
+  change_tag: x
+  status: retired
+  old_name: Allowance/charge quantity difference
+  notes: mfd in TDED 1993 No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6240
+  name: Storage Temperature. Measure
+  description: Level of heat or cold at which the goods should be stored.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Storage temperature
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 105
+    confidence: medium
+- tag: 6242
+  name: Transport Temperature. Measure
+  description: Instructions regarding the temperature under which the cargo has to
+    be transported.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Transport temperature
+  business_term: Reefer/cool cargo temperature setting
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6245
+  name: Temperature. Type.Code
+  description: Code qualifying the type of a temperature.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Temperature qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6246
+  name: Temperature. Measure
+  description: To specify the value of a temperature.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cndr
+  status: active
+  old_name: Temperature setting
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6256
+  name: Freight Charge. Basis.Quantity
+  description: Quantity on which freight and other charges are based.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Freight quantity
+  bridges: 'UNLK: L 52-66 P 27-54'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6264
+  name: Ships Stores. Item.Quantity
+  description: Quantity of articles or products stored for consumption onboard, or
+    to be taken away from a means of transport.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Quantity of stores item
+  business_term: Ship store quantity
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6270
+  name: Product. Delivered.Quantity
+  description: Quantity delivered by the seller.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Quantity delivered
+  bridges: 'UNLK: L 36-46 P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6272
+  name: Working Days. Quantity
+  description: Number of working days in a specified period.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: cn
+  status: active
+  old_name: Number of working days
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6280
+  change_tag: x
+  status: retired
+  old_name: Loading tackle weight
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6292
+  name: Goods Item. Gross Weight.Measure
+  description: Weight (mass) of goods including packaging but excluding the carrier's
+    equipment.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cnr
+  status: active
+  old_name: Gross weight
+  business_term: Actual gross weight (mass)
+  bridges: 'AWB: L 33-44, P 13-19 CIM: L 28-33, P 63-74 (CIM 26) CIMP: (600):n..7
+    CMR: L 28-42, P 63-71 (CMR 11) SAD: (SAD 35) UNLK: L 28-52, P 63-74'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6294
+  name: Transport Equipment. Gross Weight.Measure
+  description: Weight (mass) of transport equipment, such as container or similar
+    unit load device, with goods, including packing and carrier's equipment.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Container gross weight
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6296
+  name: Split Goods Item. Gross Weight.Measure
+  description: Weight (mass) of that portion of the goods item in a specific piece
+    of transport equipment.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Weight split
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: high
+- tag: 6298
+  name: Transport Means. Laden Weight.Measure
+  description: Actual total weight (mass) of the transport means and the goods loaded
+    on it.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Vehicle laden weight
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6300
+  name: Transport Means. Gross Weight.Measure
+  description: The measure of the overall size of a vessel determined in accordance
+    with the provisions of the International Convention on Tonnage Measurement of
+    Ships, 1969.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Gross tonnage
+  business_term: Vessel Tonnage
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 106
+    confidence: medium
+- tag: 6302
+  name: Transport Means. Net Weight.Measure
+  description: The measure of the useful capacity of a vessel determined in accordance
+    with the provisions of the International Convention on Tonnage Measurement of
+    Ships, 1969.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cndr
+  status: active
+  old_name: Net tonnage
+  business_term: Maximum laoding capacity on a ship
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6306
+  name: Transport Means. Utilisation Percentage.Numeric
+  description: Percentage of means of transport capacity used.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: cnd
+  status: active
+  old_name: Vehicle capacity used
+  business_term: Maximum useable loading capacity on a ship
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6311
+  name: Measurement. Function.Code
+  description: Code qualifying the purpose of the measurement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Measurement application qualifier
+  bridges: 'MAR: IMO/FAL 2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6313
+  name: Measured Attribute. Type.Code
+  description: Code specifying the type of attribute measured.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Measurement dimension, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6314
+  name: Measurement. Value.Measure
+  description: To specify the value of a measurement.
+  representation:
+    raw: an..18
+    charset: an
+    min_length: 1
+    max_length: 18
+  change_tag: cnd
+  status: active
+  old_name: Measurement value
+  bridges: 'MAR: IMO/FAL 2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6316
+  name: Line Item. Gross Volume.Measure
+  description: Measurement normally arrived at by multiplying the maximum length,
+    width and height of pieces or package or transport equipment. Also known as cube.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: add
+  status: active
+  business_term: Cube
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: high
+- tag: 6318
+  change_tag: x
+  status: retired
+  old_name: Quality/yield percentage
+  notes: mfd in TDED 1993 DE to use instead - 5482
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6321
+  name: Measurement. Significance.Code
+  description: Code specifying the significance of a measurement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Measurement significance, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6322
+  name: Goods Item. Gross Measurement Cube.Measure
+  description: Measurement normally arrived at by multiplying the maximum length,
+    width and height of pieces or package or transport equipment. Also known as cube.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Cube
+  business_term: Volume; Gross Measurement Cube (GMC)
+  bridges: 'CIMP: (500):n..9 UNLK: L 28-38, P 72-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6324
+  name: Split Consignment. Gross Measurement Cube.Measure
+  description: Gross volume (cube) of a portion of a goods item in a specific piece
+    of transport equipment.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Cube split
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: high
+- tag: 6331
+  name: Statistic. Type.Code
+  description: Code qualifying the type of a statistic.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Statistic type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 107
+    confidence: medium
+- tag: 6341
+  name: Currency. Market.Identifier
+  description: To identify an exchange rate currency market.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Currency market exchange, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6343
+  name: Currency. Type.Code
+  description: Code specifying a type of currency.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Currency qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6344
+  name: Currency. Text
+  description: The name or symbol of a monetary unit or currency.
+  representation:
+    raw: an..26
+    charset: an
+    min_length: 1
+    max_length: 26
+  change_tag: cn
+  status: active
+  old_name: Currency
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 6345
+  name: Currency. Identifier
+  description: Code specifying a monetary unit or currency.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Currency, coded
+  bridges: 'AWB: L 24, P 45-48 CIM: n2; L 45, P 18-19 and L 55, P 18-19 and L 61,
+    P 18-19 (also on reverse)(CIM 70) CIMP: (606):a3 SAD: (SAD 22)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6347
+  name: Currency. Usage.Code
+  description: Code specifying a usage of a currency.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Currency details qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6348
+  name: Currency. Rate.Numeric
+  description: To specify the value of the multiplication factor used in expressing
+    currency units.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: cnd
+  status: active
+  old_name: Currency rate base
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6350
+  name: Unit. Quantity
+  description: To specify the number of units.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Number of units
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6353
+  name: Unit. Type.Code
+  description: Code qualifying the type of unit.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Number of units
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6410
+  name: Measurement. Unit.Text
+  description: Name of a unit of measurement in which weight (mass), capacity, length,
+    area, volume or other quantity or measurement is expressed.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 6411
+  name: Measurement. Unit.Code
+  description: Indication of a unit of measurement in which weight (mass), capacity,
+    length, area, volume or other quantity or measurement is expressed.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cndr
+  status: active
+  old_name: Measure unit qualifier
+  business_term: Measure unit qualifier
+  bridges: 'AWB: L 33-44, P 20 CIMP: (601):a1; (604):a2 SAD: (SAD 47(2))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6420
+  name: Dangerous Goods. Net Weight.Measure
+  description: The weight (mass) or volume of the dangerous goods contained in a package
+    excluding the weight (mass) or volume of any packaging material.
+  representation:
+    raw: n..14
+    charset: "n"
+    min_length: 1
+    max_length: 14
+  change_tag: cnr
+  status: active
+  old_name: Dangerous goods net quantity
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6422
+  name: Consignment. Gross Volume.Measure
+  description: Total cube of all goods items referred to as one consignment
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cn
+  status: active
+  old_name: Consignment cube
+  business_term: Cube
+  bridges: 'UNLK: L34 P 72-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6424
+  name: Sample. Frequency.Quantity
+  description: The quantity of samples that have been or should be collected per measure
+    or count..
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Sample frequency value
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: medium
+- tag: 6426
+  name: Process. Stage.Quantity
+  description: Count of the total number of stages in a process.
+  representation:
+    raw: n..2
+    charset: "n"
+    min_length: 1
+    max_length: 2
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 6428
+  name: Process. Stage.Identifier
+  description: To identify a particular process stage.
+  representation:
+    raw: n..2
+    charset: "n"
+    min_length: 1
+    max_length: 2
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 6432
+  name: Significant Digit. Quantity
+  description: Count of the number of significant digits.
+  representation:
+    raw: n..2
+    charset: "n"
+    min_length: 1
+    max_length: 2
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 6434
+  name: Statistical Concept. Identifier
+  description: Free form identification of a statistical concept.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high

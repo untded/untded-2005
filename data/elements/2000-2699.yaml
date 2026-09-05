@@ -1,0 +1,2567 @@
+---
+category: 4.2.2 (2000-2699) Dates, times, periods of time
+elements:
+- tag: 2000
+  name: Date. Date.Text
+  description: To specify a calendar day, expressed by some combination of year, month,
+    week, day or day of the year in figures and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: u
+  status: active
+  old_name: Date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: high
+- tag: 2001
+  name: Date. Date.Date Time
+  description: To specify a calendar day, expressed by the combination of year, month
+    and day (YYMMDD or CCYYMMDD).
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: u
+  status: active
+  old_name: Date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: high
+- tag: 2002
+  name: Time. Time.Text
+  description: To specify a point of time of a day in hours, minutes, seconds and
+    milliseconds, expressed in figures and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: u
+  status: active
+  old_name: Time
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: high
+- tag: 2003
+  name: Time. Date Time
+  description: To specify a point of time of a day, in hours, minutes, seconds and
+    milliseconds (HHMMSSnnn).
+  representation:
+    raw: n9
+    charset: "n"
+    min_length: 9
+    max_length: 9
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: high
+- tag: 2005
+  name: Date. Function.Code
+  description: Code specifying the function of a date, time or period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Date/time/period qualifier
+  bridges: 'MAR: IMO/FAL 1,5'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: medium
+- tag: 2006
+  name: Document. Issue Date Time.Text
+  description: Date that a document was issued and when appropriate, signed or otherwise
+    authenticated, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Document date
+  bridges: 'MAR: IMO/FAL 7 UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: medium
+- tag: 2007
+  name: Document. Issue.Date Time
+  description: Date that a document was issued and when appropriate, signed or otherwise
+    authenticated
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Document date, coded
+  business_term: Date of authentication, Date of issue of document,
+  bridges: 'CIMP: (200):n2; (201):a3; (202):n2 MAR: IMO/FAL 1-7 SAD: (SAD 54)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: medium
+- tag: 2009
+  name: Terms. Time Reference.Code
+  description: Code relating terms to a reference date, time or period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Time relation, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: medium
+- tag: 2010
+  name: Order Document. Issue Date Time.Text
+  description: Date when an order is issued, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Order date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: high
+- tag: 2011
+  name: Order Document. Issue.Date Time
+  description: Date of order
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Order date, coded
+  business_term: Purchase order date
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 37
+    confidence: medium
+- tag: 2013
+  name: Frequency. Code
+  description: Code specifying the rate of recurrence.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Frequency, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2015
+  name: Despatch. Pattern.Code
+  description: Code specifying the days/periods for routine despatches
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Despatch pattern, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2017
+  name: Despatch. Pattern Timing.Code
+  description: Code specifying a set of dates/times within a despatch pattern.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Despatch pattern timing, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2018
+  name: Age. Measure
+  description: To specify the length of time that a person or thing has existed.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: high
+- tag: 2020
+  change_tag: x
+  status: retired
+  old_name: Forwarding date (day -month)
+  notes: DE to use instead - 2126
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2023
+  name: Period. Function.Code
+  description: Code qualifying the function of a period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: high
+- tag: 2024
+  name: Delivery. Last Date Time.Text
+  description: Last date, and optionally time of a delivery, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Delivery lastdate (and time)
+  bridges: 'UNLK: L 22, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2025
+  name: Delivery. Last.Date Time
+  description: Last date, and optionally time of a delivery.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Delivery lastdate (and time), coded
+  bridges: 'UNLK: Date only: L 21, p 74-80 Date and time: L 21, p 74-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2026
+  name: Consignment. Expected Acceptance Date Time.Text
+  description: Date on which the shipper expects that the goods will be at the place
+    of acceptance, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Expected date of delivery to carrier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2027
+  name: Consignment. Expected Acceptance.Date Time
+  description: Date and optionally time when the shipper expects that the goods will
+    be at the place of acceptance.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cnd
+  status: active
+  old_name: Expected date of delivery to carrier, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2029
+  name: Time Zone. Identifier
+  description: To identify a time zone.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: high
+- tag: 2030
+  change_tag: x
+  status: retired
+  old_name: Payment due week
+  notes: DE to use instead - 2481
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2032
+  name: Customs Declaration Document. Lodgement Date Time.Text
+  description: Presentation date of a declaration to customs, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Goods declaration presentation date (Customs)
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 38
+    confidence: medium
+- tag: 2033
+  name: Customs Declaration Document. Lodgement.Date Time
+  description: Presentation date of a declaration to customs
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Goods declaration presentation date (Customs), coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2034
+  name: Payment. Availability Date Time.Text
+  description: Date that an amount due becomes available to a creditor under the terms
+    of payment, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Payment date
+  business_term: Value Date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2035
+  name: Payment. Availability.Date Time
+  description: Date that an amount due becomes available to a creditor under the terms
+    of payment
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Payment date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2036
+  name: Goods Declaration Document. Acceptance Date Time.Text
+  description: Date on which a Goods declaration has been or will be accepted by Customs
+    in accordance with Customs legislation, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Goods declaration acceptancedate (Customs)
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2037
+  name: Goods Declaration Document. Acceptance.Date Time
+  description: Date on which a Goods declaration has been or will be accepted by Customs
+    in accordance with Customs legislation.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Goods declaration acceptancedate (Customs), coded
+  business_term: Goods declaration acceptancedate (Customs)
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2039
+  name: Certificate Of Origin Document. Issue.Date Time
+  description: Issue date of an order acknowledgement
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: high
+- tag: 2040
+  name: Order Acknowledgement Document. Issue Date Time.Text
+  description: Issue date of an order acknowledgement, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Acknowledgement of Order date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2041
+  name: Order Acknowledgement Document. Issue.Date Time
+  description: Issue date of an order acknowledgement
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Acknowledgement of Order date, coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2043
+  name: Consignment. Exportation.Date Time
+  description: Date and optionally time when a consignment of goods departs from last
+    port, airport, or border post of customs territory whence consigned (country of
+    export).
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Export Date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: high
+- tag: 2045
+  name: Transport Equipment. Loading.Date Time
+  description: Date and optionally time on which the loading of transport equipment
+    is to take place or has taken place.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Stuffing date; Vanning date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: medium
+- tag: 2047
+  name: Previous Customs Document. Issue.Date Time
+  description: Date of a previous Customs document.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: high
+- tag: 2049
+  name: Customs Procedure. Date Time
+  description: Date procedure performed by Customs on the goods which are subject
+    to Customs control.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 39
+    confidence: high
+- tag: 2051
+  name: Transport Means. Master Birth.Date Time
+  description: Birth date of master of means of transport e.g. vessel master, pilot
+    or driver.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2053
+  name: Consignment. Earliest Availability.Date Time
+  description: Earliest date and optionally time when a consignment of goods should
+    be available at the place of acceptance.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2055
+  name: Customs Declaration Document. Issue.Date Time
+  description: Issue date of an order acknowledgement
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2056
+  name: Customs Control. Start Date.Indicator
+  description: Indicator that the start date of a customs control is confirmed or
+    not.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: add
+  status: active
+  business_term: Arrival confirmation indicator
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2058
+  name: Document. Effective End Date Time.Text
+  description: Date on which a document expires, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2059
+  name: Document. Effective End.Date Time
+  description: Date on which a document expires
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 5'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2060
+  name: Documentary Credit Document. Presentation Duration.Text
+  description: Number of days within the credit validity period, counted from the
+    date of issuance of the negotiable document, during which documents can be presented
+    in figures and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Documentary credit presentation period
+  bridges: 'SWIFT: an..35x4 UNLK: L 55, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2063
+  name: Transport Means. Registration.Date Time
+  description: Date when a vessel, vehicle or other means of transport was registered
+    by a competent authority.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2067
+  change_tag: x
+  status: retired
+  old_name: Effective from time, coded
+  notes: DE to use instead - 2069
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2069
+  name: Event. Effective Start.Date Time
+  description: Date and or time on which specified event becomes effective.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Effective from date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2071
+  change_tag: x
+  status: retired
+  old_name: Effective to time, coded
+  notes: DE to use instead - 2073
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2073
+  name: Event. Effective End.Date Time
+  description: Date and or time on which a specified event becomes no longer effective.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Effective to date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2077
+  name: Time. Variation.Numeric
+  description: To specify a time variation.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: high
+- tag: 2078
+  name: Export Permit. Effective End Date Time.Text
+  description: Date on which an export licence expires, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Export Licence expiry date
+  business_term: Export licence expiry date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2079
+  name: Export Permit. Effective End.Date
+  description: Time Date on which an export licence expires
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Export Licence expiry date, coded
+  business_term: Export licence expiry date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 40
+    confidence: medium
+- tag: 2080
+  change_tag: x
+  status: retired
+  old_name: Transport acceptance time-limit
+  notes: DE to use instead - 2126
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2088
+  change_tag: x
+  status: retired
+  old_name: Time of payment
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2090
+  name: Delivery. Earliest Date Time.Text
+  description: Date and optionally time, before which a delivery should not take place
+    in words and figures.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2091
+  name: Delivery. Earliest.Date Time
+  description: Date and optionally time, before which a delivery should not take place.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2092
+  name: Delivery. Latest Date Time.Text
+  description: Date and optionally time, after which a delivery should not take place
+    in words and figures.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2093
+  name: Delivery. Latest.Date Time
+  description: Date and optionally time, after which a delivery should not take place.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2095
+  name: Document. Cancellation.Date Time
+  description: Date on which a document was cancelled.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2097
+  name: Document. Acceptance.Date Time
+  description: Date on which a document was accepted.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2100
+  name: Transport Equipment. Availability Date Time.Text
+  description: Date and optionally time on which a piece of transport equipment should
+    be available at the place of loading or unloading in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Transport unit disposition date (and time)
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2101
+  name: Transport Equipment. Availability.Date Time
+  description: Date and or time on which a piece of transport equipment should be
+    available at the place of loading or unloading.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Transport unit disposition date (and time), coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2103
+  name: Consignment. Latest Availability.Date Time
+  description: Latest date and optionally time when a consignment of goods should
+    be available at the place of acceptance.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2105
+  name: Delivery. Requested.Date Time
+  description: Date and optionally time on which goods are requested to be delivered.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: high
+- tag: 2106
+  name: Transport Means. Actual Arrival Date Time.Text
+  description: Date and or time of the arrival of means of transport, in figures and
+    words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Arrival date (and time)
+  bridges: 'MAR: IMO/FAL 1, 3, 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2107
+  name: Transport Means. Actual Arrival.Date Time
+  description: Date and or time of the arrival of means of transport.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Arrival date (and time), coded
+  bridges: 'CIMP: Date only: (201): a3; (202): n2 Date and time: (201)+(202)+(203):
+    n4 MAR: IMO/FAL 1 SAD: (SAD I)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 41
+    confidence: medium
+- tag: 2109
+  name: Delivery. Estimated.Date Time
+  description: Date and optionally time on which goods are estimated to be delivered.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: high
+- tag: 2111
+  name: Consignment. Availability Due.Date Time
+  description: Date and optionally time when a consignment of goods will be available
+    at the place of acceptance.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: high
+- tag: 2113
+  name: Consignment. Unloading.Date Time
+  description: Date and optionally time on which a consignment of goods will be or
+    have been discharged or unloaded from a means of transport..
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Discharge Date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2114
+  change_tag: x
+  status: retired
+  old_name: Offer validity period
+  notes: DE to use instead - 2409
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2116
+  name: Time Zone. Difference.Numeric
+  description: The difference between two defined time zones.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: high
+- tag: 2118
+  name: Period. Detail.Text
+  description: Free form description of the period detail.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: high
+- tag: 2119
+  name: Period. Detail.Code
+  description: Code specifying the period detail.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: high
+- tag: 2121
+  change_tag: x
+  status: retired
+  old_name: Quantities accumulation start date, coded
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2123
+  name: Transport Equipment. Actual Pick-up.Date Time
+  description: Date and optionally time when a consignment of goods has been picked-up
+    by a carrier.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Actual Collection Date Time
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2124
+  name: Consignment. Actual Pick-up Date Time.Text
+  description: Date and optionally time when a consignment of goods has been picked-up
+    by a carrier.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  business_term: Actual Collection Date Time
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2125
+  name: Transport Equipment. Earliest Pick-up.Date Time
+  description: Earliest date and optionally time when a consignment of goods can been
+    picked-up by a carrier.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Earliest Collection Date Time
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2126
+  name: Consignment. Actual Acceptance Date Time.Text
+  description: Actual date on which a consignment of goods is taken over by the carrier
+    at the place of acceptance, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Acceptancedate
+  business_term: Cargo acceptancedate, Date of taking over of the goods (Road)
+  bridges: 'CIM: n4; L 69, P 65-69 UNLK: L 22, P 09-26'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2127
+  name: Consignment. Actual Acceptance.Date Time
+  description: Actual date and optionally time when a consignment of goods is taken
+    over by the carrier at the place of acceptance
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Acceptancedate, coded
+  bridges: 'UNLK: L 21, P 20-26'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 42
+    confidence: medium
+- tag: 2128
+  change_tag: x
+  status: retired
+  old_name: Container take-on date
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2129
+  change_tag: x
+  status: retired
+  old_name: Container take-on date, coded
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2131
+  name: Transport Equipment. Latest Pick-up.Date Time
+  description: Latest date and optionally time when a consignment of goods can been
+    picked-up by a carrier.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Latest Collection Date Time
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2133
+  name: Event. Notification.Date Time
+  description: Date and optionally time of the notification of an event.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2135
+  name: Consignment. Customs Release.Date Time
+  description: Date and optionally time when a consignment has been released by Customs.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2136
+  name: Delivery. First Date Time.Text
+  description: First delivery date and optionally time, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Delivery firstdate
+  bridges: 'UNLK: L 22, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2137
+  name: Delivery. First.Date Time
+  description: First delivery date and optionally time.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Delivery firstdate, coded
+  bridges: 'UNLK: L 21, P 60-72'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2138
+  name: Delivery. Promised Before Date Time.Text
+  description: Date and optionally time by which the merchandise should be delivered
+    to the buyer, as agreed between the seller and the buyer (generic term) in figures
+    and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Time of delivery
+  bridges: 'UNLK: L 22, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2139
+  name: Delivery. Promised Before.Date Time
+  description: Date and optionally time by which the merchandise should be delivered
+    to the buyer, as agreed between the seller and the buyer (generic term).
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 23, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2141
+  name: Day Of Week. Code
+  description: String data representation of a day of the week (Monday = 1).
+  representation:
+    raw: an..7
+    charset: an
+    min_length: 1
+    max_length: 7
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2146
+  change_tag: x
+  status: retired
+  old_name: Delivery week
+  notes: Use DE 2310/2311
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2148
+  name: Date. Variation.Numeric
+  description: A number to indicate the difference between two dates.
+  representation:
+    raw: n..5
+    charset: "n"
+    min_length: 1
+    max_length: 5
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2151
+  name: Period. Type.Code
+  description: Code specifying the type of period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Type of period, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2152
+  name: Period. Count.Quantity
+  description: Count of the number of periods.
+  representation:
+    raw: n..3
+    charset: "n"
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Number of periods
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2155
+  name: Charge. Period Type.Code
+  description: Code specifying a type of a charge period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2156
+  name: Traveller. Check-in.Date Time
+  description: To specify a check-in date and or time.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2158
+  name: Quotation Document. Issue Date Time.Text
+  description: Issue date of a quotation, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Offer date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: high
+- tag: 2159
+  name: Quotation Document. Issue.Date Time
+  description: Issue date of a quotation
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Offer date, coded
+  business_term: Quote date, Quotation date
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 43
+    confidence: medium
+- tag: 2162
+  name: Journey. Duration.Measure
+  description: To specify the elapsed time between departure and arrival for a segment
+    or leg of a journey.
+  representation:
+    raw: an..6
+    charset: an
+    min_length: 1
+    max_length: 6
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2170
+  name: Despatch. Actual Date Time.Text
+  description: Date and optionally time on which goods are, or are expected to be
+    despatched or consigned, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Despatch date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: medium
+- tag: 2171
+  name: Despatch. Actual.Date Time
+  description: Date and optionally time on which goods are, or are expected to be
+    despatched or consigned.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Despatch date, coded
+  business_term: Pick up date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: medium
+- tag: 2173
+  name: Commission Note Document. Issue.Date Time
+  description: Date on which a Commission Note is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2175
+  name: Document Despatch Notice Document. Issue.Date Time
+  description: Date on which a Document Despatch Notice is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2177
+  name: Credit Note Document. Issue.Date Time
+  description: Date on which a Credit Note is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2179
+  name: Dangerous Goods Declaration Document. Issue.Date Time
+  description: Date on which a Dangerous Goods Declaration is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2181
+  name: Debit Note Document. Issue.Date
+  description: Time Date on which a Debit Note is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2185
+  name: Shipping Instruction Document. Issue.Date Time
+  description: Date on which a Shipping Instruction is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Freight forwarding instruction (FFI) issuedate, Shipper's letter
+    of instruction (SLI) issuedate
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: medium
+- tag: 2187
+  name: Shipping Note Document. Issue.Date Time
+  description: Date on which a Shipping Note is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Standard Shipping Note issuedate
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: medium
+- tag: 2189
+  name: Status Report Document. Issue.Date Time
+  description: Date on which a Status Report is issued.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2193
+  name: Event. Date Time
+  description: Date and or time of an event
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: high
+- tag: 2195
+  name: Transport Means. Estimated Departure.Date Time
+  description: Date and or time when a transport means is scheduled to depart.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: add
+  status: active
+  business_term: Estimated time departure (ETD)
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 44
+    confidence: medium
+- tag: 2206
+  name: Quotation Document. Effective Start Date Time.Text
+  description: Date on which the validity of a quotation takes effect, in figures
+    and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Offer commencement date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2207
+  name: Quotation Document. Effective Start.Date Time
+  description: Date on which the validity of a quotation takes effect
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Offer commencement date, coded
+  business_term: Offer commencement date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2210
+  name: Documentary Credit Document. Effective End Date Time.Text
+  description: Date on which the validity of a documentary credit expires, in figures
+    and words
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Documentary credit expiry date
+  bridges: 'UNLK: L 10, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2211
+  name: Documentary Credit Document. Effective End.Date Time
+  description: Date on which the validity of a documentary credit expires
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit expiry date, coded
+  bridges: 'SWIFT: n6 UNLK: L 09, P 38-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2218
+  name: Despatch Note Document. Issue Date Time.Text
+  description: Issue date of a despatch note, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Despatch Note date
+  bridges: 'UNLK: L 03, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2219
+  name: Despatch Note Document. Issue.Date Time
+  description: Issue date of a despatch note
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Despatch Note date, coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2221
+  name: Tax. Tax Point .Date Time
+  description: Date on which tax is due or calculated.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cnr
+  status: active
+  old_name: Tax point date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2236
+  name: Documentary Credit Document. Issue Date Time.Text
+  description: Issue date of a documentary credit, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Documentary credit issuedate
+  bridges: 'UNLK: L 10, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2237
+  name: Documentary Credit Document. Issue.Date Time
+  description: Issue date of a documentary credit
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit issuedate, coded
+  bridges: 'SWIFT: n6 UNLK: L 09, P 38-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2240
+  name: Export Permit. Effective Start Date Time.Text
+  description: Date on which the validity of an export licence takes effect, in figures
+    and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Export Licence commencement date
+  business_term: Export licence commencement date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2241
+  name: Export Permit. Effective Start.Date Time
+  description: Date on which the validity of an export licence takes effect
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Export Licence commencement date, coded
+  business_term: Export licence commencement date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2253
+  name: Calculation. Date Time
+  description: Date on which the calculation is made.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cnr
+  status: active
+  old_name: Calculation date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2264
+  change_tag: x
+  status: retired
+  old_name: Payment due month
+  notes: DE to use instead - 2480
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 45
+    confidence: medium
+- tag: 2265
+  change_tag: x
+  status: retired
+  old_name: Payment due month, coded
+  notes: DE to use instead - 2481
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2272
+  name: Import Permit. Effective End Date Time.Text
+  description: Date on which the validity of an import licence expires, in figures
+    and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Import Licence expiry date
+  business_term: Import licence expiry date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2273
+  name: Import Permit. Effective End.Date Time
+  description: Date on which the validity of an import licence expires
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Import Licence expiry date, coded
+  business_term: Import licence expiry date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2280
+  name: Transport Means. Actual Departure Date Time.Text
+  description: Date and or time of the departure of means of transport, in figures
+    and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Departuredate (and time)
+  bridges: 'MAR: IMO/FAL 1, 3, 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2281
+  name: Transport Means. Actual Departure.Date Time
+  description: Date and or time of the departure of means of transport
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Departuredate (and time), coded
+  business_term: Departuredate, Flight date, Sailing date
+  bridges: 'CIMP: Date only: (201): a3; (202): n2 Date and time: (201)+(202)+(203):
+    n4 MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2292
+  name: Import Permit. Issue Date Time.Text
+  description: Date of issue of an import licence, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Import Licence date
+  business_term: Import licence date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2293
+  name: Import Permit. Issue.Date Time
+  description: Date of issue of an import licence
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Import Licence date, coded
+  business_term: Import licence date, coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2308
+  name: Export Permit. Validity Period.Text
+  description: Period of the validity of an export licence, in figures and words..
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Export Licence validity period
+  business_term: Export licence validity period
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2310
+  name: Delivery. Period Date Time.Text
+  description: Period agreed between the seller and the buyer, during which the merchandise
+    is to be delivered, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Delivery month
+  bridges: 'UNLK: L 22, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2311
+  name: Delivery. Period.Date Time
+  description: Period agreed between the seller and the buyer, during which the merchandise
+    is to be delivered.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Delivery month, coded
+  bridges: 'UNLK: L 21, P 76-80 UNLK: L 22, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2320
+  name: Import Permit. Effective Start Date Time.Text
+  description: Date on which the validity of an import licence takes effect, in figures
+    and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Import Licence commencement date
+  business_term: Import licence commencement date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 46
+    confidence: medium
+- tag: 2321
+  name: Import Permit. Effective Start.Date Time
+  description: Date on which the validity of an import licence takes effect
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Import Licence commencement date, coded
+  business_term: Import licence commencement date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2326
+  name: Contract Document. Issue Date Time.Text
+  description: Date on which a contract is issued, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Contract date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2327
+  name: Contract Document. Issue.Date Time
+  description: Date on which a contract is issued
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Contract date, coded
+  business_term: Contract Signed Date
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2334
+  change_tag: x
+  status: retired
+  old_name: Delivery period
+  notes: DE to use instead - 2310
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2346
+  name: Consignment. Loading Date Time.Text
+  description: Date when a consignment is loaded onto a means of transport, in figures
+    and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Shipped onboard date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2347
+  name: Consignment. Loading.Date Time
+  description: Date and optionally time when a consignment is to be or has been loaded
+    onto a means of transport
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Shipped onboard date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2348
+  name: Transport Means. Estimated Arrival Date Time.Text
+  description: Date and or time of the estimated arrival of means of transport, in
+    figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Estimated arrival date (and time) at destination
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2349
+  name: Transport Means. Estimated Arrival.Date Time
+  description: Date and or time of the estimated arrival of means of transport
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Estimated arrival date (and time) at destination, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2350
+  name: Transport Means. Stay Date Time.Text
+  description: Period of time in which a means of transport stays, or is to stay,
+    in a specific port or other location expressed as startdate and end date in figures
+    and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Period of stay
+  bridges: 'MAR: IMO/FAL 3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2351
+  name: Transport Means. Stay.Date Time
+  description: Period of time in which a means of transport stays, or is to stay,
+    in a specific port or other location expressed as startdate and end date in figures.
+  representation:
+    raw: an..21
+    charset: an
+    min_length: 1
+    max_length: 21
+  change_tag: cndr
+  status: active
+  old_name: Period of stay, coded
+  bridges: 'MAR: IMO/FAL 3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2354
+  name: Contract Document Addendum. Issue Date Time.Text
+  description: Date on which an addendum to a contract is issued, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Contract Addendum date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2355
+  name: Contract Document Addendum. Issue.Date Time
+  description: Date on which an addendum to a contract is issued
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Contract Addendum date, coded
+  bridges: 'UNLK: L 04, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 47
+    confidence: medium
+- tag: 2370
+  change_tag: x
+  status: retired
+  old_name: Delivery time-limit
+  notes: DE to use instead - 2310
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2376
+  name: Invoice Document. Issue Date Time.Text
+  description: Date of issue of an invoice, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Invoice date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: high
+- tag: 2377
+  name: Invoice Document. Issue.Date Time
+  description: Date of issue of an invoice
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Invoice date, coded
+  business_term: Billing date
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2379
+  name: Date Or Time Or Period. Format.Code
+  description: Code specifying the representation of a date, time or period.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Date/time/period format qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2380
+  name: Date Or Time Or Period. Text
+  description: The value of a date, a date and time, a time or of a period in a specified
+    representation.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Date/time/period
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2387
+  change_tag: x
+  status: retired
+  old_name: Lead time reference, coded
+  notes: Deleted in TDED 93
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2388
+  change_tag: x
+  status: retired
+  old_name: Transit time/limits
+  notes: Deleted in TDED 93
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2404
+  name: Proforma Invoice Document. Issue Date Time.Text
+  description: Date of issue of a proforma invoice, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Proforma Invoice date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2405
+  name: Proforma Invoice Document. Issue.Date Time
+  description: Date of issue of a proforma invoice
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Proforma Invoice date, coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2408
+  name: Quotation Document. Effective End Date Time.Text
+  description: Date on which the validity of a quotation expires, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Offer expiry date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2409
+  name: Quotation Document. Effective End.Date Time
+  description: Date on which the validity of a quotation offer expires
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Offer expiry date, coded
+  business_term: Offer expiry date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2416
+  name: Transport Contract Document. Issue Date Time.Text
+  description: Date of issue of a transport contract document, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Transport document date
+  bridges: 'AWB: L 60, P 37-43 CMR: L 60, P 27-44 (CMR 21) MAR: L 62, P 54-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2417
+  name: Transport Contract Document. Issue.Date Time
+  description: Date of issue of a transport contract document
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Transport document date, coded
+  bridges: 'CIMP: (200):n2; (201):a3; (202): n2 CMR: L 59, P 39-44 MAR: L 61, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2440
+  name: Consignment. Receipt Date Time.Text
+  description: Date of receipt of a consignment, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Goods receipt date
+  bridges: 'UNLK: L 62, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2441
+  name: Consignment. Acceptance.Date Time
+  description: Date of receipt of a consignment
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Goods receipt date, coded
+  bridges: 'UNLK: L 61, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 48
+    confidence: medium
+- tag: 2442
+  name: Import Permit. Validity Period.Text
+  description: Date of commencement and expiry of the validity of an import licence,
+    in figures and words.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Import Licence validity period
+  business_term: Import licence validity period
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2458
+  name: Packing List Document. Issue Date Time.Text
+  description: Date of issue of a packing list, in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Packing List date
+  bridges: 'UNLK: L 04, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2459
+  name: Packing List Document. Issue.Date Time
+  description: Date of issue of a packing list
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Packing List date, coded
+  bridges: 'UNLK: L 03, P 56-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2461
+  change_tag: x
+  status: retired
+  old_name: Time zone specifier, coded
+  notes: Deleted in TDED 93
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2470
+  change_tag: x
+  status: retired
+  old_name: Payment due period
+  notes: DE to use instead - 2480
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2475
+  name: Event. Time Reference.Code
+  description: Code specifying a time that references an event that will or has occurred.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment time reference, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2480
+  name: Payment. Due Date Time.Text
+  description: Date when an amount due should be made available to the creditor under
+    the terms of payment, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Payment duedate
+  bridges: 'UNLK: L 26, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2481
+  name: Payment. Due.Date Time
+  description: Date when an amount due should be made available to the creditor under
+    the terms of payment
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Payment duedate, coded
+  bridges: 'UNLK: L 25, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2490
+  name: Person. Birth Date Time.Text
+  description: Date on which an individual is or was born, in figures and words
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Date of birth
+  bridges: 'MAR: IMO/FAL 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: high
+- tag: 2491
+  name: Person. Birth.Date Time
+  description: Date on which an individual is or was born
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Date of birth, coded
+  bridges: 'MAR: IMO/FAL 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2496
+  name: Product. Best Before Date Time.Text
+  description: Indication that freshness of goods is limited in time to the date shown,
+    in figures and words.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Freshness guarantee date
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 2497
+  name: Product. Best Before.Date Time
+  description: Indication that freshness of goods is limited in time to the date shown.
+  representation:
+    raw: an..19
+    charset: an
+    min_length: 1
+    max_length: 19
+  change_tag: cndr
+  status: active
+  old_name: Freshness guarantee date, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium

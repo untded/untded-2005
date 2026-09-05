@@ -1,0 +1,2935 @@
+---
+category: 4.2.4 (4000-4699) Clauses, conditions, terms, instructions
+elements:
+- tag: 4000
+  change_tag: x
+  status: retired
+  old_name: Reference version number
+  notes: DE to use instead - 1056
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 4002
+  name: Transport Contract Document. Condition.Text
+  description: Reference to carrier's conditions of carriage printed on document or
+    provided separately.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Conditions of carriage
+  bridges: 'AWB: L 08-14, P 45-81 (Preprinted) CMR: an..35x2 L 07-08, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 4004
+  name: Consignment. Freight Invoice Instruction.Text
+  description: Instructions from the consignor for debiting freight and additional
+    charges related with one consignment to identified parties.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cn
+  status: active
+  old_name: Freight invoicing instructions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 4006
+  name: Goods Receipt Document. Consignee Party Authentication.Text
+  description: Authentication by the consignee that the goods have been received.
+  representation:
+    raw: an..23
+    charset: an
+    min_length: 1
+    max_length: 23
+  change_tag: cn
+  status: active
+  old_name: Goods receipt
+  bridges: 'CMR: an..23x6 L 63-68, P 57-80 (CMR 24)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 4009
+  name: Option. Code
+  description: Code specifying an option.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 4010
+  change_tag: x
+  status: retired
+  old_name: Conditions of road carriage
+  notes: DE to use instead - 4002
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4012
+  change_tag: x
+  status: retired
+  old_name: Control label
+  notes: DE to use instead - 1202
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4014
+  name: Transport Equipment. Information.Text
+  description: Free text available for information regarding transport equipment.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Container transport information
+  bridges: 'CIMP: (804):an..53'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4017
+  name: Delivery Plan. Commitment Level.Code
+  description: Code specifying the level of commitment to a delivery plan.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Delivery plan status indicator, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4018
+  name: Related Information. Text
+  description: Free form description of related information.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: high
+- tag: 4020
+  name: Document. Issuer Declaration.Text
+  description: Text of a declaration made by the issuer of the document.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Declaration
+  bridges: 'CIM: L 4-8, P 45-82 UNLK: an..35; L 36-64, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4022
+  name: Business. Description.Text
+  description: Free form description of a business.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cnd
+  status: active
+  old_name: Business description
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4025
+  name: Business. Function.Code
+  description: Code specifying a business function.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Business function, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4027
+  name: Business. Function Type.Code
+  description: Code specifying a type of business function.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Business function qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4028
+  change_tag: x
+  status: retired
+  old_name: Control stamp
+  notes: DE to use instead - 3127
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4030
+  name: Transport Contract Document. Goods Condition.Text
+  description: Report for the purpose of adding clauses to the transport contract
+    document stating the facts in cases when packages are missing or when damages
+    or defects have been observed when loading the goods.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Remarks on condition of goods
+  bridges: 'CIMP: (706):a4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4032
+  name: Transport Means. Additional.Text
+  description: Additional information regarding the transport means. For vessels,
+    information called for under the IMO Facilitation Convention to be submitted by
+    the master of the ship but not specifically provided for in the standard forms.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Remarks on ship's general declaration
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 73
+    confidence: medium
+- tag: 4034
+  name: Customs Information. Text
+  description: Free text information provided by Customs
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Customs information
+  bridges: 'CIM: an..32x5 L 35-39, P 51-82 SAD: (SAD H and SAD I)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4035
+  name: Priority. Type.Code
+  description: Code specifying a type of priority.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4036
+  name: Priority. Description.Text
+  description: Free form description of a priority.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4037
+  name: Priority. Description.Code
+  description: Code specifying a priority.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4038
+  name: Additional Safety. Information.Text
+  description: Free form description of information relating to additional safety.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4039
+  name: Additional Safety. Information.Code
+  description: Code specifying information relating to additional safety.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4040
+  change_tag: x
+  status: retired
+  old_name: Destination station date stamp
+  notes: No business requirement identified
+  bridges: 'CIM: L 64-69, P 25-27'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4043
+  name: Trade. Class.Code
+  description: Code identifying the class of trade.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Class of trade, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4044
+  name: Safety Section. Name.Text
+  description: Name of a safety section.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4046
+  name: Safety Section. Sequence.Identifier
+  description: An identifier differentiating a safety section from within a series
+    such as one of the sixteen sections required by European law.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4048
+  name: Certainty. Text
+  description: Free form description of a certainty.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4049
+  name: Certainty. Code
+  description: Code specifying a certainty.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4051
+  name: Characteristic. Relevance.Code
+  description: Code specifying the relevance of a characteristic.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4052
+  name: Trade Term. Description.Text
+  description: Free form description of delivery or transport terms.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cnd
+  status: active
+  old_name: Terms of delivery
+  business_term: Incoterms
+  bridges: 'UNLK: an..35xn; L 20, P 49-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4053
+  name: Trade Term. Conditions.Code
+  description: Code specifying the delivery or transport terms.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Terms of delivery, coded
+  business_term: Incoterms Code
+  bridges: 'UNLK: L 20, P 45-48 SAD: (SAD 20)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4055
+  name: Trade Term. Function.Code
+  description: Code specifying the function of delivery or transport terms.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Terms of delivery function, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4056
+  name: Question. Text
+  description: Free form description of a question.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4057
+  name: Question. Code
+  description: Code specifying a question.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4059
+  name: Clause. Function.Code
+  description: Code specifying the nature of a clause or set of clauses.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: high
+- tag: 4062
+  change_tag: x
+  status: retired
+  old_name: Forwarding station date stamp
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 74
+    confidence: medium
+- tag: 4065
+  name: Transport Contract Document. Condition.Code
+  description: Code to identify the conditions of contract and carriage.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Contract and carriage condition, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4068
+  name: Clause. Text
+  description: Free form text of the clause.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4069
+  name: Clause. Code
+  description: Code specifying a clause.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4070
+  name: Consignment. Information For Consignee.Text
+  description: Any remark given for the information of the consignee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Information for consignee
+  bridges: 'CIM: an..35x4; L 15-18, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4072
+  name: Proviso. Text
+  description: Free form description of a proviso.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4073
+  name: Proviso. Code
+  description: Code specifying a proviso.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4074
+  name: Proviso. Calculation.Text
+  description: Free form description of the proviso calculation.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4075
+  name: Proviso. Calculation.Code
+  description: Code specifying the proviso calculation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: high
+- tag: 4078
+  name: Consignment. Handling Instruction.Text
+  description: Free form description of a set of handling instructions. For example
+    how specified goods, packages or transport equipment (container) should be handled.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Handling instructions
+  bridges: 'AWB: L 28-30, P 09-81'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4079
+  name: Consignment. Handling Instruction.Code
+  description: Code specifying a handling instruction.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Handling instructions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4080
+  name: Consignment. Loading Instruction.Text
+  description: Instructions on where or how specified packages or containers are to
+    be loaded on a means of transport.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Loading instructions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4081
+  name: Consignment. Loading Instruction.Code
+  description: To identify instructions on where or how specified packages or containers
+    are to be loaded on a means of transport.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Loading instructions, coded
+  bridges: 'CIMP: (705):a3; (807):a1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4084
+  name: Shipment. Package Status Report Document.Text
+  description: Report stating the facts in cases when packages are missing, when damages
+    or defects have been observed or other observations made when packing the goods.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Packing remarks
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4088
+  change_tag: x
+  status: retired
+  old_name: Clean transport document
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4090
+  change_tag: x
+  status: retired
+  old_name: Information for railway purposes
+  notes: DE to use instead - 4244 or 4180
+  bridges: 'CIM: an..28x6 (reverse of form)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4092
+  name: Loading. Authorisation.Identifier
+  description: Identity assigned to the loading authorisation granted by the forwarding
+    location e.g. railway or airport, when the consignment id subject to traffic limitations.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Loading authorization number
+  bridges: 'CIM: L 02, P 66-82'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 75
+    confidence: medium
+- tag: 4095
+  name: Goods Item. Customs Status.Code
+  description: Status of goods as identified by customs for regulation purposes.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  business_term: Customs status of Goods, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4097
+  name: Request. Override.Code
+  description: Code specifying a request, including a reason, to override previously
+    submitted information, such as due to an error condition.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: high
+- tag: 4101
+  name: Proviso. Type.Code
+  description: Code qualifying a proviso.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: high
+- tag: 4102
+  name: Consignment. Payment Instruction.Text
+  description: Textual representation of payment instructions related to a consignment.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Pre-payment instructions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4103
+  name: Consignment. Payment Instruction.Code
+  description: Code specifying payment instructions related to a consignment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cndr
+  status: active
+  old_name: Pre-payment instructions, coded
+  bridges: 'UNLK: L 20, P 45-82'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4106
+  name: Freight Charge. Prepayment Confirmation.Text
+  description: Request from consignor to carrier for confirmation that freight has
+    been prepaid, and carrier' s confirmation thereof.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Freight prepayment confirmation
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4108
+  change_tag: x
+  status: retired
+  old_name: Postage prepayment indicator
+  notes: DE to use instead - 4106
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4111
+  change_tag: x
+  status: retired
+  old_name: Incoterms code
+  notes: DE to use instead - 4053
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4112
+  name: Insurance. Condition.Text
+  description: Reference to the general conditions of contract under which an Insurance
+    certificate is issued , and/or wording of the specific conditions pertaining to
+    the shipment in question.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Insurance conditions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4120
+  change_tag: x
+  status: retired
+  old_name: Tariffs and routes requested
+  notes: No business requirement identified
+  bridges: 'CIM: an..35x3 L 20-22, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4122
+  name: Consignment. Haulage Instruction.Text
+  description: Instructions from the consignor to the carrier regarding local transport
+    from pick-up point to carrier's organization, from carrier's organization to delivery
+    point, or between carriers' organizations at the same place.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Cartage instructions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4123
+  name: Consignment. Haulage Instruction.Code
+  description: Code specifying Instructions from the consignor to the carrier regarding
+    local transport from pick-up point to carrier's organization, from carrier's organization
+    to delivery point, or between carriers' organizations at the same place.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cndr
+  status: active
+  old_name: Cartage instructions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 76
+    confidence: medium
+- tag: 4130
+  name: Document. Carrier Party Authentication.Text
+  description: Proof that the document has been signed or otherwise authenticated
+    by the carrier or his agent which, in combination with the sender's authentication,
+    validates the contract of carriage.
+  representation:
+    raw: an..45
+    charset: an
+    min_length: 1
+    max_length: 45
+  change_tag: cn
+  status: active
+  old_name: Authentication by carrier
+  business_term: Carrier signature
+  bridges: 'AWB: L 56, P 37-81 CIMP: (414):an..20 CMR: an..23x7; L 62-68, P 09-32
+    (CMR 23)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4132
+  change_tag: x
+  status: retired
+  old_name: Transshipme nt indicator
+  notes: DE to use instead - 4133
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4133
+  name: Goods Item. Transshipment.Code
+  description: Code specifying whether or not goods are to be transshipped.
+  representation:
+    raw: an..5
+    charset: an
+    min_length: 1
+    max_length: 5
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4136
+  name: Haulage. Sending Party Authentication.Text
+  description: Proof that the document has been signed or otherwise authenticated
+    by the sender or his agent which, in combination with the carrier's authentication,
+    validates the contract of carriage.
+  representation:
+    raw: an..45
+    charset: an
+    min_length: 1
+    max_length: 45
+  change_tag: cn
+  status: active
+  old_name: Authentication by sender
+  business_term: Haulage party signature
+  bridges: 'AWB: an..43x5; L 56-60, P 37-80 (or 83) CIMP: (414): an..20 CMR: an..23x7;
+    L 62-68, P 09-32 (CMR 22)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4140
+  name: Goods Item. Containerized.Indicator
+  description: An indication whether or not goods are transported in a container.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: cnr
+  status: active
+  old_name: Container transport indicator
+  bridges: 'SAD: (SAD 19)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4142
+  name: Document. Information.Text
+  description: Text related to a document.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4144
+  name: Document . Disposition.Text
+  description: Text providing disposition details for a document.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4148
+  name: Information. Category.Text
+  description: Free form description of an information category.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4149
+  name: Information. Category.Code
+  description: Code specifying an information category.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4150
+  name: Information. Detail.Text
+  description: Free form description of information details.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4151
+  name: Information. Detail.Code
+  description: Code specifying information details.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4153
+  name: Information. Function.Code
+  description: Code qualifying information details.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4180
+  name: Transport Contract Document. Clause.Text
+  description: Clause on a transport document regarding the cargo being consigned.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Transport document information
+  business_term: Bill of Lading clause
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4181
+  name: Transport Contract Document. Clause.Code
+  description: Code specifying a clause on a transport document regarding the cargo
+    being consigned.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cndr
+  status: active
+  old_name: Transport document information, coded
+  bridges: 'UNLK: L 52-60, P 36-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4183
+  name: Special Conditions. Code
+  description: Code specifying a set of special conditions.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Special conditions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4184
+  name: Special Requirement. Description.Text
+  description: Free form description of a special requirement.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4187
+  name: Special Requirement. Type.Code
+  description: Code specifying a type of special requirement.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: high
+- tag: 4192
+  name: Certificate. Text
+  description: Text of official certification, legalisation or stamp etc.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Certification
+  bridges: 'UNLK: an35xn; L 36-64, P 45-80 SAD: (SAD G)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 77
+    confidence: medium
+- tag: 4202
+  name: Dangerous Goods. Certifying Text.Text
+  description: Consignor's statement certifying that dangerous goods to be shipped
+    are authorised for transport according to relevant modal international regulations.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: ADR/IMDG Certification
+  bridges: 'AWB: L 53-54, P 37-81 (Preprinted)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4210
+  name: Insurance. Action.Indicator
+  description: Indication whether or not insurance has been effected through an intermediary
+    of the issuer of a document.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: cndr
+  status: active
+  old_name: Insurance action specifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4215
+  name: Freight Charge. Payment Method.Code
+  description: Code specifying the payment method for transport charges.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Transport charges method of payment, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4218
+  name: Transport Service. Priority.Text
+  description: Statement indicating priority of requested transport service.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Transport priority
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4219
+  name: Transport Service. Priority.Code
+  description: Code specifying the priority of a transport service.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Transport priority, coded
+  bridges: 'CIMP: (704):a1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4221
+  name: Discrepancy. Nature.Identifier
+  description: Code specifying the identification used to define the nature of a discrepancy.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Discrepancy, coded
+  bridges: 'CIMP: (706):a4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4223
+  name: Consignment. Split Goods Item.Code
+  description: Code specifying how and if a consignment is split across transport
+    equipment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cndr
+  status: active
+  old_name: Consignment description, coded
+  bridges: 'CIMP: (703):a1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4225
+  name: Consignment. Status.Code
+  description: Code indicating the stage in the movement which a consignment has achieved.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnr
+  status: active
+  old_name: Consignment status, coded
+  bridges: 'CIMP: (400):a3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4231
+  change_tag: x
+  status: retired
+  old_name: Discrepancy code
+  notes: DE to use instead - 4221
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4233
+  name: Consignment. Marking Instruction.Code
+  description: Code specifying instructions for marking.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Marking instructions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4236
+  name: Payment. Arrangement.Text
+  description: Free format text specifying the arrangements for a payment.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'CMR: an..35xn L 57-58, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4237
+  name: Payment. Arrangement.Code
+  description: Code specifying the arrangements for a payment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Prepaid/Collect indicator, coded
+  bridges: 'AWB: L 24, P 51-52 or 52-53 and P 55-56 or 57- 58 CIMP: (403):a1 CMR:
+    a1 P = prepaid, C = collect'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 78
+    confidence: medium
+- tag: 4240
+  name: Ascertained Weight. Measure.Text
+  description: Endorsement of the true weight (mass) as ascertained or verified.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Weight ascertained (stamp)
+  bridges: 'CIM: Stamp and indication of weight (mass) when it differs from weight
+    (mass) declared by consignor L 64-70, P 48-63'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4244
+  name: Transport Contract Document. Remark.Text
+  description: Remarks concerning the complete consignment to be printed on the transport
+    document.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Shipper disposition
+  business_term: Bill of lading remark
+  bridges: 'CIM: an..28x6 (reverse of form)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4248
+  name: Consignment. Goods Release Restriction.Text
+  description: Restriction or condition to be fulfilled before goods can be released
+    to the consignee or his agent.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Goods release restriction
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4260
+  name: Documentary Credit. Additional Condition.Text
+  description: Any further conditions of the Documentary credit.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Documentary credit additional conditions
+  bridges: 'SWIFT: an..65x24'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4264
+  name: Insurance Coverage. Risk.Text
+  description: Description of risks covered by an insurance.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Insurance coverage details
+  business_term: Type of insurance
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4270
+  name: Documentary Credit Document. Additional Information.Text
+  description: Any further qualification of the amount of the Documentary credit.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Documentary credit amount qualification
+  bridges: 'SWIFT: an..35x4 UNLK: an..35x4; L 28- 52, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4276
+  name: Payment Term. Text
+  description: Free form description of the conditions of payment between the parties
+    to a transaction.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Terms of payment
+  bridges: 'UNLK: an..35x10; L 29- 54, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4277
+  name: Payment Term. Code
+  description: Identification of the terms of payment between the parties to a transaction
+    (generic term).
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Terms of payment identification
+  bridges: 'UNLK: L 23, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4279
+  name: Payment Term. Type.Code
+  description: Code qualifying the type of payment terms.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment terms type qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4280
+  change_tag: x
+  status: retired
+  old_name: Freight agreement reference
+  notes: DE to use instead - 8022
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4281
+  change_tag: x
+  status: retired
+  old_name: Freight agreement reference, coded
+  notes: DE to use instead - 8023
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4284
+  name: Consignment. Documentary Instruction.Text
+  description: Instructions given and declarations made by the sender to the carrier
+    concerning Customs, insurance, and other formalities.
+  representation:
+    raw: an..30
+    charset: an
+    min_length: 1
+    max_length: 30
+  change_tag: cn
+  status: active
+  old_name: Sender's instructions to carrier
+  bridges: 'CIM: an..35x4; L 04-07, P 45-82 (CIM 12) CMR: an..35x10 L 45-54, P 09-44
+    (CMR 13)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 79
+    confidence: medium
+- tag: 4286
+  change_tag: x
+  status: retired
+  old_name: Freight payable at
+  notes: DE to use instead - 3102
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4287
+  change_tag: x
+  status: retired
+  old_name: Freight payable at, coded
+  notes: DE to use instead - 3103
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4290
+  change_tag: x
+  status: retired
+  old_name: Documentary credit available by
+  notes: No business requirement identified
+  bridges: 'ICC: checkmark L 20, P 51 or 61 or 72 SWIFT: an..35x2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4294
+  name: Change. Reason.Text
+  description: Free form description of the reason for change.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Change reason
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4295
+  name: Change. Reason.Code
+  description: Code specifying the reason for a change.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Change reason, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4302
+  change_tag: x
+  status: retired
+  old_name: Documentary credit draft tenor
+  notes: No business requirement identified
+  bridges: 'SWIFT: an..35x2 and UNLK: an..35x2; L 23- 24, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4308
+  name: Rejection. Reason.Text
+  description: Textual representation of the reason for a rejection.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Reason for rejection
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4309
+  name: Rejection. Reason.Code
+  description: Code specifying the reason for a rejection.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cndr
+  status: active
+  old_name: Reason for rejection, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4312
+  change_tag: x
+  status: retired
+  old_name: Documentary credit advice indication
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4314
+  name: Clinical Information. Detail.Text
+  description: Free form description of an item of clinical information.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: high
+- tag: 4315
+  name: Clinical Information. Detail.Identifier
+  description: Code specifying an item of clinical information.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: high
+- tag: 4317
+  name: Clinical Information. Function.Code
+  description: Code qualifying a type of clinical information.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: high
+- tag: 4320
+  change_tag: x
+  status: retired
+  old_name: Documentary credit confirmation
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 80
+    confidence: medium
+- tag: 4322
+  change_tag: x
+  status: retired
+  old_name: Documentary credit advice reference
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4330
+  change_tag: x
+  status: retired
+  old_name: Goods description authenticity
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4340
+  change_tag: x
+  status: retired
+  old_name: Documentary credit transferability
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4343
+  name: Response. Type.Code
+  description: Code specifying the type of acknowledgment required or transmitted.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Response type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4344
+  name: Response. Description.Text
+  description: Free form description of a response.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: high
+- tag: 4345
+  name: Response. Description.Code
+  description: Code specifying a response.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: high
+- tag: 4347
+  name: Product. Identifier Function.Code
+  description: Code specifying the function of a product identifier.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Product ID function qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4350
+  change_tag: x
+  status: retired
+  old_name: Carriage payment instructions
+  notes: DE to use instead - 4236
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4351
+  change_tag: x
+  status: retired
+  old_name: Carriage payment instructions, coded
+  notes: DE to use instead - 4237
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4352
+  change_tag: x
+  status: retired
+  old_name: Conditions of warehousing
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4356
+  change_tag: x
+  status: retired
+  old_name: Space allocation code
+  notes: DE to use instead - 1229
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 81
+    confidence: medium
+- tag: 4360
+  change_tag: x
+  status: retired
+  old_name: Partial shipments authorization
+  notes: No business requirement identified
+  bridges: 'ICC: Checkmark L 20, P 09 or 18'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4362
+  change_tag: x
+  status: retired
+  old_name: Documentary credit UCP reference
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4366
+  name: Document. Original.Indicator
+  description: Indicator that a document is an authenticated original
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: cndr
+  status: active
+  old_name: Original Bill of Lading
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4372
+  name: Purchase. Condition.Text
+  description: General terms and conditions specified by the buyer either directly
+    or by reference.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Conditions of purchase
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4376
+  name: Obligation. Guarantee.Text
+  description: Details regarding undertaking given in cash, bond or as a written guarantee
+    to ensure that an obligation will be fulfilled, e.g. under a transit procedure.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Security details
+  business_term: Type of transit guarantee
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4377
+  name: Obligation. Guarantee.Code
+  description: To identify details regarding undertaking given in cash, bond or as
+    a written guarantee to ensure that an obligation will be fulfilled, e.g. under
+    a transit procedure.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Security details, coded
+  bridges: 'SAD: (SAD 52)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4380
+  change_tag: x
+  status: retired
+  old_name: Transhipment authorization
+  notes: No business requirement identified
+  bridges: 'UNLK: L 20, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4383
+  name: Financial Institution. Operation.Code
+  description: Code specifying a bank operation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Bank operation, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4390
+  change_tag: x
+  status: retired
+  old_name: Duty/tax payment method
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4391
+  change_tag: x
+  status: retired
+  old_name: Duty/tax payment method, coded
+  notes: DE to use instead - 4467
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4400
+  name: Instruction. Text
+  description: Free form description of an instruction.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Instruction
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: high
+- tag: 4401
+  name: Instruction. Code
+  description: Code specifying an instruction.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Instruction, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 82
+    confidence: medium
+- tag: 4403
+  name: Instruction. Type.Code
+  description: Code qualifying the type of instruction.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Instruction qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4404
+  name: Status. Text
+  description: Free form description of a status.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: high
+- tag: 4405
+  name: Status. Code
+  description: Code specifying a status.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Status, coded
+  bridges: 'SAD: (SAD 14 (Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4407
+  name: Sample Process. Step.Code
+  description: Code specifying a step in a sample process.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sample process status, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4408
+  change_tag: x
+  status: retired
+  old_name: Accounting information qualifier
+  notes: No business requirement identified
+  bridges: 'CIMP: (411)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4410
+  name: Accounting. Information.Text
+  description: Information for accounting purposes.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Accounting information
+  bridges: 'AWB: L 16-22, P 45-81 and CIMP: (410): an..34 SAD: (SAD B)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4412
+  name: Quarantine. Status.Text
+  description: Specification of the status of the goods and of the transport equipment
+    and any packaging/dunnage with respect to quarantine restrictions.
+  representation:
+    raw: an..20
+    charset: an
+    min_length: 1
+    max_length: 20
+  change_tag: cn
+  status: active
+  old_name: Quarantine status
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4413
+  name: Quarantine. Status.Code
+  description: Code specifying the status of the goods and of the transport equipment
+    and any packaging/dunnage with respect to quarantine restrictions.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Quarantine status, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4415
+  name: Test. Method.Identifier
+  description: To identify a method of testing.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Test method identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4416
+  name: Test. Description.Text
+  description: Free form description of a test.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cnd
+  status: active
+  old_name: Test description
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4419
+  name: Test. Method Administration.Code
+  description: Code specifying the method of the administration of a test.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Test route of administering, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4422
+  name: Contract Document. Type.Text
+  description: Textual representation of a type of contract.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Nature of transaction
+  business_term: Nature of transaction
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4423
+  name: Contract Document. Type.Code
+  description: Code specifying a type of contract.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Nature of transaction, coded
+  bridges: 'SAD: (SAD 24)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4424
+  name: Test. Reason.Text
+  description: Name of a reason for performing a test.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Test reason
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: high
+- tag: 4425
+  name: Test. Reason.Code
+  description: Code specifying a reason for performing a test.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Test reason identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 83
+    confidence: medium
+- tag: 4426
+  name: Document. Authentication.Text
+  description: Proof that a document has been authenticated indicating where appropriate
+    the authentication party
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Authentication
+  business_term: Rubber stamp; Chop; Signature
+  bridges: 'CIMP: (414):an..20 SAD: SAD: (SAD 54 and SAD D and SAD F and SAD H) UNLK:
+    L 62-64, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4427
+  name: Document. Authentication.Code
+  description: Code specifying that a document has been authenticated indicating where
+    appropriate the authentication party
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Authentication, coded
+  bridges: 'UNLK: L 65, P 55-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4428
+  name: Document. Endorsement.Text
+  description: Proof that a document has been signed.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Endorsement
+  business_term: Signature
+  bridges: 'UNLK: L 64, P55-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4431
+  name: Payment. Guarantee Means.Code
+  description: Code specifying the means of payment guarantee.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment guarantee, coded
+  bridges: 'UNLK: L 66, P55-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4432
+  change_tag: x
+  status: retired
+  old_name: Acceptance of goods
+  notes: DE to use instead - 4180
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4435
+  name: Payment. Channel.Code
+  description: Code specifying the payment channel.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment channel, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4437
+  name: Account. Type.Code
+  description: Code qualifying the type of account.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: high
+- tag: 4438
+  name: Payment. Condition.Text
+  description: Textual representation of a set of payment conditions.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Payment conditions
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4439
+  name: Payment. Condition.Code
+  description: Code specifying a set of payment conditions.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment conditions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4440
+  name: Free Text.Text
+  description: Free form text.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Free text
+  bridges: 'SAD: (SAD 44)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: high
+- tag: 4441
+  name: Free Text. Code
+  description: Code specifying free form text.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Free text, coded
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4443
+  name: Country. Relationship.Code
+  description: Indication whether the place specified for the performance of a (contractual)
+    obligation is located in the country where the declaration is made, in another
+    member country of the same economic or Customs union, or in a third country.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnr
+  status: active
+  old_name: Country relationship, coded
+  bridges: 'SAD: (SAD 20)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4447
+  name: Free Text. Format.Code
+  description: Code specifying the format of free text.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: high
+- tag: 4451
+  name: Free Text. Subject.Code
+  description: Code specifying the subject of the text.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Text subject qualifier
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4453
+  name: Free Text. Function.Code
+  description: Code specifying the function of free text.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Text function, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4455
+  name: Back Order. Arrangement Type.Code
+  description: Code specifying a type of back order arrangement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Back order, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 84
+    confidence: medium
+- tag: 4457
+  name: Substitution. Condition.Code
+  description: Code specifying the conditions under which substitution may take place.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Product/service substitution, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4460
+  name: Payment. Means.Text
+  description: Indication of the instrument of payment, which may include a guarantee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Payment means
+  business_term: Instrument of payment
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4461
+  name: Payment. Means.Code
+  description: Code identifying a means of payment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Payment means, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4463
+  name: Intra-company Payment. Indicator.Code
+  description: Code indicating an intra-company payment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Intra-company payment, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4465
+  name: Adjustment. Reason.Code
+  description: Code specifying the adjustment reason.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Adjustment reason, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4467
+  name: Payment. Method.Code
+  description: Code specifying a method of payment.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  bridges: 'SAD: (SAD 47(5))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4469
+  name: Payment. Purpose.Code
+  description: Code identifying the purpose of a payment.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4471
+  name: Settlement. Means.Code
+  description: Code specifying the means of settlement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Settlement, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4472
+  name: Information. Type.Text
+  description: Text representation of a type of information.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4473
+  name: Information. Type.Code
+  description: Code specifying a type of information.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4474
+  name: Accounting Entity. Type.Text
+  description: Name of a type of accounting entry.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4475
+  name: Accounting Entity. Type.Code
+  description: Code specifying a type of accounting entry.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4487
+  name: Financial Transaction. Type.Code
+  description: Code specifying a type of financial transaction.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Type of financial transaction, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4490
+  name: Sales. Condition.Text
+  description: General terms and conditions specified by the seller either directly
+    or by reference.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Conditions of sale
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4492
+  name: Consignment. Delivery Instruction.Text
+  description: Delivery instructions relating to a consignment.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4493
+  name: Consignment. Delivery Instruction.Code
+  description: Code specifying a delivery instruction.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Delivery requirements, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: medium
+- tag: 4494
+  name: Insurance. Coverage.Text
+  description: Free form description of the insurance cover.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4495
+  name: Insurance. Coverage.Code
+  description: Code specifying the insurance cover.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4497
+  name: Insurance. Coverage Type.Code
+  description: Code specifying the meaning of the insurance cover.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4499
+  name: Inventory. Movement Reason.Code
+  description: Code specifying the reason for an inventory movement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4501
+  name: Inventory. Movement Direction.Code
+  description: Code specifying the direction of an inventory movement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4503
+  name: Inventory. Balance Method.Code
+  description: Code specifying the method used to establish an inventory balance.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4505
+  name: Credit Cover. Request Type.Code
+  description: Code specifying the type of request for credit cover.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 85
+    confidence: high
+- tag: 4507
+  name: Credit Cover. Response Type.Code
+  description: Code specifying the type of response to a request for credit cover.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4509
+  name: Credit Cover. Response Reason.Code
+  description: Code specifying the reason for a response to a request for credit cover.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4510
+  name: Requested Information. Detail.Text
+  description: Free form description of requested information.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4511
+  name: Requested Information. Detail.Code
+  description: Code specifying requested information.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4513
+  name: Maintenance Operation. Type.Code
+  description: Code specifying a type of maintenance operation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4517
+  name: Seal. Condition.Code
+  description: Code specifying the condition of a seal affixed to a piece of transport
+    equipment.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4519
+  name: Definition. Identifier
+  description: To identify a definition.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4521
+  name: Premium Calculation. Component.Identifier
+  description: To identify a component affecting premium calculation.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high
+- tag: 4522
+  name: Premium Calculation. Component Value Category.Text
+  description: Free text specifying the value category of a premium calculation component.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 86
+    confidence: high

@@ -1,0 +1,2072 @@
+---
+category: '4.2.7 (7000-7699) Goods and articles: descriptions and identifiers'
+elements:
+- tag: 7001
+  name: Object. State Type.Code
+  description: Code qualifying the type of state of an object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 108
+    confidence: high
+- tag: 7002
+  name: Goods Item. Description.Text
+  description: Plain language description of the nature of a goods item sufficient
+    to identify it for customs, statistical or transport purposes.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Description of goods
+  business_term: Nature of goods
+  bridges: 'CIM: L 28-38, P 09-49 CIMP: (708):an..15 CMR: L 29-52, P 34-60 (CMR 9)
+    MAR: IMO/FAL 7 SWIFT: an..65x4 (an..65x24) UNLK: an..26xn; L 28- 50, P 34-60 SAD:
+    (SAD 31)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7004
+  name: Consignment. Summary Description.Text
+  description: Plain language description of a consignment in summary terms.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Brief cargo description
+  bridges: 'UNLK: an..30xn L28-34, P 27-56'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7006
+  name: Object. State.Text
+  description: Free form description of the state of an object.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: high
+- tag: 7007
+  name: Object. State.Code
+  description: Code specifying the state of an object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: high
+- tag: 7008
+  name: Line Item. Text
+  description: Free form description of a line item.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Item description
+  bridges: 'UNLK: an…30xn L36-46, P 27-56'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7009
+  name: Line Item. Code
+  description: Code specifying a line item.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Item description identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7010
+  change_tag: x
+  status: retired
+  old_name: Commodity classification specifier
+  notes: DE to use instead - 7357
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7011
+  name: Line Item. Availability.Code
+  description: Code specifying the availability of a line item.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Article availability, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7012
+  name: Goods Item. Package.Quantity
+  description: Number of packages per goods item packaged in such away that they cannot
+    be divided without first undoing the package.
+  representation:
+    raw: n..9
+    charset: "n"
+    min_length: 1
+    max_length: 9
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7014
+  name: Consignment. Package Type.Text
+  description: Generalised description of the form in which all the goods in a consignment
+    are presented.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: high
+- tag: 7020
+  change_tag: x
+  status: retired
+  old_name: Article number
+  notes: DE to use instead - 7140
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7023
+  change_tag: x
+  status: retired
+  old_name: Article number identifier, coded
+  notes: mfd in TDED 1993 DE to use instead - 7143
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 109
+    confidence: medium
+- tag: 7036
+  name: Characteristic. Text
+  description: Free form description of a characteristic.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Characteristic
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7037
+  name: Characteristic. Code
+  description: A code specifying a characteristic.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Characteristic identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7039
+  name: Sample. Selection Method.Code
+  description: Code specifying the selection method for a sample.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sample selection method, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7042
+  change_tag: x
+  status: retired
+  old_name: Number of consignment pieces
+  notes: DE to use instead - 8046
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7045
+  name: Sample. State.Code
+  description: Code specifying the state of a sample.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sample description, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7047
+  name: Sample. Direction.Code
+  description: Code specifying the direction in which a sample was taken.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sample direction, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7052
+  change_tag: x
+  status: retired
+  old_name: Goods details
+  notes: DE to use instead - 7002
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7054
+  name: Ships Stores. Item Name.Text
+  description: Name of article or product stored for consumption on board, or to be
+    taken away from a means of transport.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Stores item
+  bridges: 'MAR: IMO/FAL 3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: high
+- tag: 7056
+  name: Transport Means. Passenger.Quantity
+  description: Total number of the passengers on board a means of transport.
+  representation:
+    raw: n..4
+    charset: "n"
+    min_length: 1
+    max_length: 4
+  change_tag: cn
+  status: active
+  old_name: Number of passengers
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7059
+  name: Class. Type.Code
+  description: Code specifying a type of class.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Property class, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7064
+  name: Package. Type.Text
+  description: Description of the type of packaging of an item.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Type of packages
+  bridges: 'AWB: L 28-30, P 09-81 CIMP: (412): an..38 CMR: L 28-42, P 34-51 (CMR 8)
+    MAR: IMO/FAL 2 UNLK: an..17 L 28-34, P 34-51'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7065
+  name: Package. Type.Code
+  description: Code specifying the type of packaging of an item.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Type of packages identification
+  business_term: Package classification code
+  bridges: 'MAR: IMO/FAL 2,7 SAD: (SAD 31)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7070
+  name: Package. Sequence.Identifier
+  description: Number assigned by the consignor to identify a particular package in
+    a consignment.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Package number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 110
+    confidence: medium
+- tag: 7073
+  name: Packaging. Term.Code
+  description: Code specifying the packaging terms and conditions.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Packaging terms and conditions, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7075
+  name: Packaging. Level.Code
+  description: Code specifying a level of packaging.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Packaging level, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7077
+  name: Description. Format.Code
+  description: Code specifying the format of a description.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Item description type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7081
+  name: Line Item. Characteristic.Code
+  description: Code specifying the characteristic of a line item.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Item characteristic, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7083
+  name: Configuration. Operation.Code
+  description: Code specifying a configuration operation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Configuration, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7085
+  name: Consignment. Cargo Type.Code
+  description: Code identifying a type of cargo.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Nature of cargo, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7088
+  name: Dangerous Goods. Flashpoint.Measure
+  description: To specify the value of the flashpoint of dangerous goods.
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Dangerous goods flashpoint
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7091
+  name: Membership. Identifier
+  description: Reference number to identify a membership number.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: high
+- tag: 7102
+  name: Goods Item. Shipping Marks.Text
+  description: Free form description of the marks and numbers on a transport unit
+    or package.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Shipping marks
+  business_term: Marks and numbers
+  bridges: 'AWB: L 28-30, P 09-81 CMR: L 28-42, P 09-26 (CMR 6) UNLK: an..17; L 28-34,
+    P 09-26 MAR: IMO/FAL 2,7 SAD: (SAD 31)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7106
+  name: Substance. Flashpoint.Measure
+  description: Temperature, in Celsius, determined by the closed cup test as per ISO
+    1523:1973 where a vapour is given off that can be ignited.
+  representation:
+    raw: n3
+    charset: "n"
+    min_length: 3
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Shipment flashpoint
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7108
+  change_tag: x
+  status: retired
+  old_name: Commodity item number
+  notes: DE to use instead - 7357
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7110
+  name: Characteristic. Value.Text
+  description: Free form description of a characteristic.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: high
+- tag: 7111
+  name: Characteristic. Value.Code
+  description: Code specifying a characteristic.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: high
+- tag: 7124
+  name: United Nations Dangerous Goods. Identifier
+  description: United Nations Dangerous Goods Identifier (UNDG) is the unique serial
+    number assigned within the United Nations to substances and articles contained
+    in a list of the dangerous goods most commonly carried.
+  representation:
+    raw: n4
+    charset: "n"
+    min_length: 4
+    max_length: 4
+  change_tag: cnd
+  status: active
+  old_name: UNDG number
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 111
+    confidence: medium
+- tag: 7130
+  name: Shipment. Authorisation.Identifier
+  description: To identify an authorisation to ship issued by the buyer.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Customer authorization number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7133
+  name: Product. Detail Type .Code
+  description: Code qualifying a type of product details.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7134
+  name: Product. Name.Text
+  description: Name identifying a product.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7135
+  name: Product. Identifier
+  description: To identify a product.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7139
+  name: Product. Characteristic.Identifier
+  description: Code specifying the identification of a product characteristic.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7140
+  name: Line Item. Identifier
+  description: A reference number such as a part number which identifies a line item.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Item number
+  bridges: 'UNLK: L 36-46, P 13-47 SAD: n..2 (SAD 32)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7143
+  name: Line Item. Identifier Type.Identifier
+  description: To identify a type of line item identifier.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Item number type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7148
+  change_tag: x
+  status: retired
+  old_name: Statistical code number (Customs)
+  notes: DE to use instead - 7357
+  bridges: 'UNLK: L 28-51, P 52-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7153
+  change_tag: x
+  status: retired
+  old_name: Article status, coded
+  notes: DE to use instead - 4405
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7160
+  name: Special Service. Text
+  description: Free form description of a special service.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7161
+  name: Special Service. Code
+  description: Code specifying a special service.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Special services, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7164
+  name: Hierarchical Structure. Level.Identifier
+  description: To identify a level within a hierarchical structure.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Hierarchical ID number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7166
+  name: Hierarchical Structure. Parent.Identifier
+  description: To identify the next higher level in a hierarchical structure.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Hierarchical parent ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7168
+  name: Level. Sequence.Identifier
+  description: Sequence number identifying a specific level amongst others.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7171
+  name: Hierarchical Structure. Object Relationship.Code
+  description: Code specifying the relationship between the hierarchical object and
+    an identified object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7173
+  name: Hierarchical Structure. Object Type.Code
+  description: Code qualifying an object in a hierarchy.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7176
+  name: Risk Object. Sub-type.Text
+  description: Free form description of the object sub-type of a risk.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7177
+  name: Risk Object. Sub-type.Identifier
+  description: Code identifying the object sub-type of a risk.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7179
+  name: Risk Object. Type.Identifier
+  description: Code identifying a type of risk object.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: high
+- tag: 7182
+  change_tag: x
+  status: retired
+  old_name: ADR/RID Class number
+  notes: DE to use instead - 8351
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 112
+    confidence: medium
+- tag: 7184
+  name: Consignment. Dangerous Goods.Indicator
+  description: Indication that the transport is subject to an international regulation
+    concerning the carriage of dangerous goods or not.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: cnr
+  status: active
+  old_name: 'Dangerous goods: RID indicator'
+  bridges: 'CIM: Checkmark L 28, P 60 (CIM 33). In interchange: n1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7186
+  name: Process. Type.Text
+  description: Free form description of a type of process.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Process type
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: high
+- tag: 7187
+  name: Process. Type.Code
+  description: Code specifying a type of process.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Process type identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7188
+  name: Test. Method Revision.Identifier
+  description: To identify a revision of a test method.
+  representation:
+    raw: an..30
+    charset: an
+    min_length: 1
+    max_length: 30
+  change_tag: cnd
+  status: active
+  old_name: Test revision number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7190
+  name: Process. Detail.Text
+  description: Free form description of a process.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: high
+- tag: 7191
+  name: Process. Detail.Code
+  description: Code specifying a process.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: high
+- tag: 7194
+  name: Line Item. Seller Assigned.Identifier
+  description: Identification of an item assigned by the seller.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Seller's article number
+  bridges: 'UNLK: L36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7203
+  change_tag: x
+  status: retired
+  old_name: Short-shipped/pre-shipped indicator
+  notes: DE to use instead - 8249
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7224
+  name: Package. Quantity
+  description: Number of individual items packaged in such a way that they cannot
+    be divided without first undoing the packing.
+  representation:
+    raw: n..8
+    charset: "n"
+    min_length: 1
+    max_length: 8
+  change_tag: cnd
+  status: active
+  old_name: Number of packages
+  business_term: Number of packages
+  bridges: 'AWB: L 33-44, P 09-12 CIMP: (701):n..4 CMR: L 28-42, P 27-33 (CMR 7) UNLK:
+    L 28-51, P 27-33 Add MAR: IMO/FAL 2,7 SAD: (SAD 31)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7226
+  name: Split Goods Item. Package.Quantity
+  description: Number of packages in a split goods item.
+  representation:
+    raw: n..6
+    charset: "n"
+    min_length: 1
+    max_length: 6
+  change_tag: cnd
+  status: active
+  old_name: Package split
+  bridges: 'CIMP: (701):n..4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7228
+  name: Transport Equipment. Package.Quantity
+  description: Number of packages loaded into or onto one piece of transport equipment
+    as part of, or total of one consignment.
+  representation:
+    raw: n..6
+    charset: "n"
+    min_length: 1
+    max_length: 6
+  change_tag: cnd
+  status: active
+  old_name: Number of packages stuffed
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7230
+  change_tag: x
+  status: retired
+  old_name: Nature and quantity of goods
+  notes: DE to use instead - 7002 and 7233 /7370
+  bridges: 'AWB: L 33-44, P 61-81 and CIMP: (708):an..15; (709):an..20'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7233
+  name: Packaging. Information.Code
+  description: Code specifying information related to packaging.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Packaging related information, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 113
+    confidence: medium
+- tag: 7240
+  name: Consignment. Goods Item.Quantity
+  description: Count of the total number of goods items within a consignment.
+  representation:
+    raw: n..15
+    charset: "n"
+    min_length: 1
+    max_length: 15
+  change_tag: cnd
+  status: active
+  old_name: Total number of
+  bridges: 'SAD: (SAD 5)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7242
+  name: Product. Model.Identifier
+  description: Reference assigned by a manufacturer to designate grouping of products
+    within the same structural design.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cn
+  status: active
+  old_name: Model number
+  bridges: 'UNLK: L 36-46, P09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7246
+  change_tag: x
+  status: retired
+  old_name: Transport label number
+  notes: DE to use instead - 7402
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7254
+  name: Dangerous Goods. Technical Name.Text
+  description: Proper shipping name, supplemented as necessary with the correct technical
+    name, by which a dangerous substance or article may be correctly identified, or
+    which is sufficiently informative to permit identification by reference to generally
+    available literature.
+  representation:
+    raw: an..26
+    charset: an
+    min_length: 1
+    max_length: 26
+  change_tag: cn
+  status: active
+  old_name: Dangerous goods technical name
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7273
+  name: Service. Requirement.Code
+  description: Code specifying a service requirement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Service requirement, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7282
+  change_tag: x
+  status: retired
+  old_name: Tariff code number (Customs)
+  notes: DE to use instead - 7357
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7290
+  name: Consignment. Documentary Credit Cover.Indicator
+  description: Indicator as to whether a particular consignment is covered by a documentary
+    credit or not.
+  representation:
+    raw: an1
+    charset: an
+    min_length: 1
+    max_length: 1
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: high
+- tag: 7291
+  change_tag: x
+  status: retired
+  old_name: Documentary credit indicator
+  notes: DE to use instead - 7290
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7293
+  name: Domain. Function.Code
+  description: Code specifying a domain or subject area.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Sector/subje ct identification qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7294
+  name: Domain. Requirement Or Condition.Text
+  description: Free text description of a requirement or a condition of a domain.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: high
+- tag: 7295
+  name: Domain. Requirement Or Condition.Identifier
+  description: To identify a requirement or a condition of a domain.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Requirement /condition identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7297
+  name: Set. Type.Code
+  description: Code qualifying a type of set.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Set identification qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7299
+  name: Object. Requirement Designator.Code
+  description: Code specifying a requirement designator for an object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: high
+- tag: 7304
+  name: Line Item. Buyer Assigned Identifier.Identifier
+  description: Identification of an item assigned by the seller.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Buyer's article number
+  bridges: 'UNLK: L36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 114
+    confidence: medium
+- tag: 7338
+  name: Product. Production Batch.Identifier
+  description: Reference number assigned by the manufacturer to designate grouping
+    of product within the same production batch.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Article batch number
+  business_term: Lot number
+  bridges: 'UNLK: L 36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7357
+  name: Goods Item. Type.Code
+  description: Code specifying a type of goods for Customs, transport or statistical
+    purposes (generic term).
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Commodity/rate identification
+  business_term: Carrier's commodity code
+  bridges: 'AWB: L 33-44, P 23-29 CIM: L 44-45, P 38-32 and L 50-51, P 28-32 and L
+    56-57,P 28-32 (also on reverse) CIMP: (707):n4..7 and (900):n4..8 CMR: n5; L 28-32,
+    P 75- 82 CIM: n5; L 28-32, P 75-82 MAR: IMO/FAL 2 SAD: (SAD 33) UNLK: L 28-50,
+    P 52-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7361
+  name: Goods Item. Customs Required.Identifier
+  description: Code identifying the goods for customs.
+  representation:
+    raw: an..18
+    charset: an
+    min_length: 1
+    max_length: 18
+  change_tag: cnd
+  status: active
+  old_name: Customs code identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7364
+  name: Process. Indicator.Text
+  description: Free form description of a processing indicator.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: high
+- tag: 7365
+  name: Process. Indicator.Code
+  description: Code specifying a processing indicator.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Processing indicator, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7368
+  name: Package. Total Quantity.Text
+  description: Total number of packages expressed in words.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Total number of packages in
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7370
+  name: Consignment. Package.Quantity
+  description: Count of total number of packages referred to as one consignment
+  representation:
+    raw: n..8
+    charset: "n"
+    min_length: 1
+    max_length: 8
+  change_tag: cndr
+  status: active
+  old_name: Total number of packages
+  business_term: Total number of packages
+  bridges: 'SAD: (SAD 6)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7380
+  change_tag: x
+  status: retired
+  old_name: IMDG Code page number
+  notes: DE to use instead - 8078/827 3/8351
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7383
+  name: Object. Topological Position.Code
+  description: Code specifying the topological position on an object such as the position
+    on a surface or layer.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Surface/layer indicator, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7402
+  name: Object. Identifier
+  description: To identity an object, for example the unique number affixed by the
+    manufacturer to a product for identification purposes.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Identity number
+  business_term: Identity number
+  bridges: 'UNLK: L 36-46, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7405
+  name: Object. Identifier Type.Code
+  description: Code qualifying the identification of an object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Identity number qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 115
+    confidence: medium
+- tag: 7410
+  name: Crew. Personal Effects.Text
+  description: Description and quantities of such personal belongings in the possession
+    of individual crew members which according to regulations in force at the place
+    of arrival of a means of transport are dutiable or subject to prohibitions or
+    restrictions.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Crew's effects
+  bridges: 'MAR: IMO/FAL 4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7416
+  change_tag: x
+  status: retired
+  old_name: IMDG class number
+  notes: DE to use instead - 8351/827 3
+  bridges: 'MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7418
+  name: Hazardous Material. Category Name.Text
+  description: Name of a kind of hazard for a material.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: high
+- tag: 7419
+  name: Hazardous Material. Category.Code
+  description: Code specifying a kind of hazard for a material.
+  representation:
+    raw: an..7
+    charset: an
+    min_length: 1
+    max_length: 7
+  change_tag: cndr
+  status: active
+  old_name: Hazardous material class code, identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7421
+  change_tag: x
+  status: retired
+  old_name: Hazardous materialcode list id
+  notes: mfd in TDED 1993 DE to use instead - 3055/113 1
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7424
+  name: Shipment. Transport Unit.Identifier
+  description: Identifier used to group articles into a pre-described unit load for
+    shipment/despatch as agreed between parties.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Transport group number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7429
+  name: Index. Structure Type.Code
+  description: Code qualifying an indexing structure.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Indexing structure qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7431
+  name: Agreement. Function.Code
+  description: Code qualifying a type of agreement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Agreement type qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7432
+  name: Agreement. Type.Text
+  description: Free form description of a type of agreement.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: high
+- tag: 7433
+  name: Agreement. Type.Code
+  description: Code specifying a type of agreement.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Agreement type, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7434
+  change_tag: x
+  status: retired
+  old_name: Agreement type description
+  notes: DE to use instead - 7432
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: medium
+- tag: 7436
+  name: Index. First Level.Identifier
+  description: To identify the first level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level one ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 116
+    confidence: high
+- tag: 7438
+  name: Index. Second Level.Identifier
+  description: To identify the second level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level two ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7440
+  name: Index. Third Level.Identifier
+  description: To identify the third level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level three ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7442
+  name: Index. Fourth Level.Identifier
+  description: To identify the fourth level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level four ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7444
+  name: Index. Fifth Level.Identifier
+  description: To identify the fifth level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level five ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7446
+  name: Index. Sixth Level.Identifier
+  description: To identify the sixth level of a sequencing mechanism used to position
+    an item within an indexing structure.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Level six ID
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7449
+  name: Membership. Type.Code
+  description: Code qualifying the type of membership.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Membership qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7450
+  name: Membership. Category.Text
+  description: Free form description of a membership category.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Membership category
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7451
+  name: Membership. Category.Code
+  description: Code specifying a membership category.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: cnd
+  status: active
+  old_name: Membership category identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7452
+  name: Membership. Status.Text
+  description: Free form description of a membership status.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Membership status
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7453
+  name: Membership. Status.Code
+  description: Code specifying a membership status.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Membership status, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7455
+  name: Membership. Level Function.Code
+  description: Code qualifying the level of membership.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Membership level qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7456
+  name: Membership. Level.Text
+  description: Free form description of a level of membership.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Membership level
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7457
+  name: Membership. Level.Code
+  description: Code specifying a level of membership.
+  representation:
+    raw: an..9
+    charset: an
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Membership level identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7458
+  name: Attendee. Category.Text
+  description: Free form description of a category attendee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7459
+  name: Attendee. Category.Code
+  description: Code specifying a category of attendee.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7488
+  name: Dangerous Goods. Additional Information.Text
+  description: Additional information required for each dangerous substance or article
+    in a consignment.
+  representation:
+    raw: an..26
+    charset: an
+    min_length: 1
+    max_length: 26
+  change_tag: cn
+  status: active
+  old_name: Dangerous goods additional information
+  bridges: 'Add MAR: IMO/FAL 7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: medium
+- tag: 7491
+  name: Inventory. Type.Code
+  description: Code specifying a type of inventory.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7493
+  name: Damage. Detail Type.Code
+  description: Code qualifying damage details.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7495
+  name: Object. Type.Code
+  description: Code qualifying a type of object.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7497
+  name: Structure Component. Function.Code
+  description: Code qualifying the function of a structure component.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7500
+  name: Damage. Type.Text
+  description: Free form description of a type of damage.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7501
+  name: Damage. Type.Code
+  description: Code specifying a type of damage.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7502
+  name: Damage. Area.Text
+  description: Free form description of an area of damage.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 117
+    confidence: high
+- tag: 7503
+  name: Damage. Area.Code
+  description: Code specifying an area of damage.
+  representation:
+    raw: an..4
+    charset: an
+    min_length: 1
+    max_length: 4
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7504
+  name: Component. Type.Text
+  description: Free form description of a type of component.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7505
+  name: Component. Type.Code
+  description: Code specifying a type of component.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7506
+  name: Component. Material.Text
+  description: Free form description of a component material.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7507
+  name: Component. Material.Code
+  description: Code specifying a component material.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7508
+  name: Damage. Severity.Text
+  description: Free form description of damage severity.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7509
+  name: Damage. Severity.Code
+  description: Code specifying the damage severity.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7511
+  name: Marking. Type.Code
+  description: Code specifying a type of marking.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7512
+  name: Structure Component. Identifier
+  description: To identify a component of a structure.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high
+- tag: 7515
+  name: Structure. Type.Code
+  description: Code specifying a type of structure.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 118
+    confidence: high

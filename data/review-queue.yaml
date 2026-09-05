@@ -1,0 +1,30 @@
+---
+entries:
+- page: 89
+  tag: 5082
+  field: change_tag
+  raw_fragments:
+  - cr
+  issue: change tag outside printed legend (section 4.1)
+  confidence: low
+- page: 91
+  tag: 5180
+  field: change_tag
+  raw_fragments:
+  - cdr
+  issue: change tag outside printed legend (section 4.1)
+  confidence: low
+- page: 97
+  tag: 5390
+  field: change_tag
+  raw_fragments:
+  - cr
+  issue: change tag outside printed legend (section 4.1)
+  confidence: low
+- page: 99
+  tag: 5450
+  field: change_tag
+  raw_fragments:
+  - cd
+  issue: change tag outside printed legend (section 4.1)
+  confidence: low

@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# Content-fidelity verification against the source PDF.
+# Usage: bin/verify [--ocr N]   (N = rows to re-read via independent OCR)
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+require "untded"
+
+data_dir = File.expand_path("../data", __dir__)
+pdf = File.expand_path("../references/UNTDED2005_Redacted.pdf", __dir__)
+ocr_count = 0
+
+args = ARGV.dup
+if (i = args.index("--ocr"))
+  ocr_count = args[i + 1].to_i
+end
+
+failures = []
+Untded::Verifier.new(pdf: pdf, data_dir: data_dir).call.each do |name, check|
+  line = format("%-24s %-5s %s", name, check.status.to_s.upcase, check.detail)
+  puts line
+  failures << name if check.status == :fail
+end
+
+if ocr_count.positive?
+  puts
+  Untded::OcrSampler.new(pdf: pdf, data_dir: data_dir, sample_size: ocr_count).call
+end
+
+if failures.any?
+  puts "\nVERIFY FAILED: #{failures.join(', ')}"
+  exit 1
+end
+puts "\nVERIFY OK"

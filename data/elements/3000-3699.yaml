@@ -1,0 +1,4666 @@
+---
+category: 4.2.3 (3000-3699) Parties, addresses, places, countries
+elements:
+- tag: 3000
+  name: Consignment. Final Delivery Location.Text
+  description: Name and address of the location to which a consignment is to be delivered
+    to the final consignee.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: high
+- tag: 3001
+  name: Consignment. Final Delivery Location.Identifier
+  description: To identify the location to which a consignment is to be delivered
+    to the final consignee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'SAD: (SAD 17(a) and 17(b))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: medium
+- tag: 3002
+  name: Buyer. Party Identification.Text
+  description: Name and address of a party to which merchandise or services are sold.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Buyer
+  business_term: Purchaser
+  bridges: 'UNLK: L 10-14, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: high
+- tag: 3003
+  name: Buyer. Party.Identifier
+  description: Identifier of a party to which merchandise or services are sold
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cn
+  status: active
+  old_name: Buyer, coded
+  bridges: 'UNLK: L 09, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 49
+    confidence: high
+- tag: 3004
+  name: Warehouse Depositor. Party Identification.Text
+  description: Name and address of party depositing goods in a warehouse.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Warehouse depositor
+  bridges: 'UNLK: an..35x5; L 10- 18, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3006
+  name: Invoicee. Party Identification.Text
+  description: Name and address of the party to whom an invoice is issued.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Invoicee
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3007
+  name: Invoicee. Party Identifier
+  description: Identifier of the party to whom an invoice is issued.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Invoicee, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3009
+  name: Maintenance Operation. Payer Type.Code
+  description: A code identifying the type of party paying for a maintenance operation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3011
+  name: Payment . Customs Office Location.Identifier
+  description: Identifier of the location of a customs office at which a payment is
+    to be or has been made.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3012
+  name: Seller. Bank Identification.Text
+  description: Name and address of the bank designated by the seller to receive payment.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Seller's bank
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3013
+  name: Seller. Bank.Identifier
+  description: To identify the bank designated by the seller to receive payment.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Seller's bank, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3014
+  name: Consignment. Destination Country Name.Text
+  description: Name of the country to which a consignment of goods is to be or has
+    been delivered.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3015
+  name: Consignment. Destination Country.Identifier
+  description: To identify the country to which a consignment of goods is to be or
+    has been delivered.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3016
+  name: Document. Release Location.Text
+  description: Name of a location where a document e.g. Bill of Lading will be or
+    has been released.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3017
+  name: Document. Release Location.Identifier
+  description: To identify a location where a document e.g. Bill of Lading will be
+    or has been released.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: high
+- tag: 3018
+  name: Trade Term. Location.Text
+  description: Name of the point or port of departure, shipment or destination, as
+    required under the applicable terms of delivery, e.g. Incoterm.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Incoterms place
+  bridges: 'UNLK: L 20, P 49-80 SAD: (SAD 20)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3019
+  name: Trade Term. Location.Identifier
+  description: Identifier of the point or port of departure, shipment or destination,
+    as required under the applicable delivery term, e.g. Incoterm.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Incoterms place, coded
+  bridges: 'UNLK: L 19, P 72-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3020
+  name: Importer. Party Identification.Text
+  description: Name and address of party who makes - or on whose behalf a Customs
+    clearing agent or other authorised person makes - an import declaration. This
+    may include a person who has possession of the goods or to whom the goods are
+    consigned.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Importer
+  bridges: 'UNLK: an..35x5; L 10-14 P 45-80 SAD: (SAD 14)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3021
+  name: Importer. Party.Identifier
+  description: Identifier of party who makes - or on whose behalf a Customs clearing
+    agent or other authorised person makes -an import declaration. This may include
+    a person who has possession of the goods or to whom the goods are consigned.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Importer, coded
+  bridges: 'UNLK: L 09, P 63-80 SAD: (SAD 14(Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3022
+  name: Warehouse Keeper. Party Identification.Text
+  description: Name and address of party taking responsibility for goods entered into
+    a warehouse.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Warehouse keeper
+  bridges: 'UNLK: an..35x5; L 10- 14, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3024
+  name: Goods Custodian. Party Identification.Text
+  description: Name and address of party responsible for the keeping of goods.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Goods custodian
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 50
+    confidence: medium
+- tag: 3026
+  name: Goods Releasing. Party Identification.Text
+  description: Name and address of party entitled to authorise release of goods from
+    custodian.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Goods releaser
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3027
+  name: Goods Releasing. Party.Identifier
+  description: Identifier of party entitled to authorize release of goods from custodian.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Goods releaser, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3028
+  name: Invoice Issuer. Party Identification.Text
+  description: Name and address of the party issuing an invoice.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Invoice issuer
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3029
+  name: Invoice Issuer. Party.Identifier
+  description: Identifier of the party issuing an invoice.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Invoice issuer, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3030
+  name: Exporter. Party Identification.Text
+  description: Name and address of party who makes, or on whose behalf the export
+    declaration is made, and who is the owner of the goods or has similar rights of
+    disposal over them at the time when the declaration is accepted.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Exporter
+  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44 SAD: (SAD 14)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3031
+  name: Exporter. Party.Identifier
+  description: To identify the name and address of party who makes, or on whose behalf
+    the export declaration is made, and who is the owner of the goods or has similar
+    rights of disposal over them at the time when the declaration is accepted.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Exporter, coded
+  bridges: 'UNLK: L 03, P 27-44 SAD: (SAD 14(Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3032
+  name: Freight Charge. Prepaid To Location.Text
+  description: Name of the place up to which freight has been prepaid.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Freight and charges prepaid to
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3035
+  name: Party. Function.Code
+  description: Code giving specific meaning to role of a party.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Party qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3036
+  name: Party. Name.Text
+  description: Name of a party.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Party name
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: high
+- tag: 3039
+  name: Party. Identifier
+  description: Code specifying the identity of a party.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Party id identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3040
+  name: Declaration. Reporting Port Location.Text
+  description: Name of the port, either inward or outward, where a declaration is
+    made.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Port where report is made
+  bridges: 'MAR: IMO/Fal 2-7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3041
+  name: Declaration. Reporting Port Location.Identifier
+  description: Code of the port, either inward or outward, where a declaration is
+    made.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Port where report is made, coded
+  bridges: 'UNLK: L 23, P 39-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3042
+  name: Postal Service. Delivery Point.Text
+  description: Specification of the postal delivery point such as street and number
+    or post office box.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Street and number/P.O. Box
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3045
+  name: Party. Name Format.Code
+  description: Code specifying the representation of a party name.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Party name format, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3048
+  change_tag: x
+  status: retired
+  old_name: Destination station
+  notes: DE to use instead - 3392
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 51
+    confidence: medium
+- tag: 3049
+  change_tag: x
+  status: retired
+  old_name: Destination station, coded
+  notes: DE to use instead - 3393
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3050
+  name: Consignment. Route.Text
+  description: Description of a route to be used for the transport of goods.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Routes
+  bridges: 'CIM: an..38x3; L 24-26, P 45-82 (CIM 49) AWB: L 22, P 27-44 CIMP: (313):a3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3051
+  name: Consignment. Route.Code
+  description: Code specifying a route to be used for the transport of goods.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Route, coded
+  bridges: 'CIM: n..3; L 44, P 18-19 and L 50, P 18-19 and L 56,P 18-19 and on reverse
+    of CIM form (CIM 54)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3052
+  name: Carrier Agent. Party Identification.Text
+  description: Name and address of party authorized to act for or on behalf of carrier.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Carrier's agent
+  business_term: Loading broker, Shipping agent
+  bridges: 'AWB: L 16-18, P 09-44 CIMP: (109):an..14;(300):an..35; (301):an..35; (302):an..17;
+    (303):an..9;(305):an..9 MAR: IMO/FAL 1,7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3053
+  name: Carrier Agent. Party.Identifier
+  description: Identifier of party authorized to act for or on behalf of carrier.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Carrier's agent, coded
+  business_term: Air agent's IATA code
+  bridges: 'AWB: L 20, P 09-26 CIMP: (309):n4; (311):n7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3055
+  name: Code List. Responsible Agency.Code
+  description: Code specifying the agency responsible for a code list.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Code list responsible agency, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3056
+  name: Transport Means. Itinerary.Text
+  description: Concatenation of the name of all ports of call or other locations of
+    an itinerary of a means of transport.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Itinerary
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: high
+- tag: 3057
+  name: Transport Means. Itinerary Codes.Text
+  description: Concatenation of the code of all the ports of call or other locations
+    of an itinerary of a means of transport.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Itinerary, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: medium
+- tag: 3058
+  name: Dangerous Goods. Emergency Contact Name.Text
+  description: The name of the person to be contacted in the event of a dangerous
+    goods emergency
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: high
+- tag: 3060
+  name: Dangerous Goods. Contact Name.Text
+  description: The name of the person to be contacted for details about hazardous
+    materials and the transportation of dangerous goods.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: high
+- tag: 3062
+  name: Event. Contact Party Identification.Text
+  description: Name and optionally address of a party to be contacted in relation
+    to an event.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: high
+- tag: 3064
+  name: Event. Contact Name.Text
+  description: Name of a person to be contacted for information
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 52
+    confidence: high
+- tag: 3066
+  change_tag: x
+  status: retired
+  old_name: Seller's address particulars
+  notes: DE to use instead - 3346
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3068
+  name: Consignment. Relay Location.Text
+  description: Name of a location where cargo is transferred from one of transport
+    to another means of transport owned or operated by the same carrier under the
+    same transport contract
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3069
+  name: Consignment. Relay Location.Identifier
+  description: To identify a location where cargo is transferred from one of transport
+    to another means of transport owned or operated by the same carrier under the
+    same transport contract
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3070
+  name: Insurer. Party Identification.Text
+  description: Name and address of underwriter.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Insurer
+  business_term: Underwriter
+  bridges: 'UNLK: an..35x5 L 10-18, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3072
+  change_tag: x
+  status: retired
+  old_name: Service provider
+  notes: DE to use instead - 3126
+  bridges: 'UNLK: L 10-14, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3073
+  change_tag: x
+  status: retired
+  old_name: Service provider, coded
+  notes: DE to use instead - 3127
+  bridges: 'UNLK: L 09, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3074
+  change_tag: x
+  status: retired
+  old_name: Requested routing
+  notes: DE to use instead - 3050
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3077
+  name: Test. Medium.Code
+  description: Code specifying the medium on which a test was or is to be applied.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Test media, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3079
+  name: Organisation. Classification.Code
+  description: Code specifying the classification of an organisation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3080
+  name: Customs. Clearance Location.Text
+  description: Name of the place at which Customs clearance should take place.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Customs clearance place
+  bridges: 'CIM: L 22, P 45-82 (CIM 47) CIMP: (313):a3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3081
+  name: Customs Clearance. Location.Identifier
+  description: To identify the place at which Customs clearance should take place.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3082
+  name: Organisation. Class.Text
+  description: Name of a class of organisation.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3083
+  name: Organisation. Class.Code
+  description: Code specifying a class of organisation.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3085
+  name: Document Preparing Party. Identifier
+  description: To identify a party responsible for preparing a document.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: high
+- tag: 3086
+  name: Transit Regime. End Customs Office Location.Text
+  description: Name of the customs office at which goods are released from a Customs
+    transit regime.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Customs office of destination (transit)
+  business_term: Customs office of destination (transit)
+  bridges: 'SAD: (SAD 53)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 53
+    confidence: medium
+- tag: 3087
+  name: Transit Regime. End Customs Office Location.Identifier
+  description: To identify the customs office at which goods are released from a Customs
+    transit regime.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Customs office of destination (transit), coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3088
+  name: Consignment. Entry Customs Office Location.Text
+  description: Name of the customs office at which the goods enter the customs territory
+    of destination.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Customs office of entry
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3089
+  name: Consignment. Entry Customs Office Location.Identifier
+  description: To identify the customs office at which the goods enter the customs
+    territory of destination.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Customs office of entry, coded
+  bridges: 'SAD: (SAD 29)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3090
+  name: Freight Charge. Payable From Location.Text
+  description: Name of place from which the transport charges tariff applies or where
+    charges have been incurred.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Freight from
+  bridges: 'CIM: L 50, P 02-20 and L 56, P 02-50 and on reverse of CIM form'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3091
+  name: Freight Charge. Payable From Location.Identifier
+  description: To identify the place from which the transport charges tariff applies
+    or where charges have been incurred.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Freight from, coded
+  bridges: 'CIM: (nn-nnnnn,n); L 47, P 04-12 and L 53, P 04- 12 and L 59, P 04-12
+    and on reverse of CIM form (CIM 63, top part)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3092
+  name: Transport Equipment. Storage Location.Text
+  description: Name of a location where a piece of transport equipment will be, is
+    or has been stored.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  business_term: Pre-stacking location
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3095
+  name: Transport Means. Next Port of Call Location.Identifier
+  description: To identify a port, airport or other type of location which is the
+    next place that a means of transport is scheduled to call.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 1, 3, 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: high
+- tag: 3096
+  name: Consignment. Exit Customs Office Location.Text
+  description: Name of the customs office at which the goods leave or intended to
+    leave the customs territory of despatch.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Customs office of exit
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3097
+  name: Consignment. Exit Customs Office Location.Identifier
+  description: To identify the customs office at which the goods leave or are intended
+    to leave the customs territory of despatch.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Customs office of exit, coded
+  bridges: 'MAR: IMO/FAL 1,3,5 SAD: (SAD 29)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3099
+  name: Consignment. Original Loading Location.Identifier
+  description: To identify the seaport, airport, freight terminal, rail station or
+    other location where the goods were first loaded onto the means of transport being
+    utilised for their carriage.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: high
+- tag: 3102
+  name: Freight Charge. Payable To Location.Text
+  description: Name of a place to which a transport charges tariff applies or where
+    freight and other related charges are to be or have been incurred.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Freight to
+  bridges: 'CIM: L 45, P 02-20 and L 51, P 02-20 and L 57, P 02-20 and on reverse
+    of CIM form UNLK: L 62, P 36-53'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3103
+  name: Freight Charge. Payable To Location.Identifier
+  description: To identify a place to which a transport charges tariff applies or
+    where freight and other related charges are to be or have been incurred.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Freight to, coded
+  bridges: 'CIM: (nn-nnnnn,n); L 49, P 04-12 and L 55, P 04- 12 and L 61, P 04-12
+    and on reverse of CIM form (CIM 63, bottom part)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 54
+    confidence: medium
+- tag: 3105
+  name: Transport Means. Registration Location.Identifier
+  description: To identify the place at which a means of transport has been officially
+    registered.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'MAR: IMO/FAL 1'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3106
+  name: Transit . Customs Office Location .Text
+  description: Name of the customs office which is responsible for transit formalities
+    en route.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Customs office of transit
+  bridges: 'SAD: SAD an..11 (SAD 51)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3107
+  name: Transit . Customs Office Location.Identifier
+  description: To identify the customs office which is responsible for transit formalities
+    en route.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Customs office of transit, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3108
+  name: Payment. Location.Text
+  description: Name of the place where the payment has been, or should be made.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Payment place
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3109
+  name: Payment. Location.Identifier
+  description: To identify the place where the payment has been, or should be made.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Payment place, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3110
+  name: Transit Guarantee. Customs Office Location.Text
+  description: Customs office at which a security or guarantee for the movement of
+    goods under a transit procedure is lodged.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cnr
+  status: active
+  old_name: Customs office of guarantee
+  business_term: Customs office of guarantee
+  bridges: 'SAD: (SAD 52)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3111
+  name: Transit Guarantee. Customs Office Location.Identifier
+  description: To identify the Customs office at which a security or guarantee for
+    the movement of goods under a transit procedure is lodged.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Customs office of guarantee, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3116
+  change_tag: x
+  status: retired
+  old_name: Country of sale
+  notes: No business requirement identified
+  bridges: 'UNLK: L 16, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3117
+  change_tag: x
+  status: retired
+  old_name: Country of sale, coded
+  notes: No business requirement identified
+  bridges: 'UNLK: L 15, P 60-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3120
+  name: Transport Equipment Loading. Party Identification.Text
+  description: Textual representation of the type of party that is performing the
+    loading of transport equipment.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Loader indicator
+  business_term: Stuffing party, Vanning party
+  bridges: 'CIM: (CIM 28) L32, P07 or L33, P07'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3121
+  name: Transport Equipment Loading. Party.Identifier
+  description: To identify the type of party that is performing the loading of transport
+    equipment.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Load indicator, coded
+  business_term: Loader indicator, coded
+  bridges: 'CIM: (CIM 28) L32, P07 or L33, P07'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3124
+  name: Party. Identification.Text
+  description: Textual representation of an identification of a party such as the
+    party name and address.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Name and address line
+  business_term: Name and address line
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 55
+    confidence: medium
+- tag: 3126
+  name: Carrier. Party Identification.Text
+  description: Name and address of party providing the transport of goods between
+    named points.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Carrier
+  business_term: Airline, Haulier, Shipping Line, Railway network/co mpany, Intemodal
+    transport company
+  bridges: 'AWB: L 03-07, P 63-81, L 24, P 13-29 CMR: an..35x5 L 10-14, P 45-80 (CMR
+    16) UNLK: L 10-14, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: medium
+- tag: 3127
+  name: Carrier. Party.Identifier
+  description: To identify a party providing the transport of goods between named
+    points.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Carrier identification
+  bridges: 'AWB: L 24, P 13-29, 34- 36, 41-43 CIM: L 04-08, P 02-07 CIMP: (312):an2
+    CMR: L 09, P 63-80 MAR: L 13, P 63-80 UNLK: L 09, P 63-80 MAR: IMO/FAL 1,7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: medium
+- tag: 3128
+  change_tag: x
+  status: retired
+  old_name: Carrier name
+  notes: DE to use instead - 3126
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: medium
+- tag: 3131
+  name: Address. Type.Code
+  description: Code specifying the type of an address.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: high
+- tag: 3132
+  name: Consignee. Party Identification.Text
+  description: Name and address of party to which goods are consigned.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Consignee
+  business_term: Consigned to order of
+  bridges: 'AWB: L 11-14, P 09-44 CIMP: (109):an..14; (300):an..35; (301):an..35;(302):an..17;
+    (303):an..9 ; (304):a2; (305):an..9 UNLK: an..35x5 L 10- 14, P 09-44 CIM: (CIM
+    14; CMR 2) MAR: IMO/FAL 2 SAD: (SAD 8)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: medium
+- tag: 3133
+  name: Consignee. Party.Identifier
+  description: Identifier of party to which goods are consigned.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Consignee, coded
+  bridges: 'AWB: L 09, P 27-44 CIM: n..13, L 09, P 32-44 (CIM 15) CIMP: (320):an..15
+    UNLK: L 09, P 27-44 SAD: (SAD 8(Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 56
+    confidence: medium
+- tag: 3136
+  name: Insured. Party Identification.Text
+  description: Name and address of party which benefits from insurance coverage. For
+    example, in transport this is usually the shipper.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Insured
+  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3139
+  name: Contact. Function.Code
+  description: Code specifying the function of a contact (e.g. department or person).
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Contact function, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3140
+  name: Declarant. Party Identification.Text
+  description: Name and address of party which makes a declaration to an official
+    body or - where legally permitted - in whose name, or on whose behalf, a declaration
+    to an official body is made.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnr
+  status: active
+  old_name: Declarant
+  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3141
+  name: Declarant. Party.Identifier
+  description: Identifier of party which makes a declaration to an official body or
+    - where legally permitted - in whose name, or on whose behalf, a declaration to
+    an official body is made.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Declarant, coded
+  bridges: 'UNLK: L 03, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3144
+  name: Delivery Party. Party Identification.Text
+  description: Name and address of party to which goods should be delivered, if not
+    identical with consignee such as the place where a container is to be, or has
+    been, positioned.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Delivery party
+  business_term: Positioning Party, Delivery address
+  bridges: 'CMR: an..35x3; L 16-18, P 09-44 (CMR 3) UNLK: an..35x5; L 16- 20, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3145
+  name: Delivery Party. Party.Identifier
+  description: To identify the name and address of party to which goods should be
+    delivered, if not identical with consignee such as the place where a container
+    is to be, or has been, positioned.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Delivery party, coded
+  bridges: 'UNLK: L 15, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3148
+  name: Communication. Address.Identifier
+  description: To identify a communication address.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Communication number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3150
+  name: Despatch. Location.Text
+  description: Name of place, from or at which despatch is to take place.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Despatch place
+  business_term: Shipment place
+  bridges: 'SWIFT: an..65 UNLK: L 24, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3153
+  name: Communication. Medium Type.Code
+  description: Code specifying the type of communication medium.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Communication channelidentifier, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3155
+  name: Communication. Means Type.Code
+  description: Code specifying the type of communication address.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Communication channel qualifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3156
+  name: Warehouse. Identification.Text
+  description: Location of warehouse where a particular consignment has been stored.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Warehouse
+  bridges: 'CIMP: (321): an..7 UNLK: an..35x3; L 16- 18, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3157
+  name: Warehouse. Identifier
+  description: To identify a warehouse where a particular consignment has been stored.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Warehouse, coded
+  bridges: 'SAD: (SAD 49)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3160
+  name: Consignment. Goods Receipt Location Name.Text
+  description: Name of the place at which the goods have been or are to be received
+    by the consignee.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Goods receipt place
+  business_term: Goods receipt place
+  bridges: 'CMR: L 62, P 45-62 (CMR 24)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3161
+  name: Consignment. Goods Receipt Location.Identifier
+  description: Code of the place at which the goods have been or are to be received
+    by the consignee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Goods receipt place, coded
+  business_term: Goods receipt place
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 57
+    confidence: medium
+- tag: 3164
+  name: Address. City.Text
+  description: Name of a city.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: City name
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: high
+- tag: 3167
+  name: Maintenance Operation. Responsible Party Type.Code
+  description: A code identifying the type of party being responsible for a maintenance
+    operation.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: high
+- tag: 3170
+  name: Freight Forwarder. Party Identification.Text
+  description: Name and address of party undertaking forwarding of goods.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cn
+  status: active
+  old_name: Freight forwarder
+  business_term: Forwarder
+  bridges: 'CIMP: (109):an..14; (300):an..35; (301):an..35; (302):an..17; (303):an..9;
+    (304):a2; (305):an..9 UNLK: an..35x5; L 16- 18, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3171
+  name: Freight Forwarder. Party.Identifier
+  description: Identifier of party undertaking forwarding of goods.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Freight forwarder, coded
+  bridges: 'CIMP: (320):an..15 UNLK: L 15, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3174
+  name: Transport Equipment Operator. Party Identification.Text
+  description: Name, and optionally address, of the party owning, operating or controlling
+    the transport equipment, for example container.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cnd
+  status: active
+  old_name: Container operator
+  business_term: Container operator
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3175
+  name: Transport Equipment Operator. Party.Identifier
+  description: To identify the party owning, operating or controlling the transport
+    equipment, for example container.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Container operator, coded
+  bridges: 'CIMP: (801): an2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3177
+  name: Name. Component Type.Code
+  description: Code qualifying the type of a name component.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: high
+- tag: 3180
+  name: Notify Party. Party Identification.Text
+  description: Name and address of a party to be notified.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Notify party
+  business_term: Notify address, Notify party 1
+  bridges: 'AWB: L 28-30, P 09-81 CIMP: (109):an..14; (300):an..35; (301):an..35;
+    (302):an..17; (303):an..9; (304):a2; (305):an..9 MAR: IMO/FAL 2 UNLK: an..35x3;
+    L 16- 18, P 09-44 SAD: (SAD 50)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3181
+  name: Notify Party. Party.Identifier
+  description: Identification of a party to be notified.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Notify party, coded
+  bridges: 'CIMP: (320):an..15 UNLK: L 15, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3182
+  name: Transport Equipment Load Authorization. Party Identification.Text
+  description: Name and address of the authorized party responsible for certifying
+    that the goods were loaded into the transport equipment.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  business_term: Surveyor, Party responsible for proof of vanning
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: medium
+- tag: 3183
+  name: Transport Equipment Load Authorization. Party.Identifier
+  description: To identify an authorized party responsible for certifying that the
+    goods were loaded into the transport equipment.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: high
+- tag: 3185
+  name: Nationality. Type.Code
+  description: Code specifying a type of nationality such as nationality at birth
+    or current nationality.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 58
+    confidence: high
+- tag: 3190
+  name: Documentary Credit Advising Bank. Party Identification.Text
+  description: Name and address of the bank advising of a documentary credit to the
+    beneficiary
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit advising bank
+  bridges: 'SWIFT: - (Header)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3192
+  name: Financial Account. Holder Name.Text
+  description: Name of the holder of an account.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Account holder name
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3194
+  name: Financial Account. Holder.Identifier
+  description: To identify the holder of an account.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Account holder number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3196
+  name: Agent. Party Identification.Text
+  description: Name and address of a party authorised to act on behalf of another
+    party.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Agent
+  business_term: Authorized representati ve's name, Authorized agent for principal
+  bridges: 'SAD: (SAD 14)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3197
+  name: Agent. Party.Identifier
+  description: Identification of a party authorised to act on behalf of another party.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  old_name: Local shipping agent code, shipping agent code
+  bridges: 'SAD: (SAD 14 (Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3198
+  name: Documentary Credit Applicant. Party Identification.Text
+  description: Name and address of the applicant of a documentary credit
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit applicant
+  bridges: 'ICC: an..35x5 L 10-14, P 09-44 SWIFT: 35x4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3202
+  name: Buyer. Contact Name.Text
+  description: The contact within the buyer's enterprise, responsible for an order.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Buyer's department or employee
+  business_term: Purchaser's department or employee
+  bridges: 'UNLK: L 14, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3206
+  name: Country. Name.Text
+  description: Name of the country or other geographical entity as specified in ISO
+    3166 and UN/ECE Rec 3
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Country
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: high
+- tag: 3207
+  name: Country. Identifier
+  description: Identification of the name of the country or other geographical entity
+    as specified in ISO 3166 and UN/ECE Rec 3
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Country, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3209
+  change_tag: x
+  status: retired
+  old_name: Country qualifier
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3212
+  name: Documentary Credit Document. Expiry Location.Text
+  description: Name of the place at which a documentary credit expires
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit expiry place
+  bridges: 'UNLK: L 08, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 59
+    confidence: medium
+- tag: 3213
+  name: Documentary Credit Document. Expiry Location.Identifier
+  description: To identify the place at which a documentary credit expires
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit expiry place, coded
+  bridges: 'SWIFT: an..29 UNLK: L 08, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3214
+  name: Transport Means. Departure Location.Text
+  description: Name of the port, airport or other type of location from which a means
+    of transport is scheduled to depart or has departed
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of departure
+  bridges: 'AWB: L 22, P 09-26 MAR: IMO/FAL 1,3,5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3215
+  name: Transport Means. Departure Location.Identifier
+  description: To identify the port, airport or other type of location from which
+    a means of transport is scheduled to depart or has departed
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of departure, coded
+  bridges: 'AWB: L 01, P 12-14 CIMP: (313):a3 UNLK: L 21, P 54-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3216
+  name: Consignment. Final Destination Country Name.Text
+  description: Name of the country to which the goods are to be delivered to the final
+    consignee or buyer
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Country of destination
+  business_term: Ultimate destination Country, Country of arrival
+  bridges: 'MAR: IMO/FAL 2 UNLK: L 18, P 63-79 SAD: (SAD 17)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3217
+  name: Consignment. Final Destination Country.Identifier
+  description: To identify the country to which the goods are to be delivered to the
+    final consignee or buyer
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Country of destination, coded
+  bridges: 'UNLK: L 17, P 74-79 SAD: (SAD 17a)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3219
+  name: Consignment. First Destination Country.Identifier
+  description: To identify the country where a consignment is off-loaded from the
+    means of transport used for its original exportation
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Country of first destination, coded
+  bridges: 'SAD: (SAD 10) ISO Alpha-2 Country code, cf. Vol. II of UNTDED'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3220
+  name: Exportation Country. Name.Text
+  description: 'Name of country from which a consignment of goods was initially exported
+    to the importing country without any commercial transaction taking place in intermediate
+    countries. Syn.: country whence consigned. Country of despatch: country from which
+    goods are despatched between countries of a Customs union'
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Country whence consigned
+  business_term: Country from which goods are despatched between countries of a Customs
+    union, Despatch country, Country of exportation, Country of provenance
+  bridges: 'UNLK: L 16, P 45 - 61 SAD: (SAD 15)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3221
+  name: Consignment. Exportation Country.Identifier
+  description: 'To identify the country from which a consignment of goods was initially
+    exported to the importing country without any commercial transaction taking place
+    in intermediate countries. Syn.: country whence consigned. Country of despatch:
+    country from which goods are despatched between countries of a Customs union'
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Country whence consigned, coded
+  bridges: 'UNLK: L 15, P 56 - 61 SAD: (SAD 15a)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 60
+    confidence: medium
+- tag: 3222
+  name: First Related Location. Name.Text
+  description: Name of first related location.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cnd
+  status: active
+  old_name: Related place/location one
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3223
+  name: First Related Location. Identifier
+  description: To identify a first related location.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Related place/location one identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3224
+  name: Location. Name.Text
+  description: Name of a location.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place/location
+  bridges: 'MAR: IMO/FAL 1, 3, 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3225
+  name: Location. Identifier
+  description: To identify a location.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place/location identification
+  bridges: 'MAR: IMO/FAL 1, 3, 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3227
+  name: Location. Function.Code
+  description: Code specifying the function of a location.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Place/location qualifier
+  bridges: 'MAR: IMO/FAL 1-7'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3228
+  name: Country. Subdivision.Text
+  description: Name of a country subdivision.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Country sub-entity, name
+  business_term: Canton, County, Departement, Prefecture, Province, State, etc.
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3229
+  name: Country. Subdivision.Identifier
+  description: To identify the name of a country subdivision.
+  representation:
+    raw: an..9
+    charset: an
+    min_length: 1
+    max_length: 9
+  change_tag: cnd
+  status: active
+  old_name: Country sub-entity identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3230
+  change_tag: x
+  status: retired
+  old_name: Port of loading
+  notes: DE to use instead - 3334
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3231
+  change_tag: x
+  status: retired
+  old_name: Port of loading, coded
+  notes: DE to use instead - 3335
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3232
+  name: Second Related Location. Name.Text
+  description: Name of a second related location.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Related place/location two
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3233
+  name: Second Related Location. Identifier
+  description: To identify a second related location.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Related place/location two identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 61
+    confidence: medium
+- tag: 3234
+  name: Documentary Credit Applicant Agent Bank. Party Identification.Text
+  description: Name and address of a bank, other than an issuing bank, which is acting
+    on behalf of the applicant of a documentary credit
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit applicant bank
+  bridges: 'ICC: an..35x5 L 16-20, P 09-44 SWIFT: 35x4 (n..11)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3236
+  name: Sample. Location.Text
+  description: Free form description of the location of a sample
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Sample location
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3237
+  name: Sample. Location.Identifier
+  description: To identify the location of a sample.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Sample location, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3238
+  name: Consignment. Origin Country Name.Text
+  description: Name of the country in which the goods have been produced or manufactured,
+    according to criteria laid down for the application of the Customs tariff or quantitative
+    restrictions, or any measure related to trade..
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Country of origin
+  business_term: Country of origin
+  bridges: 'UNLK: L 18, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3239
+  name: Consignment. Origin Country.Identifier
+  description: To identify the country in which the goods have been produced or manufactured,
+    according to criteria laid down for the application of the Customs tariff or quantitative
+    restrictions, or any measure related to trade..
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Country of origin, coded
+  bridges: 'CIMP: (304): a2 UNLK: L 17, P 60-62 SAD: (SAD 34a)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3242
+  name: Documentary Credit Available Bank. Party Identification.Text
+  description: Name and address of a bank at which the Documentary credit is available.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit available with
+  bridges: 'ICC: L 18, P 45-80 SWIFT: an..35x2'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3246
+  name: Consignment. Delivery Location.Text
+  description: The place at which the cargo leaves the custody of the carrier under
+    the terms and conditions of the transport contract
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of delivery
+  bridges: 'UNLK: L 26, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3247
+  name: Consignment. Delivery Location.Identifier
+  description: To identify the place at which the cargo leaves the custody of the
+    carrier under the terms and conditions of the transport contract
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of delivery, coded
+  bridges: 'UNLK: L 25, P 36-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3251
+  name: Address. Postcode.Identifier
+  description: Code specifying a postal zone or address.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Postcode identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3254
+  name: Seller Agent. Party Identification.Text
+  description: Name and address of a party representing the seller for the purpose
+    of a trade transaction
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Seller's representative
+  bridges: 'UNLK: an..35x5; L 16- 18, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3255
+  name: Seller Agent. Party.Identifier
+  description: To identify a party representing the seller for the purpose of a trade
+    transaction
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cndr
+  status: active
+  old_name: Seller's representative, coded
+  bridges: 'AWB: L 26, P 09-26 UNLK: L15, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3258
+  name: Transport Means. Destination Location.Text
+  description: Name of the port, airport or other type of location at which a means
+    of transport is scheduled to arrive or has arrived
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of destination
+  business_term: Airport of destination, Arrival location
+  bridges: 'AWB: L 24, P 09-12 and P 30-33 and P 37-40 MAR: IMO/FAL 1, 3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 62
+    confidence: medium
+- tag: 3259
+  name: Transport Means. Destination Location.Identifier
+  description: To identify the port, airport or other type of location at which a
+    means of transport is scheduled to arrive or has arrived
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of destination, coded
+  bridges: 'AWB: L 24, P 09-12 and P 30-33 and P 37-40 CIMP: (313):a3 UNLK: L 26,
+    P 18-44 MAR: IMO/FAL 1, 3, 5-6 SWIFT: an..35'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3260
+  name: Documentary Credit Beneficiary. Party Identification.Text
+  description: Name and address of the beneficiary of a documentary credit
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit beneficiary
+  bridges: 'ICC: an..35x5 L 10-14, P 45-80 SWIFT: 35x4'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3263
+  name: Transit. Country.Identifier
+  description: A country through which a goods or passengers are routed between the
+    country of original departure and final destination.
+  representation:
+    raw: an2
+    charset: an
+    min_length: 2
+    max_length: 2
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: high
+- tag: 3265
+  name: Customs Declaration Document. Lodgement Location.Identifier
+  description: To identify a location at which a declaration is lodged.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  bridges: 'SAD: (SAD (A) and SAD C))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3267
+  name: Goods Item. Origin Country Subdivision.Identifier
+  description: To identify the region or sub-division of a country in which goods
+    have been produced or manufactured, according to criteria laid down for the purposes
+    of application of the Customs tariff, or quantitative restrictions, or of any
+    other measure related to trade
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  bridges: 'SAD: (SAD 34b)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: high
+- tag: 3268
+  name: Transport Equipment. Loading Location.Text
+  description: Name of the location where the goods are loaded into the transport
+    equipment
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  business_term: Stuffing location; Vanning location
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3269
+  name: Transport Equipment. Loading Location.Identifier
+  description: To identify the location where the goods are loaded into the transport
+    equipment
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: high
+- tag: 3270
+  name: Documentary Credit Confirming Bank. Party Identification.Text
+  description: Name and address of a bank requested to add its confirmation to a documentary
+    credit
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit confirming bank
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3274
+  change_tag: x
+  status: retired
+  old_name: Freight charges payable to
+  notes: DE to use instead - 3102
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3279
+  name: Geographic Area. Identifier
+  description: To identify a geographical area.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Geographic environment, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3280
+  change_tag: x
+  status: retired
+  old_name: Supplier
+  notes: DE to use instead - 3346
+  bridges: 'UNLK: L 03, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 63
+    confidence: medium
+- tag: 3281
+  change_tag: x
+  status: retired
+  old_name: Supplier, coded
+  notes: DE to use instead - 3347
+  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3282
+  name: Despatch Party. Party Identification.Text
+  description: Name and address of the party where goods are to be, or have been,
+    taken over by a carrier such as the place where a container is picked-up.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Despatch party
+  business_term: Pick-up Party
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3283
+  name: Despatch Party. Party.Identifier
+  description: To identify the name and address of the party where goods are to be,
+    or have been, taken over by a carrier such as the place where a container is picked-up.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Despatch party, coded
+  business_term: Pick-up Party
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3285
+  name: Instruction Receiving. Party.Identifier
+  description: To identify a party to receive an instruction.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Recipient of the instruction identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3286
+  name: Address. Component.Text
+  description: Free form description of the component of an address.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3289
+  name: Person. Characteristic Type.Code
+  description: Code qualifying a type of characteristic of a person.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3290
+  name: Documentary Credit Drawee. Party Identification.Text
+  description: Name and address of party on whom any draft is to be drawn from the
+    documentary credit.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit drawee
+  bridges: 'SWIFT: an..35x2 UNLK: an..35x2; L 25- 26, P 45-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3292
+  name: Nationality. Country Name.Text
+  description: The name of a nationality.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3293
+  name: Nationality. Country.Identifier
+  description: To identify a nationality.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3295
+  name: Name. Original Alphabet.Code
+  description: Code specifying the alphabet originally used to represent a name.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3296
+  change_tag: x
+  status: retired
+  old_name: Internal trading partner identification
+  notes: DE to use instead - 0004 /0010
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3299
+  name: Address. Purpose.Code
+  description: Code specifying the purpose of an address.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3301
+  name: Instruction Enacting. Party.Identifier
+  description: To identify the party enacting an instruction.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Party enacting instruction identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3302
+  name: Transport Movement. Pre-carriage Receipt Location.Text
+  description: Name of the place at which goods are to be, or have been, taken over
+    for carriage prior to the main transport
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of receipt by pre-carrier
+  bridges: 'UNLK: L 22, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3303
+  name: Transport Movement. Pre-carriage Receipt Location.Identifier
+  description: To identify the place at which goods are to be, or have been, taken
+    over for carriage prior to the main transport
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of receipt by pre-carrier, coded
+  bridges: 'UNLK: L 21, P 36-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: medium
+- tag: 3308
+  name: Payer. Party Identification.Text
+  description: Name of a party responsible for making a payment
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Payer
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 64
+    confidence: high
+- tag: 3309
+  name: Payer. Party.Identifier
+  description: To identify a party responsible for making a payment
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Payer, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: high
+- tag: 3310
+  name: Person. Inherited Characteristic.Text
+  description: Free form description of an inherited characteristic of a person.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: high
+- tag: 3311
+  name: Person. Inherited Characteristic.Code
+  description: "|Code specifying an inherited characteristic of a person."
+  representation:
+    raw: an..8
+    charset: an
+    min_length: 1
+    max_length: 8
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: high
+- tag: 3320
+  name: Documentary Credit Issuing Bank. Party Identification.Text
+  description: Name and address of a bank issuing a documentary credit
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit issuing bank
+  bridges: 'ICC: an..35x5 L 04-08, P 09-44 SWIFT: (Header)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3322
+  name: Consignment. Baseport Loading Location.Text
+  description: The place or port at which the cargo is loaded on a means of transport
+    according to the transport contract. The goods may or may not be loaded on the
+    main means of transport at this place or port.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Baseport for acceptance
+  business_term: Baseport loading
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3323
+  name: Consignment. Baseport Loading Location.Identifier
+  description: To identify the place or port at which the cargo is loaded on a means
+    of transport according to the transport contract. The goods may or may not be
+    loaded on the main means of transport at this place or port
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Baseport for acceptance, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3331
+  name: Consignment. Final Exportation Country.Identifier
+  description: To identify the country from which goods have been or will be consigned
+    prior to final importation
+  representation:
+    raw: a2
+    charset: a
+    min_length: 2
+    max_length: 2
+  change_tag: cnd
+  status: active
+  old_name: Country of last consignment, coded
+  bridges: 'SAD: (SAD 10)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3334
+  name: Consignment. Loading Location.Text
+  description: Name of a seaport, airport, freight terminal, rail station or other
+    place at which goods are loaded onto the means of transport being used for their
+    carriage
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of loading
+  business_term: Berth/Dock/Container base of loading, Airport of loading, Pier of
+    loading
+  bridges: 'UNLK: L 24, P 27-44 SAD: (SAD 27)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3335
+  name: Consignment. Loading Location.Identifier
+  description: To identify a seaport, airport, freight terminal, rail station or other
+    place at which goods are loaded onto the means of transport being used for their
+    carriage
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of loading, coded
+  bridges: 'MAR: IMO/FAL 2,7 UNLK: L 23, P 36-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3336
+  name: Consignor. Party Identification.Text
+  description: Name of the party consigning goods as stipulated in the transport contract
+    by the party ordering transport
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Consignor
+  business_term: Sender, Shipper
+  bridges: 'AWB: L 05-08, P 09-44 CIMP: (109):an..14; (300):an..35; (301):an..35;
+    (302):an..17; (303):an..9; (304):a2; (305):an..9 UNLK: an..35x5; L 04- 08, P 09-44
+    (CIM 10; CMR 1) SAD: (SAD 2)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 65
+    confidence: medium
+- tag: 3337
+  name: Consignor. Party.Identifier
+  description: To identify the party consigning goods as stipulated in the transport
+    contract by the party ordering transport
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Consignor, coded
+  bridges: 'AWB: L 03, P 27-44 CIM: n13; L 03, P 32-44 CIM 11 CIMP: (320):an..15 SAD:
+    (SAD 2 (Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3340
+  name: Responsible To Customs. Party Identification.Text
+  description: Name and address of a party liable for goods moving under a customs
+    authorisation and, when applicable, a guarantee
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Principal responsible party
+  bridges: 'SAD: (SAD 50)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3341
+  name: Responsible To Customs. Party.Identifier
+  description: To identify a party liable for goods moving under a customs authorisation
+    and, when applicable, a guarantee
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Principal responsible party, coded
+  bridges: 'SAD: (SAD 50 (Nr))'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3346
+  name: Seller. Party Identification.Text
+  description: Name and address of a party selling merchandise or services to a buyer
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Seller
+  bridges: 'UNLK: an..70; L 04-08, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3347
+  name: Seller. Party.Identifier
+  description: Identifier of the party selling merchandise or services to a buyer.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Seller, coded
+  bridges: 'UNLK: L 03, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: high
+- tag: 3348
+  name: Consignment. Acceptance Location.Text
+  description: Name of the place where the goods are taken over by the carrier
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of acceptance
+  business_term: Place of receipt
+  bridges: 'CMR: L 20-22, P 09-44 (CMR 4) UNLK: L 22, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3349
+  name: Consignment. Acceptance Location.Identifier
+  description: To identify the place where the goods are taken over by the carrier
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of acceptance, coded
+  bridges: 'UNLK: L 21, P 36-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3350
+  name: Documentary Credit Reimbursing Bank. Party Identification.Text
+  description: Name and address of a bank nominated by the issuing bank to reimburse
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Documentary credit reimbursing bank
+  bridges: 'SWIFT: an..35x4 (n..11)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3352
+  change_tag: x
+  status: retired
+  old_name: Accepting party
+  notes: DE to use instead -the appropriate such as Consignor (3336/7)
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3356
+  name: Consignment. Baseport Unloading Location.Text
+  description: The place or port at which the cargo is discharged or unloaded from
+    a means of transport according to the transport contract. The goods may or may
+    not be discharged from the main means of transport at this place or port.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Baseport for delivery
+  business_term: Baseport discharge
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 66
+    confidence: medium
+- tag: 3357
+  name: Consignment. Baseport Unloading Location.Identifier
+  description: To identify the place or port at which the cargo is discharged or unloaded
+    from a means of transport according to the transport contract. The goods may or
+    may not be discharged from the main means of transport at this place or port.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Baseport for delivery, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3358
+  name: Transport Movement. On-carriage Receipt Location.Text
+  description: Name of the place to which goods are to be, or have been, delivered
+    by an on-carriage carrier following the main transport
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of delivery by on-carrier
+  bridges: 'UNLK: L 26, P 27-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3359
+  name: Transport Movement. On-carriage Receipt Location.Identifier
+  description: To identify the place to which goods are to be, or have been, delivered
+    by an on-carriage carrier following the main transport
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of delivery by on-carrier, coded
+  bridges: 'UNLK: L 25, P 36-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3360
+  name: Insurance Claims Adjuster. Party Identification.Text
+  description: Name and address of the insurance claims adjuster.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Insurance claims adjuster
+  bridges: 'UNLK: an..35x5; L 56- 60, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3363
+  name: Tariff Issuer. Party.Identifier
+  description: To identify a party maintaining a tariff
+  representation:
+    raw: an3
+    charset: an
+    min_length: 3
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Tariff issuer, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3369
+  name: Freight Rate. Combination Location.Identifier
+  description: To identify a place over which freight rates are combined
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Rate combination point code
+  bridges: 'AWB: L 33-44, P 09-12 (IATA location identifiercode)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3370
+  name: Payee. Party Identification.Text
+  description: Name and address of party to which a payment is to be or has been made
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Payee
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: high
+- tag: 3371
+  name: Payee. Party.Identifier
+  description: To identify a party to which a payment is to be or has been made
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Payee, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3376
+  name: Second Notify Party. Party Identification.Text
+  description: Name and address of a second party to be notified.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Second notify party
+  business_term: Also notify, Second notify address
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3377
+  name: Second Notify Party. Party.Identifier
+  description: To identify a second party to be notified.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Second notify party, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3378
+  name: Third Notify Party. Party Identification.Text
+  description: Name and address of a third party to be notified.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: high
+- tag: 3379
+  name: Third Notify Party. Party.Identifier
+  description: To identify a third party to be notified.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: high
+- tag: 3380
+  change_tag: x
+  status: retired
+  old_name: Transport destination
+  notes: DE to use instead - 3259
+  bridges: 'SWIFT: an..35 and UNLK: L 26, P 18-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3384
+  name: Goods Item. Storage Location.Text
+  description: Name of the place where a specific goods item is located.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Location of goods
+  bridges: 'CIMP: (321):an..7 SAD: (SAD 30)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: medium
+- tag: 3385
+  name: Goods Item. Storage Location.Identifier
+  description: To identify the place where a goods item is located
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 67
+    confidence: high
+- tag: 3392
+  name: Consignment. Unloading Location.Text
+  description: Name of a seaport, airport, freight terminal, rail station or other
+    place at which goods are unloaded from the means of transport having been used
+    for their carriage
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of discharge
+  business_term: Discharge Location, Airport of discharge, Berth/Dock/Container base
+    of discharge, Pier of discharge, Place of unloading
+  bridges: 'CIM: an..35x3; L 24-26, P 09-44 UNLK: L 26, P 09-26'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3393
+  name: Consignment. Unloading Location.Identifier
+  description: To identify a seaport, airport, freight terminal, rail station or other
+    place at which goods are unloaded from the means of transport having been used
+    for their carriage
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of discharge, coded
+  bridges: 'CIM: n..8 (nn,nnnnn,n); L 23, P 32-44 UNLK: L 25, P 18-26'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3394
+  change_tag: x
+  status: retired
+  old_name: Country of purchase
+  notes: No business requirement identified
+  bridges: 'UNLK: L 16, P 45-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3395
+  change_tag: x
+  status: retired
+  old_name: Country of purchase, coded
+  notes: No business requirement identified
+  bridges: 'UNLK: L 15, P 60-62'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3397
+  name: Name. Status.Code
+  description: To specify the status of a name (such as current name).
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: high
+- tag: 3398
+  name: Name. Component.Text
+  description: Free form description of a name component.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: high
+- tag: 3401
+  name: Name. Component Usage.Code
+  description: Code specifying the usage of a name component.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: high
+- tag: 3403
+  name: Name. Type.Code
+  description: Code specifying the type of name.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: high
+- tag: 3404
+  name: Person. Name.Text
+  description: Family name and given names of an individual.
+  representation:
+    raw: an..25
+    charset: an
+    min_length: 1
+    max_length: 25
+  change_tag: cn
+  status: active
+  old_name: Name of person
+  bridges: 'MAR: (IMO FAL Forms 4- 6)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3408
+  name: Transport Means. Master Name.Text
+  description: Name of the Master of a means of transport such as a vessel
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cndr
+  status: active
+  old_name: Master
+  business_term: Vessel master, Driver, Pilot
+  bridges: 'MAR: (IMO FAL Forms 1- 2)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3410
+  name: Document. Issue Location.Text
+  description: Name of the location where a document was issued and when appropriate,
+    signed or otherwise authenticated.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of issue of document
+  business_term: Place document completed
+  bridges: 'AWB: L 60, P 44-60 CIMP: (302):an..17 CMR: L 60, P 09-26 (CMR 21) INV:
+    L 34-64, P 09-26 MAR: IMO/FAL 7 SAD: (SAD 54)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 68
+    confidence: medium
+- tag: 3411
+  name: Document. Issue Location.Identifier
+  description: To identify the location where a document was issued and when appropriate,
+    signed or otherwise authenticated.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Place of issue of document, coded
+  bridges: 'CIMP: (313):a3 CMR: L 59, P 20-26 INV: L 34-64, P 09-26 MAR: L 61, P 63-80'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3412
+  name: Contact. Name.Text
+  description: Name of a department or employee.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Department or employee
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3413
+  name: Contact. Identifier
+  description: To identify a department or employee.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Department or employee identification
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3414
+  change_tag: x
+  status: retired
+  old_name: Port of discharge
+  notes: DE to use instead - 3292
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3415
+  change_tag: x
+  status: retired
+  old_name: Port of discharge, coded
+  notes: DE to use instead - 3293
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3416
+  name: Transport Means. Port Berth Location.Text
+  description: Location in port where the vessel is berthed or moored.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Position of ship in port
+  bridges: 'MAR: IMO/FAL 1-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3420
+  name: Buyer. Bank Identification.Text
+  description: Name and address of a bank employed by the buyer to make a payment
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Buyer's bank
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: high
+- tag: 3421
+  name: Buyer. Bank.Identifier
+  description: To identify a bank employed by the buyer to make a payment
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Buyer's bank, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3422
+  name: Payee. Bank Identification.Text
+  description: Name and address of a bank designated by the payee to receive a payment
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Payee's bank
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3423
+  name: Payee. Bank.Identifier
+  description: To identify a bank designated by the payee to receive a payment
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Payee's bank, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3424
+  name: Consignment. Transshipment Location.Text
+  description: Name of a place where goods are to be or have been transferred from
+    one means of transport to another during the course of one transport operation
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Transhipment place
+  bridges: 'SAD: (SAD 55)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3425
+  name: Consignment. Transshipment Location.Identifier
+  description: To identify a place where goods are to be or have been transferred
+    from one means of transport to another during the course of one transport operation
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cndr
+  status: active
+  old_name: Transhipment place, coded
+  bridges: 'CIMP: (313):a3'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3430
+  name: Insurer At Destination Agent. Party Identification.Text
+  description: Name and address of the agent of the insurer's at the place of destination
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Insurer's Agent at destination
+  business_term: Insurer's Agent at destination
+  bridges: 'UNLK: an..35x5; L 50- 54, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3432
+  name: Financial Institution. Name.Text
+  description: Name of an institution.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: cnd
+  status: active
+  old_name: Institution name
+  business_term: Bank name
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3433
+  name: Financial Institution. Identifier
+  description: To identify the name of an institution.
+  representation:
+    raw: an..11
+    charset: an
+    min_length: 1
+    max_length: 11
+  change_tag: cnd
+  status: active
+  old_name: Institution name identification
+  business_term: Bank name identifier
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 69
+    confidence: medium
+- tag: 3434
+  name: Financial Institution. Branch.Identifier
+  description: To identify a branch of an institution.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Institution branch number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3436
+  name: Financial Institution. Branch Location.Text
+  description: Name of the location of a branch of an institution.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Institution branch place
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3438
+  change_tag: x
+  status: retired
+  old_name: Sub-location
+  notes: DE deleted in 1993
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3440
+  change_tag: x
+  status: retired
+  old_name: Post office of despatch
+  notes: DE to use instead - 3334
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3442
+  change_tag: x
+  status: retired
+  old_name: Post office of destination
+  notes: DE to use instead - 3258
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3444
+  change_tag: x
+  status: retired
+  old_name: Post office of posting
+  notes: No business requirement identified
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3446
+  name: Party. Tax.Identifier
+  description: To identify a number assigned to a party by a tax authority.
+  representation:
+    raw: an..20
+    charset: an
+    min_length: 1
+    max_length: 20
+  change_tag: cnd
+  status: active
+  old_name: Party tax identification number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3450
+  name: Financial Settlement. Party Identification.Text
+  description: Name and address of the party responsible for either the transfer or
+    repatriation of the funds relating to a transaction
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Party responsible for financial settlement
+  bridges: 'SAD: SAD an..35x3 (SAD 9)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3451
+  name: Financial Settlement. Party.Identifier
+  description: To identify the party responsible for either the transfer or repatriation
+    of the funds relating to a transaction
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Party responsible for financial settlement, coded
+  bridges: 'SAD: (SAD 9)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3452
+  name: Language. Name.Text
+  description: Name of a language
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3453
+  name: Language. Identifier
+  description: To identify a language
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: cnd
+  status: active
+  old_name: Language, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: medium
+- tag: 3455
+  name: Language. Usage.Code
+  description: Code specifying a use of a language.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3457
+  name: Request. Originator Type.Code
+  description: Code specifying the type of originator of a request.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3459
+  name: Frequent Traveller. Identifier
+  description: To identify a frequent traveller.
+  representation:
+    raw: an..25
+    charset: an
+    min_length: 1
+    max_length: 25
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3460
+  name: Person. Given Name.Text
+  description: An individual's given name.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3463
+  name: Gate. Identifier
+  description: To identify a gate.
+  representation:
+    raw: an..6
+    charset: an
+    min_length: 1
+    max_length: 6
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3465
+  name: In-house. Identifier
+  description: A unique locally assigned identification.
+  representation:
+    raw: an..9
+    charset: an
+    min_length: 1
+    max_length: 9
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 70
+    confidence: high
+- tag: 3468
+  name: Seller. Contact Name.Text
+  description: Name of seller's sales contact
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Seller's department or employee
+  bridges: 'UNLK: L 08, P 09-44'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3470
+  name: Freight Payer. Party Identification.Text
+  description: Name and address of a party responsible for the payment of freight
+    charges
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Freight payer
+  business_term: Freight payor
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3471
+  name: Freight Payer. Party.Identifier
+  description: To identify a party responsible for the payment of freight charges
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Freight payer, coded
+  business_term: Freight payor, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3472
+  name: Freight. Other Charge Payer.Text
+  description: Name and address of a party responsible for the payment of charges
+    and fees other than freight costs
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: cndr
+  status: active
+  old_name: Charges payer
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3473
+  name: Freight. Other Charge Payer.Identifier
+  description: To identify a party responsible for the payment of charges and fees
+    other than freight costs
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Charges payer, coded
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3475
+  name: Address. Status.Code
+  description: Code specifying the status of an address.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3477
+  name: Address. Format.Code
+  description: Code specifying the format of an address.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3478
+  name: Marital. Status.Text
+  description: Free form description of the marital status of a person.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3479
+  name: Marital. Status.Code
+  description: Code specifying the marital status of a person.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3480
+  name: Person. Job Title.Text
+  description: Name of a job title, such as rank or rating of crew member.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: cnd
+  status: active
+  old_name: Rank or rating of crew member
+  bridges: 'MAR: IMO/FAL 4-5'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3482
+  name: Person. Religion Name.Text
+  description: Name of a religion.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3483
+  name: Person. Religion.Identifier
+  description: To identify a religion.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3484
+  name: Person. Nationality.Text
+  description: Name of the nationality of a an object, for example the nationality
+    of a person or the nationality of a means of transport.
+  representation:
+    raw: a..35
+    charset: a
+    min_length: 1
+    max_length: 35
+  change_tag: cnd
+  status: active
+  old_name: Nationality of person
+  bridges: 'MAR: (IMO FAL Forms 5-6)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3485
+  name: Person. Nationality.Identifier
+  description: To identify the nationality of a an object, for example the nationality
+    of a person or the nationality of a means of transport.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  bridges: 'MAR: (IMO FAL Forms 5-6)'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3486
+  name: Person. Birth Location.Text
+  description: Name of the place where a person was born
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of birth
+  bridges: 'MAR: IMO/FAL 5-6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3488
+  name: Person. Embarkation Location.Text
+  description: Name of the place where a person or persons join a means of transport
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of embarkation
+  bridges: 'MAR: IMO/FAL 6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3490
+  name: Person. Disembarkation Location.Text
+  description: Name of the place where a person or persons leave a means of transport
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: cndr
+  status: active
+  old_name: Place of disembarkation
+  bridges: 'MAR: IMO/FAL 6'
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3492
+  name: Seller. Bank Account.Identifier
+  description: To identify an account with the bank designated to receive payment
+  representation:
+    raw: an..10
+    charset: an
+    min_length: 1
+    max_length: 10
+  change_tag: cnd
+  status: active
+  old_name: Seller's bank account number
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3494
+  change_tag: x
+  status: retired
+  old_name: Job Title
+  notes: DE ti use instead - 3480
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: medium
+- tag: 3496
+  name: Sales. Channel.Identifier
+  description: To identify a sales channel.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 71
+    confidence: high
+- tag: 3499
+  name: Gender. Code
+  description: Code giving the gender of a person, animal or plant.
+  representation:
+    raw: an..3
+    charset: an
+    min_length: 1
+    max_length: 3
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3500
+  name: Person. Family Name.Text
+  description: Family name of a person
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  business_term: Surname, Last name
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 3503
+  name: Access. Authorisation.Identifier
+  description: To identify an authorisation to access.
+  representation:
+    raw: an..9
+    charset: an
+    min_length: 1
+    max_length: 9
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3504
+  name: Person. Title.Text
+  description: Free form description of a title.
+  representation:
+    raw: an..9
+    charset: an
+    min_length: 1
+    max_length: 9
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3509
+  name: Transport Means. First Arrival Location.Identifier
+  description: To identify the first arrival location. This would be a port for sea,
+    airport for air and border post for land crossing.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3511
+  name: Goods Item. Examination Location.Identifier
+  description: Identification of a place where goods are to be examined if different
+    from the specified goods item location (3385)
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3512
+  name: Manufacturer. Party Identification.Text
+  description: Name and address of a party which manufactures goods.
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3513
+  name: Manufacturer. Party.Identifier
+  description: Identification of the name and address of a party which manufactures
+    goods.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3514
+  name: Consignment. Exportation Country Subdivision.Text
+  description: Country subdivision where goods begin their journey to export location.
+  representation:
+    raw: an..70
+    charset: an
+    min_length: 1
+    max_length: 70
+  change_tag: add
+  status: active
+  business_term: Inspection location
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 3515
+  name: Consignment. Exportation Country Subdivision.Identifier
+  description: Country subdivision where goods begin their journey to export location.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  business_term: Region of export
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: medium
+- tag: 3516
+  name: Document. Receiving Party Contact Name.Text
+  description: Name of the person receiving a document.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3518
+  name: Document. Sending Party Contact Name.Text
+  description: Name of the person sending a document.
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3520
+  name: Document. Receiving Party Identification.Text
+  description: Name and address of the party receiving a document
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3521
+  name: Document. Receiving Party.Identifier
+  description: To identify the party receiving a document.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3522
+  name: Document. Sending Party Identification.Text
+  description: Name and address of the party sending a document
+  representation:
+    raw: an..512
+    charset: an
+    min_length: 1
+    max_length: 512
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3523
+  name: Document. Sending Party.Identifier
+  description: To identify the party sending a document.
+  representation:
+    raw: an..17
+    charset: an
+    min_length: 1
+    max_length: 17
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3524
+  name: Event. Location.Text
+  description: Name of location of an event.
+  representation:
+    raw: an..256
+    charset: an
+    min_length: 1
+    max_length: 256
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high
+- tag: 3525
+  name: Event. Location.Identifier
+  description: To identify the location of an event
+  representation:
+    raw: an..35
+    charset: an
+    min_length: 1
+    max_length: 35
+  change_tag: add
+  status: active
+  provenance:
+    pdf: UNTDED2005_Redacted.pdf
+    page: 72
+    confidence: high

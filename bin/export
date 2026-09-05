@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# Regenerates derived outputs (CSV, JSON, HTML) from the YAML SSOT.
+# Derived files are never hand-edited; bin/extract is the only writer of the SSOT.
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+require "untded"
+
+data_dir = ARGV[0] || File.expand_path("../data", __dir__)
+out_dir = ARGV[1] || File.expand_path("../derived", __dir__)
+
+count = Untded::Exporter.new(data_dir, out_dir).call
+puts "exported #{count} elements to #{out_dir}/elements.csv, elements.json, index.html"
