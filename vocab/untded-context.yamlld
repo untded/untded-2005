@@ -1,0 +1,31 @@
+# YAML-LD context — the semantic SSOT of the UNTDED 2005 dataset.
+# Element IRIs are the live registry pages (https://www.untded.org/elements/NNNN),
+# so what you read in the data is what you can open in a browser.
+"@context":
+  utd: https://www.untded.org/ns/untded#
+  schema: https://schema.org/
+  dct: http://purl.org/dc/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  TradeDataElement: utd:TradeDataElement
+  tag: utd:tag
+  representation: utd:representation
+  charset: utd:charset
+  minLength: utd:minLength
+  maxLength: utd:maxLength
+  changeTag: utd:changeTag
+  status: utd:status
+  oldName: utd:oldName
+  businessTerm: utd:businessTerm
+  bridges: utd:bridges
+  sourcePage: utd:sourcePage
+  extractionConfidence: utd:extractionConfidence
+  elementCount: utd:elementCount
+  name: schema:name
+  description: schema:description
+  isPartOf: schema:isPartOf
+  isBasedOn: schema:isBasedOn
+  distribution: schema:distribution
+  DataDownload: schema:DataDownload
+  Dataset: schema:Dataset
+  encodingFormat: schema:encodingFormat
+  source: dct:source
