@@ -13,4 +13,5 @@ module Untded
   autoload :Exporter, "untded/exporter"
   autoload :Verifier, "untded/verifier"
   autoload :OcrSampler, "untded/ocr_sampler"
+  autoload :LinkedData, "untded/linked_data"
 end

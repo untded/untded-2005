@@ -9,3 +9,13 @@ out_dir = ARGV[1] || File.expand_path("../derived", __dir__)
 
 count = Untded::Exporter.new(data_dir, out_dir).call
 puts "exported #{count} elements to #{out_dir}/elements.csv, elements.json, index.html"
+
+# Linked Data derivations (JSON-LD + Turtle) from the same models;
+# IRIs default to the live registry, override with UNTDED_SITE_ORIGIN.
+elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
+  Untded::ElementFile.from_yaml(File.read(path)).elements
+end
+linked = Untded::LinkedData.new(elements: elements)
+File.write(File.join(out_dir, "untded.jsonld"), linked.to_jsonld)
+File.write(File.join(out_dir, "untded.ttl"), linked.to_ttl)
+puts "linked data: #{out_dir}/untded.jsonld, untded.ttl"
