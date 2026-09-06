@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+# Joins the directory against the UN/EDIFACT D.05B segments mirror and
+# writes derived/edifact-links.json — the machine-readable crosslink set
+# behind the website's element chips. The mirror lives in the sibling
+# references repo (references/edifact-D05B/segments.xml); the join rule
+# is shared with bin/crosscheck-edifact (Untded::EdifactJoin).
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
+require "untded"
+require "json"
+
+data_dir = ARGV[0] || File.expand_path("../data", __dir__)
+out_path = ARGV[1] || File.expand_path("../derived/edifact-links.json", __dir__)
+xml_path = ENV["UNTDED_EDIFACT_MIRROR"] ||
+  File.expand_path("../../references/edifact-D05B/segments.xml", __dir__)
+
+abort "mirror not found: #{xml_path}" unless File.exist?(xml_path)
+
+elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
+  Untded::ElementFile.from_yaml(File.read(path)).elements
+end
+mirror = Untded::EdifactJoin.mirror(xml_path)
+links = Untded::EdifactJoin.links(elements, mirror)
+
+require "fileutils"
+FileUtils.mkdir_p(File.dirname(out_path))
+File.write(out_path, JSON.pretty_generate({
+  "source" => "UN/EDIFACT D.05B segments mirror (unece.org/trade/uncefact/unedifact)",
+  "coverage" => "active elements referenced by D05B segments (first occurrence per tag)",
+  "joined" => links.size,
+  "aligned" => links.count { |l| l["aligned"] },
+  "links" => links,
+}))
+puts "edifact-links: #{links.size} joined, #{links.count { |l| l["aligned"] }} aligned on charset+max length -> #{out_path}"

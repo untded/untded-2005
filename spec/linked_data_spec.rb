@@ -62,14 +62,44 @@ RSpec.describe Untded::LinkedData do
       "@type" => "TradeDataElement",
       "tag" => 1001,
       "name" => "Document. Type.Code",
-      "representation" => "an..3",
-      "charset" => "an",
-      "maxLength" => 3,
       "changeTag" => "cndr",
       "status" => "active",
-      "oldName" => "Document/message name, coded",
       "sourcePage" => 28,
     )
+    expect(e["representation"]).to eq(
+      "@type" => "Representation",
+      "printedForm" => "an..3",
+      "charset" => "an",
+      "minLength" => 1,
+      "maxLength" => 3,
+    )
+    expect(e["altLabel"]).to include("Document/message name, coded")
+    bridge = e["bridge"].find { |b| b["scheme"] == "UNLK" }
+    expect(bridge["zone"]).to eq([
+      "@type" => "UnlkZone", "lineFrom" => 4, "lineTo" => 4,
+      "posFrom" => 41, "posTo" => 45,
+    ])
+  end
+
+  it "links retired elements to their replacement" do
+    e = by_id["https://example.untded.test/elements/1002"]
+    expect(e["replacedBy"]).to eq("@id" => "https://example.untded.test/elements/1000")
+  end
+
+  it "carries UNLK zones on the colon-less bridge of element 5010" do
+    e = by_id["https://example.untded.test/elements/5010"]
+    expect(e["bridge"].first).to include("scheme" => "UNLK", "detail" => "L 24, P45-80")
+    expect(e["bridge"].first["zone"]).to eq([
+      "@type" => "UnlkZone", "lineFrom" => 24, "lineTo" => 24,
+      "posFrom" => 45, "posTo" => 80,
+    ])
+  end
+
+  it "closes over the graph: every replacedBy target exists" do
+    ids = graph["@graph"].map { |n| n["@id"] }.to_set
+    targets = graph["@graph"].filter_map { |n| n["replacedBy"]&.fetch("@id", nil) }
+    expect(targets).not_to be_empty
+    targets.each { |t| expect(ids).to include(t) }
   end
 
   it "round-trips JSON-LD and Turtle through the RDF gems" do

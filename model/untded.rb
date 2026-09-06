@@ -19,6 +19,10 @@ module Untded
   autoload :Exporter, "untded/exporter"
   autoload :Verifier, "untded/verifier"
   autoload :OcrSampler, "untded/ocr_sampler"
+  autoload :Bridges, "untded/bridges"
+  autoload :UnlkZones, "untded/unlk_zones"
+  autoload :Replacement, "untded/replacement"
+  autoload :EdifactJoin, "untded/edifact_join"
   autoload :LinkedData, "untded/linked_data"
   autoload :Vocabulary, "untded/vocabulary"
 end

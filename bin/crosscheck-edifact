@@ -14,20 +14,10 @@ require "untded"
 require "rexml/document"
 
 data_dir = File.expand_path("../data", __dir__)
-xml_path = File.expand_path("../references/edifact-D05B/segments.xml", __dir__)
+xml_path = File.expand_path("../../references/edifact-D05B/segments.xml", __dir__)
 
-mirror = {}
-doc = REXML::Document.new(File.read(xml_path))
-REXML::XPath.match(doc, "//data_element").each do |el|
-  id = el.attributes["id"].to_i
-  next unless id >= 1000
-  # first occurrence wins; later ones are repetitions within other segments
-  mirror[id] ||= {
-    name: el.attributes["name"],
-    desc: el.attributes["desc"],
-    type: el.attributes["type"],
-    max: el.attributes["maxlength"].to_i,
-  }
+mirror = Untded::EdifactJoin.mirror(xml_path).transform_values do |m|
+  { name: m.name, desc: m.desc, type: m.type, max: m.max_length }
 end
 
 ours = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
@@ -116,5 +106,5 @@ report.puts({ joined: matched.size, repr_match: repr_match, repr_diff: repr_diff
               only_ours: only_ours.size, only_mirror: only_mirror }.inspect)
 report.puts "\nREPR DIFFS:\n" + repr_examples.join("\n")
 report.puts "\nDESC DIFFS:\n" + desc_examples.join("\n")
-File.write(File.expand_path("../sources/edifact-D05B/crosscheck-report.txt", __dir__), report.string)
-puts "\nfull report: sources/edifact-D05B/crosscheck-report.txt"
+File.write(File.expand_path("../../references/edifact-D05B/crosscheck-report.txt", __dir__), report.string)
+puts "\nfull report: references/edifact-D05B/crosscheck-report.txt"

@@ -21,9 +21,38 @@ module Untded
         uid_reconciliation: check_uid_reconciliation,
         tag_order: check_tag_order,
         retired_references: check_retired_references,
+        bridge_zones: check_bridge_zones,
         name_tails: check_name_tails,
         description_endings: check_description_endings,
       }
+    end
+
+
+    # Parsed bridge semantics must hold on the real data: every bridges
+    # string yields scheme entries, and UNLK zones stay in printable
+    # range with ordered spans (the printed directory references lines
+    # beyond the 33-line chart — observed up to line 68 — and positions
+    # run 1..82 per the publication).
+    def check_bridge_zones
+      bad = []
+      elements.each do |e|
+        entries = Bridges.entries(e.bridges)
+        bad << "#{e.tag}: bridges without a scheme entry" if e.bridges && entries.empty?
+        UnlkZones.of(e.bridges).each do |z|
+          unless (1..99).cover?(z.line_from) && (1..99).cover?(z.line_to) && z.line_from <= z.line_to
+            bad << "#{e.tag}: lines #{z.line_from}-#{z.line_to} out of range"
+          end
+          unless (1..82).cover?(z.pos_from) && (1..82).cover?(z.pos_to) && z.pos_from <= z.pos_to
+            bad << "#{e.tag}: positions #{z.pos_from}-#{z.pos_to} out of range"
+          end
+        end
+      end
+      if bad.empty?
+        zones = elements.sum { |e| UnlkZones.of(e.bridges).size }
+        Check.new(status: :pass, detail: "#{zones} UNLK zones parsed, spans in range")
+      else
+        Check.new(status: :fail, detail: bad.first(5).join("; "))
+      end
     end
 
     private
