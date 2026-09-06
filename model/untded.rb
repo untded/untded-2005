@@ -23,6 +23,7 @@ module Untded
   autoload :UnlkZones, "untded/unlk_zones"
   autoload :Replacement, "untded/replacement"
   autoload :EdifactJoin, "untded/edifact_join"
+  autoload :UnclCoverage, "untded/uncl_coverage"
   autoload :LinkedData, "untded/linked_data"
   autoload :Vocabulary, "untded/vocabulary"
 end
