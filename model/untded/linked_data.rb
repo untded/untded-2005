@@ -1,5 +1,3 @@
-require "yaml"
-
 module Untded
   # Linked Data layer: derives JSON-LD and Turtle representations of the
   # dataset from the Element models. The context (term -> IRI mapping) is
@@ -16,7 +14,7 @@ module Untded
     end
 
     def context
-      YAML.safe_load(File.read(File.join(__dir__, "..", "..", "vocab", "untded-context.yamlld")))["@context"]
+      Vocabulary.context
     end
 
     def dataset_iri
@@ -35,7 +33,7 @@ module Untded
       {
         "@context" => context,
         "@graph" =>
-          vocabulary_nodes + [dataset_node, scheme_node] +
+          Vocabulary.ontology_nodes + [dataset_node, scheme_node] +
           categories.map { |c| category_node(c) } +
           @elements.map { |e| element_node(e) },
       }
@@ -105,13 +103,12 @@ module Untded
       }
     end
 
-    # Parses Extractor::CATEGORY_BY_RANGE ("1000" => "4.2.1 (1000-1699) label")
-    # into ordered category records; the single category source for the graph.
+    # Structured category records (Untded::CATEGORIES) with display-
+    # capitalised labels; the single category source for the graph.
     def categories
-      @categories ||= Extractor::CATEGORY_BY_RANGE.map do |base, text|
-        section, range, label = text.match(/\A([\d.]+)\s+\(([\d-]+)\)\s+(.+)\z/)&.captures
-        { k: base.to_i / 1000, section:, range: range || "#{base}-#{base.to_i + 699}",
-          label: label ? label[0].upcase + label[1..] : text }
+      @categories ||= Untded::CATEGORIES.map do |c|
+        { k: c[:k], section: c[:section], range: c[:range],
+          label: c[:label][0].upcase + c[:label][1..] }
       end
     end
 
@@ -133,42 +130,7 @@ module Untded
       }
     end
     # Self-describing vocabulary: the classes and properties of the utd:
-    # namespace, declared in the graph itself.
-    def vocabulary_nodes
-      ns = "https://www.untded.org/ns/untded#"
-      classes = {
-        "TradeDataElement" => "A data element of the Trade Data Elements Directory: a named, defined unit of trade information with a tag and a representation.",
-        "Category" => "One of the nine ordered tag ranges into which the directory groups its data elements.",
-        "CategoryScheme" => "The ordered scheme of the nine tag-range categories.",
-      }
-      properties = {
-        "tag" => ["TradeDataElement", "The four-digit unique identifier of the data element."],
-        "representation" => ["TradeDataElement", "The printed character representation notation, e.g. an..35."],
-        "charset" => ["TradeDataElement", "The character class of the representation: a, an or n."],
-        "minLength" => ["TradeDataElement", "Minimum number of characters in a value."],
-        "maxLength" => ["TradeDataElement", "Maximum number of characters in a value."],
-        "changeTag" => ["TradeDataElement", "The printed change indicator against the 1993 edition."],
-        "status" => ["TradeDataElement", "active or retired, per the printed change indicator."],
-        "oldName" => ["TradeDataElement", "The data element name in the 1993 edition."],
-        "businessTerm" => ["TradeDataElement", "The printed business term (synonym)."],
-        "bridges" => ["TradeDataElement", "Printed locations on aligned trade documents (UNLK, SAD, CIMP, CIM, MAR)."],
-        "sourcePage" => ["TradeDataElement", "Page of the source publication the entry appears on."],
-        "category" => ["TradeDataElement", "The tag-range category the element belongs to."],
-        "tagRange" => ["Category", "The tag interval of the category, e.g. 1000-1699."],
-        "elementCount" => "The number of member elements.",
-      }
-      class_nodes = classes.map do |name, comment|
-        { "@id" => "#{ns}#{name}", "@type" => "rdfs:Class", "comment" => comment }
-      end
-      prop_nodes = properties.map do |name, meta|
-        domain, comment = meta
-        node = { "@id" => "#{ns}#{name}", "@type" => "rdf:Property", "comment" => comment }
-        node["domain"] = { "@id" => "#{ns}#{domain}" } if domain.is_a?(String) && classes.key?(domain)
-        node
-      end
-      class_nodes + prop_nodes
-    end
-
+    # namespace, declared once in Untded::Vocabulary.
     def element_node(e)
       category = category_of_tag(e.tag)
       node = {
@@ -196,13 +158,9 @@ module Untded
     end
 
     def ttl_prefixes
-      {
-        # the vocabulary namespace is minted once (it matches the context in
-        # vocab/) and is independent of the deployment origin
-        "utd" => "https://www.untded.org/ns/untded#",
-        "schema" => "https://schema.org/",
-        "dct" => "http://purl.org/dc/terms/",
-      }
+      # the vocabulary namespace is minted once in Untded::Vocabulary and
+      # is independent of the deployment origin
+      Vocabulary::PREFIXES
     end
   end
 end

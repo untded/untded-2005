@@ -40,18 +40,6 @@ module Untded
     # verbatim and flagged to the review queue.
     LEGEND_TAGS = %w[add cn cnd cnr cndr x u].freeze
 
-    CATEGORY_BY_RANGE = {
-      "1000" => "4.2.1 (1000-1699) documentation, references",
-      "2000" => "4.2.2 (2000-2699) Dates, times, periods of time",
-      "3000" => "4.2.3 (3000-3699) Parties, addresses, places, countries",
-      "4000" => "4.2.4 (4000-4699) Clauses, conditions, terms, instructions",
-      "5000" => "4.2.5 (5000-5699) Amounts, charges, percentages",
-      "6000" => "4.2.6 (6000-6699) Measure identifiers, quantities (other than monetary)",
-      "7000" => "4.2.7 (7000-7699) Goods and articles: descriptions and identifiers",
-      "8000" => "4.2.8 (8000-8699) Transport modes, means and equipments",
-      "9000" => "4.2.9 (9000-9699) Other data elements (Customs, etc.)",
-    }.freeze
-
     attr_reader :pdf, :pages, :stats, :rows
 
     def initialize(pdf:, pages: 28..132)
@@ -102,7 +90,8 @@ module Untded
       require "fileutils"
       FileUtils.mkdir_p(File.join(dir, "elements"))
       elements.group_by { |e| format("%d000", e.tag / 1000) }.each do |range, els|
-        category = CATEGORY_BY_RANGE.fetch(range) { "#{range} uncategorized" }
+        cat = Untded.category_for_base(range)
+        category = cat ? Untded.category_header(cat) : "#{range} uncategorized"
         file = ElementFile.new(category: category, elements: els.sort_by(&:tag))
         path = File.join(dir, "elements", "#{range}-#{range.to_i + 699}.yaml")
         File.write(path, file.to_yaml)

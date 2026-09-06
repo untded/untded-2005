@@ -43,7 +43,7 @@ module Untded
     end
 
     def cell_strings(el)
-      [el.name, el.name_fr, el.description, el.representation&.raw,
+      [el.name, el.description, el.representation&.raw,
        el.old_name, el.business_term, el.notes, el.bridges].compact
     end
 

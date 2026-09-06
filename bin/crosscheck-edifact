@@ -8,6 +8,8 @@
 # absent from the mirror are informational (the mirror only covers
 # elements referenced by segments).
 $LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
 require "untded"
 require "rexml/document"
 

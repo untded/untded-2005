@@ -2,13 +2,15 @@
 # Regenerates derived outputs (CSV, JSON, HTML) from the YAML SSOT.
 # Derived files are never hand-edited; bin/extract is the only writer of the SSOT.
 $LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
 require "untded"
 
 data_dir = ARGV[0] || File.expand_path("../data", __dir__)
 out_dir = ARGV[1] || File.expand_path("../derived", __dir__)
 
 count = Untded::Exporter.new(data_dir, out_dir).call
-puts "exported #{count} elements to #{out_dir}/elements.csv, elements.json, index.html"
+puts "exported #{count} elements to #{out_dir}/elements.csv, elements.json, categories.json"
 
 # Linked Data derivations (JSON-LD + Turtle) from the same models;
 # IRIs default to the live registry, override with UNTDED_SITE_ORIGIN.
@@ -19,4 +21,4 @@ linked = Untded::LinkedData.new(elements: elements)
 File.write(File.join(out_dir, "untded.jsonld"), linked.to_jsonld)
 File.write(File.join(out_dir, "untded.ttl"), linked.to_ttl)
 linked.write_element_files(File.join(out_dir, "elements-rdf"))
-puts "linked data: #{out_dir}/untded.jsonld, untded.ttl, elements-rdf/*.{jsonld,ttl}"
+puts "linked data: #{out_dir}/untded.jsonld, untded.ttl, elements-rdf/*.{jsonld,ttl}; context: vocab/untded-context.yamlld"

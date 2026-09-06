@@ -24,7 +24,7 @@ RSpec.describe Untded::Exporter do
     expect(count).to eq(1504)
     described_class.new(data_dir, out2).call
 
-    %w[elements.csv elements.json index.html].each do |name|
+    %w[elements.csv elements.json categories.json].each do |name|
       expect(File.binread(File.join(out1, name))).to eq(File.binread(File.join(out2, name)))
     end
   end
