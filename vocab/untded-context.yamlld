@@ -40,7 +40,6 @@
   businessTerm: utd:businessTerm
   bridges: utd:bridges
   sourcePage: utd:sourcePage
-  extractionConfidence: utd:extractionConfidence
   category: utd:category
 
   # category-level
