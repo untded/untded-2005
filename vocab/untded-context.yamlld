@@ -11,6 +11,9 @@
 
   # classes
   TradeDataElement: utd:TradeDataElement
+  Representation: utd:Representation
+  Bridge: utd:Bridge
+  UnlkZone: utd:UnlkZone
   Category: utd:Category
   CategoryScheme: utd:CategoryScheme
   Dataset: schema:Dataset
@@ -29,6 +32,7 @@
   # element-level
   tag: utd:tag
   representation: utd:representation
+  printedForm: utd:printedForm
   charset: utd:charset
   minLength: utd:minLength
   maxLength: utd:maxLength
@@ -36,7 +40,18 @@
   status: utd:status
   oldName: utd:oldName
   businessTerm: utd:businessTerm
+  altLabel: skos:altLabel
+  replacedBy: utd:replacedBy
   bridges: utd:bridges
+  bridge: utd:bridge
+  scheme: utd:scheme
+  detail: utd:detail
+  zone: utd:zone
+  lineFrom: utd:lineFrom
+  lineTo: utd:lineTo
+  posFrom: utd:posFrom
+  posTo: utd:posTo
+  fieldFormat: utd:fieldFormat
   sourcePage: utd:sourcePage
   category: utd:category
 

@@ -54,7 +54,19 @@ UN/EDIFACT D.05B cross-check corpus live in the sibling
 ontology definitions — is declared once in
 `model/untded/vocabulary.rb`; the YAML-LD context
 `vocab/untded-context.yamlld` is generated from it (a spec fails if the
-committed file drifts from the declaration). Element IRIs are the live
+committed file drifts from the declaration).
+`bin/export` also writes `vocabulary.json` (the declaration as JSON,
+consumed by the website's /ontology page). The graph carries the
+directory's semantics structurally: representations as nodes (charset,
+length bounds, printed form), bridges as per-scheme nodes with parsed
+UNLK zones (line and position spans), retired elements linked to their
+replacement via `utd:replacedBy`, and old names / business terms as
+`skos:altLabel`. `bin/join-edifact` writes `edifact-links.json` — the
+tag join against the D05B segments mirror (rule shared with
+`bin/crosscheck-edifact`). One entry prints its scheme without the
+colon (element 5010, verbatim from the source); the parser accepts that
+form at the start of the cell.
+ Element IRIs are the live
 registry pages (`https://www.untded.org/elements/N`, override with
 `UNTDED_SITE_ORIGIN`). Serialization goes through the rdf/json-ld gems.
 

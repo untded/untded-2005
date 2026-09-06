@@ -15,6 +15,7 @@ module Untded
       write_csv(elements)
       write_json(elements)
       write_categories
+      write_vocabulary
       write_context
       elements.size
     end
@@ -80,5 +81,23 @@ module Untded
       File.write(target, lines.join("\n") + "\n")
     end
 
+
+    # The vocabulary declaration as JSON: namespace, prefixes, classes
+    # and terms — consumed by the website's /ontology page (single
+    # writer; mirrors the committed context).
+    def write_vocabulary
+      doc = {
+        "namespace" => Vocabulary::NAMESPACE,
+        "prefixes" => Vocabulary::PREFIXES,
+        "classes" => Vocabulary::CLASSES.map { |name, comment| { "term" => name, "comment" => comment } },
+        "terms" => Vocabulary::TERMS.filter_map do |term, defn|
+          next if defn[:group] == "classes"
+          { "term" => term, "iri" => defn[:iri], "group" => defn[:group] }
+            .merge(defn[:domain] ? { "domain" => defn[:domain] } : {})
+            .merge(defn[:comment] ? { "comment" => defn[:comment] } : {})
+        end,
+      }
+      File.write(File.join(@out_dir, "vocabulary.json"), JSON.pretty_generate(doc))
+    end
   end
 end

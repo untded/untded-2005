@@ -11,6 +11,7 @@ module Untded
     def initialize(elements:, origin: DEFAULT_ORIGIN)
       @elements = elements
       @origin = origin.to_s.sub(%r{/\z}, "")
+      @tags = elements.map(&:tag)
     end
 
     def context
@@ -145,16 +146,49 @@ module Untded
       }
       node["name"] = e.name if e.name
       node["description"] = e.description if e.description
-      if e.representation
-        node["representation"] = e.representation.raw
-        node["charset"] = e.representation.charset
-        node["minLength"] = e.representation.min_length
-        node["maxLength"] = e.representation.max_length
-      end
-      node["oldName"] = e.old_name if e.old_name
-      node["businessTerm"] = e.business_term if e.business_term
+      node["representation"] = representation_node(e) if e.representation
+      alt = [e.old_name, e.business_term].compact
+      node["altLabel"] = alt unless alt.empty?
+      replacement = Replacement.of(e, @tags)
+      node["replacedBy"] = { "@id" => "#{origin}/elements/#{replacement}" } if replacement
       node["bridges"] = e.bridges if e.bridges
+      bridges = bridge_nodes(e)
+      node["bridge"] = bridges unless bridges.empty?
       node
+    end
+
+    def representation_node(e)
+      r = e.representation
+      {
+        "@type" => "Representation",
+        "printedForm" => r.raw,
+        "charset" => r.charset,
+        "minLength" => r.min_length,
+        "maxLength" => r.max_length,
+      }
+    end
+
+    # One bridge node per scheme entry, verbatim detail kept; UNLK
+    # entries carry their parsed line/position zones.
+    def bridge_nodes(e)
+      Bridges.entries(e.bridges).map do |entry|
+        node = { "@type" => "Bridge", "scheme" => entry.scheme, "detail" => entry.detail }
+        if entry.scheme == "UNLK"
+          zones = UnlkZones.of(e.bridges).map do |z|
+            zone = {
+              "@type" => "UnlkZone",
+              "lineFrom" => z.line_from,
+              "lineTo" => z.line_to,
+              "posFrom" => z.pos_from,
+              "posTo" => z.pos_to,
+            }
+            zone["fieldFormat"] = z.format if z.format
+            zone
+          end
+          node["zone"] = zones unless zones.empty?
+        end
+        node
+      end
     end
 
     def ttl_prefixes
