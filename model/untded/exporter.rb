@@ -17,6 +17,7 @@ module Untded
       write_categories
       write_vocabulary
       write_context
+      write_context_json
       elements.size
     end
 
@@ -98,6 +99,14 @@ module Untded
         end,
       }
       File.write(File.join(@out_dir, "vocabulary.json"), JSON.pretty_generate(doc))
+    end
+
+    # The context as plain JSON-LD, served by the registry at
+    # /ns/untded-context.jsonld (the website copies it in sync-data;
+    # one writer, same declaration).
+    def write_context_json
+      require "json"
+      File.write(File.join(@out_dir, "context.jsonld"), JSON.pretty_generate(Vocabulary.context) + "\n")
     end
   end
 end
