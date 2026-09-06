@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+# Joins the directory against the UN/EDIFACT D.05B UNCL code-list mirror
+# and writes derived/uncl-coverage.json — which TDED elements are
+# code-qualified in the live UN/EDIFACT directory and with how many code
+# values. The mirror lives in the sibling references repo
+# (references/edifact-D05B/codes.xml); the join rule is
+# Untded::UnclCoverage (specs pin it to real files).
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
+require "untded"
+require "json"
+
+data_dir = ARGV[0] || File.expand_path("../data", __dir__)
+out_path = ARGV[1] || File.expand_path("../derived/uncl-coverage.json", __dir__)
+xml_path = ENV["UNTDED_EDIFACT_CODES"] ||
+  File.expand_path("../../references/edifact-D05B/codes.xml", __dir__)
+
+abort "codes mirror not found: #{xml_path}" unless File.exist?(xml_path)
+
+elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
+  Untded::ElementFile.from_yaml(File.read(path)).elements
+end
+counts = Untded::UnclCoverage.counts(xml_path)
+links = Untded::UnclCoverage.links(elements, counts)
+skipped = Untded::UnclCoverage.skipped_ids(counts, elements.map(&:tag))
+
+require "fileutils"
+FileUtils.mkdir_p(File.dirname(out_path))
+File.write(out_path, JSON.pretty_generate({
+  "source" => "UN/EDIFACT D.05B UNCL code-list mirror (unece.org/trade/uncefact/unedifact)",
+  "coverage" => "active elements with code values in the D05B UNCL (short names; full descriptions are not mirrored)",
+  "elements" => links.size,
+  "code_values" => links.sum { |l| l["code_values"] },
+  "links" => links,
+}))
+puts "uncl-coverage: #{links.size} coded elements, #{links.sum { |l| l["code_values"] }} code values" \
+  "#{skipped.empty? ? "" : ", #{skipped.size} non-TDED ids skipped"} -> #{out_path}"

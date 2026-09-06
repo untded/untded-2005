@@ -63,7 +63,13 @@ UNLK zones (line and position spans), retired elements linked to their
 replacement via `utd:replacedBy`, and old names / business terms as
 `skos:altLabel`. `bin/join-edifact` writes `edifact-links.json` — the
 tag join against the D05B segments mirror (rule shared with
-`bin/crosscheck-edifact`). One entry prints its scheme without the
+`bin/crosscheck-edifact`). `bin/join-uncl` writes
+`uncl-coverage.json` — which active elements are code-qualified in
+the D05B UNCL (references/edifact-D05B/codes.xml) and with how many
+values; the mirror carries short names only, so the section-4.1.5
+bracket cross-references are not derivable from it. Both joins carry
+the D05B vintage caveat: this edition was built on D.02A (see the
+Foreword); D05B is the cross-check vintage. One entry prints its scheme without the
 colon (element 5010, verbatim from the source); the parser accepts that
 form at the start of the cell.
  Element IRIs are the live
