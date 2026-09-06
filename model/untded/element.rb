@@ -3,7 +3,6 @@ module Untded
     attribute :tag, :integer
     restrict :tag, required: true
     attribute :name, :string
-    attribute :name_fr, :string
     attribute :description, :string
     attribute :representation, Representation
     attribute :change_tag, :string
@@ -14,14 +13,12 @@ module Untded
     attribute :business_term, :string
     attribute :notes, :string
     attribute :bridges, :string
-    attribute :code_list, CodeList
     attribute :provenance, Provenance
     restrict :provenance, required: true
 
     yaml do
       map :tag, to: :tag
       map :name, to: :name
-      map :name_fr, to: :name_fr
       map :description, to: :description
       map :representation, to: :representation
       map :change_tag, to: :change_tag
@@ -30,7 +27,6 @@ module Untded
       map :business_term, to: :business_term
       map :notes, to: :notes
       map :bridges, to: :bridges
-      map :code_list, to: :code_list
       map :provenance, to: :provenance
     end
   end

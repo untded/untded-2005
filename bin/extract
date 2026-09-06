@@ -2,6 +2,8 @@
 # Regenerates the YAML SSOT in data/ from the source PDF.
 # Usage: bin/extract [pdf] [data-dir]
 $LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
 require "untded"
 
 pdf = ARGV[0] || File.expand_path("../references/UNTDED2005_Redacted.pdf", __dir__)

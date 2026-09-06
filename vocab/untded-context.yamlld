@@ -1,7 +1,5 @@
-# YAML-LD context — the semantic SSOT of the UNTDED 2005 dataset.
-# Element IRIs are the live registry pages (https://www.untded.org/elements/NNNN),
-# category IRIs the live category pages (/categories/NNNN-NNNN), so what you
-# read in the data is what you can open in a browser.
+# YAML-LD context — GENERATED from model/untded/vocabulary.rb by
+# bin/export. Do not edit; change the declaration instead.
 "@context":
   utd: https://www.untded.org/ns/untded#
   schema: https://schema.org/

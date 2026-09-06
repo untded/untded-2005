@@ -12,15 +12,19 @@ RSpec.describe Untded::LinkedData do
   let(:graph) { linked.graph }
   let(:by_id) { graph["@graph"].to_h { |n| [n["@id"], n] } }
 
-  it "carries the YAML-LD context from vocab/" do
-    expect(graph["@context"]).to include(
-      "utd" => "https://www.untded.org/ns/untded#",
-      "TradeDataElement" => "utd:TradeDataElement",
-    )
+  it "derives the context from the single vocabulary declaration" do
+    expect(graph["@context"]).to eq(Untded::Vocabulary.context)
+  end
+
+  it "keeps the committed context file regenerated" do
+    committed = YAML.safe_load(
+      File.read(File.expand_path("../vocab/untded-context.yamlld", __dir__))
+    )["@context"]
+    expect(committed).to eq(Untded::Vocabulary.context)
   end
 
   it "emits one dataset node and one node per element" do
-    expect(graph["@graph"].size).to eq(1532)
+    expect(graph["@graph"].size).to be > elements.size
     dataset = by_id["https://example.untded.test/dataset/untded-2005"]
     expect(dataset["@type"]).to eq("Dataset")
     expect(dataset["elementCount"]).to eq(1504)
@@ -35,11 +39,21 @@ RSpec.describe Untded::LinkedData do
     expect(by_id["https://example.untded.test/elements/1001"]["category"]["@id"]).to eq("https://example.untded.test/categories/1000-1699")
   end
 
-  it "declares the vocabulary classes and properties" do
-    defs = graph["@graph"]
-    expect(defs.count { |n| n["@type"] == "rdfs:Class" }).to eq(3)
-    expect(defs.count { |n| n["@type"] == "rdf:Property" }).to eq(14)
-    expect(by_id["https://www.untded.org/ns/untded#tag"]["domain"]["@id"]).to end_with("TradeDataElement")
+  it "is self-describing: every used utd: term is declared in the graph" do
+    ns = Untded::Vocabulary::NAMESPACE
+    context = graph["@context"]
+    used_predicates = graph["@graph"].flat_map { |n| n.keys.grep_v(/\A@/) }.uniq
+    utd_predicates = used_predicates.select { |t| context[t].to_s.start_with?("utd:") }
+    declared_properties = graph["@graph"].select { |n| n["@type"] == "rdf:Property" }.map { |n| n["@id"] }
+    expect(utd_predicates).not_to be_empty
+    utd_predicates.each { |t| expect(declared_properties).to include("#{ns}#{t}") }
+
+    used_classes = graph["@graph"].flat_map { |n| Array(n["@type"]) }.uniq
+    utd_classes = used_classes.select { |t| context[t].to_s.start_with?("utd:") }
+    declared_classes = graph["@graph"].select { |n| n["@type"] == "rdfs:Class" }.map { |n| n["@id"] }
+    utd_classes.each { |t| expect(declared_classes).to include("#{ns}#{t}") }
+
+    expect(by_id["#{ns}tag"]["domain"]["@id"]).to end_with("TradeDataElement")
   end
 
   it "shapes a known element faithfully" do

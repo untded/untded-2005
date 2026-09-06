@@ -1,9 +1,9 @@
 require "lutaml/model"
 
 module Untded
+  autoload :CATEGORIES, "untded/categories"
   autoload :Provenance, "untded/provenance"
   autoload :Representation, "untded/representation"
-  autoload :CodeList, "untded/code_list"
   autoload :Element, "untded/element"
   autoload :ElementFile, "untded/element_file"
   autoload :ReviewEntry, "untded/review_entry"
@@ -14,4 +14,5 @@ module Untded
   autoload :Verifier, "untded/verifier"
   autoload :OcrSampler, "untded/ocr_sampler"
   autoload :LinkedData, "untded/linked_data"
+  autoload :Vocabulary, "untded/vocabulary"
 end

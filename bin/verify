@@ -2,6 +2,8 @@
 # Content-fidelity verification against the source PDF.
 # Usage: bin/verify [--ocr N]   (N = rows to re-read via independent OCR)
 $LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
 require "untded"
 
 data_dir = File.expand_path("../data", __dir__)
