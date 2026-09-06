@@ -33,7 +33,6 @@ RSpec.describe "YAML SSOT" do
 
   it "attaches provenance to every element" do
     expect(elements.all? { |e| e.provenance.page.between?(28, 132) }).to be(true)
-    expect(elements.map { |e| e.provenance.pdf }.uniq).to eq(["UNTDED2005_Redacted.pdf"])
   end
 
   it "parses every present representation through the notation grammar" do

@@ -241,35 +241,29 @@ module Untded
     end
 
     def join_fragments(frags, vocab)
-      return [nil, { wrapped: false, direct_join: false }] if frags.empty?
+      return nil if frags.empty?
       text = frags.first.strip
-      meta = { wrapped: frags.size > 1, direct_join: false }
       frags.drop(1).each do |frag|
         piece = frag.strip
         first_word = piece.split(/\s+/).first
         rest_words = piece.split(/\s+/).drop(1)
         if text.end_with?("/")
           text = rest_words.empty? ? text + piece : text + first_word + " " + rest_words.join(" ")
-          meta[:direct_join] = true
         elsif first_word.match?(/\A[,.;:)]/) && !text.end_with?(" ")
           text = text + piece
-          meta[:direct_join] = true
         elsif text.end_with?("-") && piece.match?(/\A[a-z]/)
           text = rest_words.empty? ? text + piece : text + first_word + " " + rest_words.join(" ")
-          meta[:direct_join] = true
         elsif first_word.match?(/\A[b-hj-z][,.]?\z/) && text.match?(/[a-z]\z/)
           text = rest_words.empty? ? text + first_word : text + first_word + " " + rest_words.join(" ")
-          meta[:direct_join] = true
         elsif piece.match?(/\A[a-z]/) && text.match?(/[a-z]\z/) && vocab_join?(text, piece, vocab)
           head = text.split(/\s+/)[0..-2]
           merged = text.split(/\s+/).last + first_word
           text = (head + [merged] + rest_words).join(" ")
-          meta[:direct_join] = true
         else
           text = text + " " + piece
         end
       end
-      [text, meta]
+      text
     end
 
     # Direct-join is safe when the raw concatenation of the junction words
@@ -292,27 +286,16 @@ module Untded
 
     def build_element(row, vocab)
       reviews = []
-      fields = {}
       joined = {}
       %i[name description representation old_name business_term notes bridges].each do |key|
-        text, meta = join_fragments(row.cells[key], vocab)
-        joined[key] = { text: text, **meta }
+        joined[key] = join_fragments(row.cells[key], vocab)
       end
 
-      name = joined[:name][:text]
+      name = joined[:name]
       name = nil if name == "." || name.to_s.strip.empty?
-      repr = Representation.from_notation(joined[:representation][:text])
+      repr = Representation.from_notation(joined[:representation])
 
-      confidence = :high
-      # narrow columns carry OCR mid-word break risk; wide columns wrap at
-      # word boundaries which space-joining handles safely
-      %i[old_name business_term notes bridges].each do |key|
-        confidence = :medium if joined[key][:wrapped]
-      end
-      confidence = :medium if joined.any? { |_, m| m[:direct_join] }
-
-      if repr.nil? && joined[:representation][:text]
-        confidence = :low
+      if repr.nil? && joined[:representation]
         reviews << ReviewEntry.new(
           page: row.page, tag: row.tag, field: "representation",
           raw_fragments: row.cells[:representation],
@@ -321,7 +304,6 @@ module Untded
         )
       end
       if name.nil? && row.change_tag != "x"
-        confidence = :low
         reviews << ReviewEntry.new(
           page: row.page, tag: row.tag, field: "name",
           raw_fragments: row.cells[:name],
@@ -339,7 +321,6 @@ module Untded
         return [nil, reviews]
       end
       unless LEGEND_TAGS.include?(row.change_tag)
-        confidence = :low
         reviews << ReviewEntry.new(
           page: row.page, tag: row.tag, field: "change_tag",
           raw_fragments: [row.change_tag],
@@ -351,19 +332,15 @@ module Untded
       element = Element.new(
         tag: row.tag,
         name: name,
-        description: joined[:description][:text],
+        description: joined[:description],
         representation: repr,
         change_tag: row.change_tag,
         status: row.change_tag == "x" ? "retired" : "active",
-        old_name: joined[:old_name][:text],
-        business_term: joined[:business_term][:text],
-        notes: joined[:notes][:text],
-        bridges: joined[:bridges][:text],
-        provenance: Provenance.new(
-          pdf: File.basename(@pdf),
-          page: row.page,
-          confidence: confidence.to_s
-        )
+        old_name: joined[:old_name],
+        business_term: joined[:business_term],
+        notes: joined[:notes],
+        bridges: joined[:bridges],
+        provenance: Provenance.new(page: row.page)
       )
       [element, reviews]
     end
@@ -375,7 +352,6 @@ module Untded
         reviews: reviews.size,
         change_tags: rows.map(&:change_tag).tally,
         wrapped_cells: rows.sum { |r| r.cells.count { |_, v| v.size > 1 } },
-        confidence: elements.map { |e| e.provenance.confidence }.tally,
       }
     end
   end

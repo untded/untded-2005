@@ -52,7 +52,6 @@ module Untded
         active_without_name: missing_name,
         active_without_repr: missing_repr,
         review_entries: queue_entries,
-        confidence: elements.map { |e| e.provenance.confidence }.tally,
       }
       Result.new(errors: errors, summary: summary)
     end
