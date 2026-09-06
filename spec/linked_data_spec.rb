@@ -20,7 +20,7 @@ RSpec.describe Untded::LinkedData do
   end
 
   it "emits one dataset node and one node per element" do
-    expect(graph["@graph"].size).to eq(1533)
+    expect(graph["@graph"].size).to eq(1532)
     dataset = by_id["https://example.untded.test/dataset/untded-2005"]
     expect(dataset["@type"]).to eq("Dataset")
     expect(dataset["elementCount"]).to eq(1504)
@@ -38,7 +38,7 @@ RSpec.describe Untded::LinkedData do
   it "declares the vocabulary classes and properties" do
     defs = graph["@graph"]
     expect(defs.count { |n| n["@type"] == "rdfs:Class" }).to eq(3)
-    expect(defs.count { |n| n["@type"] == "rdf:Property" }).to eq(15)
+    expect(defs.count { |n| n["@type"] == "rdf:Property" }).to eq(14)
     expect(by_id["https://www.untded.org/ns/untded#tag"]["domain"]["@id"]).to end_with("TradeDataElement")
   end
 
@@ -55,7 +55,6 @@ RSpec.describe Untded::LinkedData do
       "status" => "active",
       "oldName" => "Document/message name, coded",
       "sourcePage" => 28,
-      "extractionConfidence" => "medium",
     )
   end
 

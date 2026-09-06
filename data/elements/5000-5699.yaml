@@ -12,9 +12,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: high
 - tag: 5002
   name: Consignment. Sender Additional Charge.Amount
   description: Amount of additional charges payable to the carrier by the sender.
@@ -28,9 +26,7 @@ elements:
   old_name: Supplementary charges, sender
   bridges: 'CMR: L 55, P 54-63'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5004
   name: Monetary Amount. Amount
   description: To specify a monetary amount.
@@ -43,9 +39,7 @@ elements:
   status: active
   old_name: Monetary Amount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5006
   name: Monetary Amount. Function.Text
   description: Free form text of a function of a monetary amount.
@@ -57,9 +51,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: high
 - tag: 5007
   name: Monetary Amount. Function.Code
   description: Code specifying a function of a monetary amount.
@@ -72,9 +64,7 @@ elements:
   status: active
   old_name: Monetary function, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5008
   name: Consignment. Consignor Additional Charge.Amount
   description: Total additional charges to be paid by the consignor, in addition to
@@ -89,9 +79,7 @@ elements:
   old_name: Additional charges total, consignor
   bridges: 'CIM: L 47, P 59-66 and L 53, P 59-66 and L 59, P 59-66 (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5010
   name: Consignment. Insured Value. Text
   description: Representation in letters of the total sum covered by an insurance
@@ -107,9 +95,7 @@ elements:
   business_term: Amount of insurance
   bridges: UNLK L 24, P45-80
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5011
   name: Consignment. Insured Value.Amount
   description: Representation in figures of the total sum covered by an insurance
@@ -125,9 +111,7 @@ elements:
   bridges: 'AWB: L 26, P 45-55 CIMP: (508) n..11, or the letters ''XXX'' UNLK: L 26,
     P 45-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5013
   name: Index. Function.Code
   description: Code specifying a function of an index.
@@ -140,9 +124,7 @@ elements:
   status: active
   old_name: Index qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5014
   name: Discount. Amount
   description: Amount of discount or percentage, other than payment (cash) discount,
@@ -157,9 +139,7 @@ elements:
   old_name: Discount
   bridges: 'AWB: L 33-44, P 39-46, P 48-59 CIMP: (514):n..8 UNLK: L 54, P 62-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 86
-    confidence: medium
 - tag: 5016
   name: Payment. Cash On Delivery.Text
   description: Monetary amount to be paid at time of delivery in words and figures.
@@ -173,9 +153,7 @@ elements:
   old_name: Cash-on-delivery amount, in words
   bridges: 'CMR: L 60, P 45-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5017
   name: Consignment. Cash On Delivery.Amount
   description: Monetary amount to be paid at time of delivery in figures.
@@ -190,18 +168,14 @@ elements:
   business_term: COD amount
   bridges: 'CIM: L 41-42, P 50-73 (CIM 31) CIM: L 41 P 75-82 (CIM 74)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5018
   change_tag: x
   status: retired
   old_name: Cash-on-delivery amount in currency of collection
   notes: DE to use instead - 5017
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5020
   name: Customs. Allowable Deduction Basis.Amount
   description: Allowable deductions from the price payable for calculating Customs
@@ -216,9 +190,7 @@ elements:
   old_name: Deducted amount (Customs)
   bridges: 'ODETTE: n..11'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5022
   name: Consignment. Consignee Additional Charge.Amount
   description: Total additional charges to be paid by the consignee, in addition to
@@ -234,9 +206,7 @@ elements:
   bridges: 'CIM: L 47, P 67-74 and L 53, P 67-74 and L 59, P 67-74 (also on reverse)
     CMR: L 54, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5025
   name: Monetary Amount. Type.Code
   description: Code specifying the type of a monetary amount.
@@ -249,9 +219,7 @@ elements:
   status: active
   old_name: Monetary amount type qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5027
   name: Index. Type.Code
   description: Code specifying a type of index.
@@ -264,9 +232,7 @@ elements:
   status: active
   old_name: Index type, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5028
   name: Late Payment. Annual Interest Percentage.Numeric
   description: Agreed percentage of annual interest by which an amount due will be
@@ -282,9 +248,7 @@ elements:
   business_term: Interest on arrears
   bridges: 'UNLK: L 36-46, P 09-44'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5029
   name: Late Payment. Annual Interest Percentage Numeric.Code
   description: Code specifying an agreed percentage of annual interest by which an
@@ -298,9 +262,7 @@ elements:
   status: active
   old_name: Interest on arrears, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5030
   name: Index. Value.Identifier
   description: To identify a value in an index.
@@ -313,9 +275,7 @@ elements:
   status: active
   old_name: Index value
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: high
 - tag: 5032
   name: Goods Item. For Customs Declared Value.Amount
   description: Amount declared for customs purposes of those goods in a consignment
@@ -330,9 +290,7 @@ elements:
   status: active
   old_name: Customs value
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: medium
 - tag: 5034
   name: Charge. Amount
   description: Monetary amount charged for the provision of a product or service.
@@ -344,9 +302,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 87
-    confidence: high
 - tag: 5036
   name: Goods Item. For Carriage Declared Value.Amount
   description: Value, declared by the shipper or his agent solely for the purpose
@@ -365,9 +321,7 @@ elements:
     CIMP: (510)n..12, or the letters ''NVD'' CMR: L 56, P 30-41 (Ref: Article 24 of
     the CMR Convention)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5039
   name: Index. Value Representation.Code
   description: Code specifying the representation of an index value.
@@ -380,9 +334,7 @@ elements:
   status: active
   old_name: Index value representation, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5042
   name: Consignment. Consignee Charge.Amount
   description: Total amount of charges payable by the consignee.
@@ -396,9 +348,7 @@ elements:
   old_name: Total charges, consignee
   bridges: 'CIM: n..8 (CIM 92; reverse of CIM form) CMR: L 57, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5044
   name: Monetary Amount Adjustment. Percentage.Numeric
   description: Specification of any additional charges, dues or deductions, expressed
@@ -415,9 +365,7 @@ elements:
   bridges: 'CIM: L 44-45, P 40-43 and L 50-51, P 40-43 and L 56-57,P 40-43 (also on
     reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5047
   name: Contribution. Function.Code
   description: Code qualifying a contribution.
@@ -430,9 +378,7 @@ elements:
   status: active
   old_name: Contribution qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5048
   name: Contribution. Type.Text
   description: Free form description of a type of contribution scheme.
@@ -445,9 +391,7 @@ elements:
   status: active
   old_name: Contribution type
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5049
   name: Contribution. Type.Code
   description: Code specifying a type of contribution scheme.
@@ -460,9 +404,7 @@ elements:
   status: active
   old_name: Contribution type, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5052
   change_tag: x
   status: retired
@@ -470,9 +412,7 @@ elements:
   notes: No business requirement identified
   bridges: 'UNLK: L 36-44, P 09-44'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5054
   name: Consignment. Trade Term.Amount
   description: Monetary amount that has to be or has been paid as calculated under
@@ -486,9 +426,7 @@ elements:
   status: active
   business_term: FOB value
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: high
 - tag: 5056
   name: Payment. Discount Percentage.Numeric
   description: Discount, expressed as a percentage, deductible from the total amount
@@ -503,9 +441,7 @@ elements:
   old_name: Payment discount
   bridges: 'UNLK: L 36-46, P 09-44'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5057
   name: Payment. Discount Percentage Numeric.Code
   description: Code specifying a percentage discount which is deductible from the
@@ -520,9 +456,7 @@ elements:
   status: active
   old_name: Payment discount, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5060
   name: Contract. Total Amount.Amount
   description: Total value of a contract.
@@ -535,9 +469,7 @@ elements:
   status: active
   old_name: Contract amount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 88
-    confidence: medium
 - tag: 5062
   name: Monetary Amount. Brought Forward.Amount
   description: Amount brought forward from one page to the next or from additional
@@ -552,9 +484,7 @@ elements:
   old_name: Amount brought forward
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5068
   name: Invoice. Line Item. Amount
   description: Total sum charged with respect to a single line item of an invoice.
@@ -568,9 +498,7 @@ elements:
   old_name: Invoiceamount
   bridges: 'UNLK: L 56, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5070
   name: Consignment. For Customs Total.Amount
   description: Total amount for customs purposes of all goods in a consignment, whether
@@ -586,9 +514,7 @@ elements:
   old_name: Declared Customs value for entire consignment
   bridges: 'AWB: L 24, P 71-81 CIMP: (509):n..12, or the letters ''NCV'''
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5072
   name: Customs Declaration. Invoice.Amount
   description: Total of all invoice amounts declared in a single declaration.
@@ -601,9 +527,7 @@ elements:
   status: active
   bridges: 'SAD: (SAD 22)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5074
   name: Tax. Deduction.Amount
   description: Amount of deduction from a duty or tax.
@@ -615,9 +539,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5077
   name: Price. Currency.Identifier
   description: Code specifying the monetary unit in which a price is calculated
@@ -629,9 +551,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5080
   name: Consignment. Sender Brought Forward Payment.Amount
   description: Amount paid by the sender, carried forward from the front page of the
@@ -646,9 +566,7 @@ elements:
   old_name: Amount paid by sender
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5082
   name: Payment. Amount
   description: Actual amount paid, or to be paid.
@@ -662,9 +580,7 @@ elements:
   old_name: Paymentamount
   bridges: 'ODETTE: n..11'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: low
 - tag: 5088
   name: Consignment. Consignee Brought Forward Collect Charge.Amount
   description: Amount brought forward from front page of the rail consignment note,
@@ -679,9 +595,7 @@ elements:
   old_name: Amount to be collected from consignee brought forward
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5094
   change_tag: x
   status: retired
@@ -689,9 +603,7 @@ elements:
   notes: DE to use instead - 5214
   bridges: 'UNLK: L 56, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5097
   name: World Trade Organisation Valuation Agreement. Addition.Code
   description: Code specifying any additions necessary under the World Trade Organisation
@@ -704,9 +616,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5099
   name: Transport Service. Freight Rate Class.Code
   description: Code to indicate applicable rate class for air freight.
@@ -721,9 +631,7 @@ elements:
   business_term: Charge basis
   bridges: 'AWB: L 33-44, P 22 CIMP: (507)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: medium
 - tag: 5104
   name: Monetary Amount. Function Detail.Text
   description: Free form description of the detail of a monetary amount function.
@@ -735,9 +643,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5105
   name: Monetary Amount. Function Detail.Code
   description: Code specifying the detail of a monetary amount function.
@@ -749,9 +655,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5110
   name: Line Item. Unit Price.Amount
   description: Price per unit of quantity on which an article item amount is calculated.
@@ -765,27 +669,21 @@ elements:
   old_name: Unit price
   bridges: 'UNLK: L36-46, P 64-71'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 89
-    confidence: high
 - tag: 5112
   change_tag: x
   status: retired
   old_name: Freight and charges totalamount
   notes: DE to use instead - 5290
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5114
   change_tag: x
   status: retired
   old_name: Freight totalamount
   notes: DE to use instead - 5290
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5116
   name: Line Item. Charge.Amount
   description: Amount due for each chargeable item of goods or services.
@@ -800,9 +698,7 @@ elements:
   business_term: Item price
   bridges: 'UNLK: L36-46, P 72-80 SAD: (SAD 42)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5118
   name: Line Item. Price.Amount
   description: Monetary amount for which goods are bought and sold.
@@ -815,9 +711,7 @@ elements:
   status: active
   old_name: Price
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: high
 - tag: 5120
   name: Consignment. Consignee Supplementary Charge.Amount
   description: Amount of additional charges payable to the carrier by a consignee.
@@ -831,9 +725,7 @@ elements:
   old_name: Supplementary charges, consignee
   bridges: 'UNLK: L 54, P 62-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5122
   name: Value Added Tax . Rate.Numeric
   description: Rate of value-added tax to be applied to amounts subjects to the application
@@ -847,9 +739,7 @@ elements:
   status: active
   old_name: Value-addes tax rate
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5125
   name: Price. Congeries.Code
   description: Code specifying a type of price.
@@ -862,9 +752,7 @@ elements:
   status: active
   old_name: Price qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5126
   name: Consignment. Freight Charge Basis Rate.Numeric
   description: Rate or price per unit of quantity, or percentage, on which freight
@@ -879,9 +767,7 @@ elements:
   old_name: Freight rate
   bridges: 'AWB: L 33-44, P 39-46 CIMP: (506):n..8 UNLK: L 52-66 P 27-54'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5128
   name: Consignment. Goods Value.Amount
   description: Value of the goods for the calculation of the freight or similar transport
@@ -895,9 +781,7 @@ elements:
   status: active
   old_name: Goods value (for freighting)
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5132
   name: Consignment. Consignee Collect Charge.Amount
   description: Total amount to be collected from the consignee, as shown on the transport
@@ -912,9 +796,7 @@ elements:
   old_name: Total amount to be collected from consignee
   bridges: 'AWB: L 60, P 23-36 CIM: n..8 (reverse of CIM form) (CIM 97) CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5134
   name: Transport Equipment. Rate Class.Code
   description: Coded description of a rate class for transport equipment such as a
@@ -929,9 +811,7 @@ elements:
   old_name: ULD rate class type
   bridges: 'AWB: L 33-44, P 23-29 CIMP: (513): n1(a1)a1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5139
   name: Consignment. Charge Payment Method.Code
   description: To identify a method of payment of charges.
@@ -945,9 +825,7 @@ elements:
   old_name: AWB Charges code
   bridges: 'AWB: L 24, P 48-49 CIMP: (503): a2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5140
   name: Invoice. Surcharge.Amount
   description: Amount to be added to the total in a commercial invoice.
@@ -961,9 +839,7 @@ elements:
   old_name: Invoice additional amount
   bridges: 'UNLK: L 56, P 62-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5142
   name: Consignment. Collect Carry Forward Charge.Amount
   description: Total charges amount collected at destination or 'Collect' amount to
@@ -978,9 +854,7 @@ elements:
   old_name: Amount to carry forward
   bridges: 'CIM: L 62, P 74-82'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 90
-    confidence: medium
 - tag: 5146
   name: Consignment. Collect Valuation Charge.Amount
   description: Amount of valuation charge wholly to be collected.
@@ -994,9 +868,7 @@ elements:
   old_name: Valuation charge, to collect
   bridges: 'AWB: L 50, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5150
   name: Consignment. Prepaid Utilised.Amount
   description: Part of 'Paid' charges utilized at the time of departure, in the case
@@ -1011,9 +883,7 @@ elements:
   old_name: Amount utilized
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5152
   name: Tax Or Fee. Type.Text
   description: Type of duty or tax applicable to commodities or type of tax or fee
@@ -1027,9 +897,7 @@ elements:
   status: active
   old_name: Duty/tax/fee type
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5153
   name: Tax Or Fee. Type.Code
   description: Code specifying a type of duty or tax applicable to commodities or
@@ -1044,9 +912,7 @@ elements:
   old_name: Duty/tax/fee type, coded
   bridges: 'SAD: (SAD 47(1))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5158
   name: Consignment. Prepaid Other Charge.Indicator
   description: Indication that other charges are wholly prepaid.
@@ -1060,9 +926,7 @@ elements:
   old_name: Other charges, prepaid
   bridges: 'AWB: Checkmark L 24, P 55-56 CIMP: (403):a1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5160
   name: Monetary Amount. Total Amount.Amount
   description: To specify a total monetary amount.
@@ -1075,9 +939,7 @@ elements:
   status: active
   bridges: 'UNLK: L 56, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: high
 - tag: 5162
   name: Available Balance. Amount
   description: Amount of balance available in case of charges paid for a specified
@@ -1092,9 +954,7 @@ elements:
   old_name: Balance available
   bridges: 'CIM: (n2-n..7) (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5164
   name: Invoice. Additional Cost.Text
   description: Description in plain language of an item to be added to the Article
@@ -1108,9 +968,7 @@ elements:
   status: active
   old_name: Invoice additional cost specification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5166
   name: Consignment. Nil Insurance Value.Indicator
   description: Indication whether or not a consignment has a nil value for insurance
@@ -1123,9 +981,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: high
 - tag: 5168
   name: Consignment. Nil Carriage Value.Indicator
   description: Indication whether or not a consignment has a nil value for carriage
@@ -1138,9 +994,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: high
 - tag: 5170
   name: Consignment. Nil Customs Value.Indicator
   description: Indication whether or not a consignment has a nil value for Customs
@@ -1153,9 +1007,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: high
 - tag: 5176
   name: Consignment. Sender Freight Charge.Amount
   description: Amount of charges payable to the carrier by the sender.
@@ -1169,9 +1021,7 @@ elements:
   old_name: Carriage charges, sender
   bridges: 'CMR: L 52, P 54-63'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5180
   name: Invoice. Deduction.Amount
   description: Amount to be deducted from the total in a commercial invoice.
@@ -1185,18 +1035,14 @@ elements:
   old_name: Invoice deductionamount
   bridges: 'UNLK: L 56, P 62-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: low
 - tag: 5184
   change_tag: x
   status: retired
   old_name: Freight total prepaidamount
   notes: DE to use instead - 5302
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5189
   name: Monetary Amount Adjustment. Type.Code
   description: Code specifying a type of an adjustment to a monetary amount such as
@@ -1210,9 +1056,7 @@ elements:
   status: active
   old_name: Charge/allowance description, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 91
-    confidence: medium
 - tag: 5190
   name: Account. Brought Forward Balance.Amount
   description: Balance available brought forward.
@@ -1226,9 +1070,7 @@ elements:
   old_name: Balance brought forward
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5192
   name: Invoice. Deduction.Text
   description: Description in plain language of an item to be deducted from the article
@@ -1242,9 +1084,7 @@ elements:
   status: active
   old_name: Invoice deduction specification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5202
   name: Consignment. Consignee Freight Charge.Amount
   description: Amount of charges payable to the carrier by the consignee.
@@ -1258,9 +1098,7 @@ elements:
   old_name: Carriage charges, consignee
   bridges: 'CMR: L 52, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5208
   name: Consignment. Other Charge.Amount
   description: Amount of specified individual charge or fee, other than weight and
@@ -1275,18 +1113,14 @@ elements:
   old_name: Other charges amount
   bridges: 'AWB: Included in L 48- 52, P 37-81 CIMP: (501): n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5209
   change_tag: x
   status: retired
   old_name: Other charges amount, coded
   notes: mfd in TDED 1993
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5210
   name: Quotation. Total Amount.Amount
   description: Total monetary amount of a quotation.
@@ -1299,9 +1133,7 @@ elements:
   status: active
   old_name: Offer amount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: high
 - tag: 5213
   name: Sub Line Item. Price Change Operation.Code
   description: Code specifying the price change operation for a sub-line item.
@@ -1314,9 +1146,7 @@ elements:
   status: active
   old_name: Sub-line price change, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5214
   name: Invoice. Total.Amount
   description: Amount, debited by the seller and being the total of related article
@@ -1331,9 +1161,7 @@ elements:
   old_name: Article items total
   bridges: 'UNLK: L 56, P 63-80 MAR: IMO/FAL 3-4'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5218
   name: Goods Item. For Statistics Declared Value.Amount
   description: Value declared for statistical purposes of those goods in a consignment
@@ -1348,18 +1176,14 @@ elements:
   old_name: Statistical value
   bridges: 'SAD: (SAD 46)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5222
   change_tag: x
   status: retired
   old_name: Freight total collect amount
   notes: DE to use instead - 5398
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5228
   name: Consignment. Consignee Tariff Charge.Amount
   description: Transport charges to be paid by the consignee for each tariff class.
@@ -1374,9 +1198,7 @@ elements:
   bridges: 'CIM: L 44-45, P 67-74 and L 50-51, P 67-74 and L 56-57, P 67-74 (also
     on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5237
   name: Charge. Category.Code
   description: Code specifying a category of charges.
@@ -1389,9 +1211,7 @@ elements:
   status: active
   old_name: Charge category, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5238
   name: Customs. Additional Value Basis.Amount
   description: Required additions to the Customs value basis used.
@@ -1406,9 +1226,7 @@ elements:
   business_term: Other amount to be added
   bridges: 'SAD: (SAD 47(3))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 92
-    confidence: medium
 - tag: 5240
   name: Consignment. Agent Other Charge.Amount
   description: Total amount due agent of individual charges and fees, other than weight
@@ -1423,9 +1241,7 @@ elements:
   old_name: Total other charges due agent, to collect
   bridges: 'AWB: L 54, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5242
   name: Tariff. Class.Text
   description: Free form description of an applicable rate or tariff class.
@@ -1439,9 +1255,7 @@ elements:
   old_name: Rate/tariff class
   business_term: Rate
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5243
   name: Tariff. Class.Code
   description: Code specifying an applicable rate or tariff class.
@@ -1455,9 +1269,7 @@ elements:
   old_name: Rate/tariff class identification
   business_term: Rate Code
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5245
   name: Percentage. Type.Code
   description: Code specifying the type of percentage.
@@ -1470,9 +1282,7 @@ elements:
   status: active
   old_name: Percentage qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5246
   name: Consignment. Consignee Other Charge.Amount
   description: Amount of ancillary charges payable to the carrier by a consignee.
@@ -1486,9 +1296,7 @@ elements:
   old_name: Other charges, consignee
   bridges: 'CMR: L 56, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5249
   name: Percentage. Basis.Code
   description: Code specifying the basis on which a percentage is calculated.
@@ -1501,9 +1309,7 @@ elements:
   status: active
   old_name: Percentage basis, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5250
   name: Consignment. Consignor Tariff Charge.Amount
   description: Transport charges to be paid by the consignor for each tariff class.
@@ -1518,9 +1324,7 @@ elements:
   bridges: 'CIM: L 44-45, P 59-66 and L 50-51, P 59-66 and L 56-57, P59-66 (also on
     reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5252
   name: Consignment. Charge.Text
   description: Description of type of charge for each individual charge associated
@@ -1535,9 +1339,7 @@ elements:
   old_name: Charge description
   bridges: 'AWB: L 48-52, P 37-81'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5253
   name: Consignment. Charge.Code
   description: Code of type of charge for each individual charge associated with a
@@ -1553,9 +1355,7 @@ elements:
   business_term: Accessorial charges
   bridges: 'AWB: Included in L 48- 52, P 37-81 CIMP: (504):an2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5261
   name: Charge. Unit.Code
   description: Code specifying a charge unit.
@@ -1567,9 +1367,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: high
 - tag: 5264
   name: Consignment. Freight Charge Deduction.Amount
   description: Amount deductible from the carriage charges payable to the carrier
@@ -1584,9 +1382,7 @@ elements:
   old_name: Carriage deductions, consignee
   bridges: 'CMR: L 53, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5267
   name: Service. Type.Code
   description: Code specifying the type of service.
@@ -1598,9 +1394,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: high
 - tag: 5270
   name: Consignment. Total Prepaid Due Carrier Other Charge.Amount
   description: Total amount due carrier of prepaid individual charges and fees, other
@@ -1615,9 +1409,7 @@ elements:
   old_name: Total other charges due carrier, prepaid
   bridges: 'AWB: L 56, P 09-22 CIMP: (501): n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5273
   name: Tax or Fee. Rate Basis.Code
   description: Code specifying the basis for a duty or tax or fee rate such as weight
@@ -1631,9 +1423,7 @@ elements:
   status: active
   old_name: Duty/tax/fee rate basis identification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5275
   name: Supplementary Tariff. Code
   description: Code specifying a supplementary rate or tariff.
@@ -1647,9 +1437,7 @@ elements:
   old_name: Supplementary rate/tariff basis identification
   business_term: Supplementary rate
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 93
-    confidence: medium
 - tag: 5276
   name: Consignment. Sender Balance.Amount
   description: Amount of the carriage charges after deduction of carriage deductions
@@ -1664,9 +1452,7 @@ elements:
   old_name: Carriage balance, sender
   bridges: 'CMR: L 54, P 54-63'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5278
   name: Tax Or Fee. Rate.Text
   description: Textual representation of a rate of a duty or tax or fee.
@@ -1679,9 +1465,7 @@ elements:
   status: active
   old_name: Duty/tax/fee rate
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5279
   name: Tax Or Fee. Rate.Code
   description: Code specifying a rate of a duty or tax or fee.
@@ -1694,9 +1478,7 @@ elements:
   status: active
   old_name: Duty/tax/fee rate identification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5280
   name: Consignment. Additional Charge.Amount
   description: Amount of additional charges.
@@ -1711,9 +1493,7 @@ elements:
   bridges: 'CIM: (n..3-n..8); L 47-49, P 23-48 and L 53-55, P 23-48 and L 59-61, P
     23- 48 (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5283
   name: Tax Or Fee. Function.Code
   description: Code specifying the function of a duty or tax or fee.
@@ -1726,9 +1506,7 @@ elements:
   status: active
   old_name: Duty/tax/fee function qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5284
   name: Unit Price. Basis.Quantity
   description: To specify the basis for a unit price.
@@ -1742,9 +1520,7 @@ elements:
   old_name: Unit price basis
   business_term: Rate basis
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5286
   name: Tax Or Fee. Assessment Basis.Amount
   description: To specify the amount on which a duty or tax or fee will be assessed.
@@ -1758,9 +1534,7 @@ elements:
   old_name: Duty/tax/fee assessment basis
   bridges: 'SAD: (SAD 47(2))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5289
   name: Tax Or Fee. Account.Code
   description: Code specifying a duty or tax or fee account.
@@ -1773,9 +1547,7 @@ elements:
   status: active
   old_name: Duty/tax/fee account identification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5290
   name: Consignment. Freight Charge.Amount
   description: Costs incurred by the shipper in moving goods, by whatever means, from
@@ -1794,18 +1566,14 @@ elements:
   business_term: Freight cost (Customs), Freight and charges total amount
   bridges: 'UNLK: L 60, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5292
   change_tag: x
   status: retired
   old_name: Freight cost (Customs)
   notes: DE to use instead - 5290
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5294
   name: Tax. Collect Amount.Amount
   description: Amount of tax, to be collected.
@@ -1819,18 +1587,14 @@ elements:
   old_name: Tax, to collect
   bridges: 'AWB: L 52, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5297
   change_tag: x
   status: retired
   old_name: Valuation purpose, coded
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5298
   name: Consignment. Prepaid Weight And Valuation Charge.Indicator
   description: Indication that weight and valuation charges are wholly prepaid.
@@ -1844,9 +1608,7 @@ elements:
   old_name: Weight/Valuation charge, prepaid
   bridges: 'AWB: Checkmark L 24, P 51-52'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 94
-    confidence: medium
 - tag: 5302
   name: Consignment. Total Prepaid Freight Charge.Amount
   description: Monetary amount of all of the consignment charges which have been paid
@@ -1862,9 +1624,7 @@ elements:
   bridges: 'AWB: L 60, P 09-22 CIM: n..12; L 49, P 51- 58 and L 55, P 51-58 and L
     61, P 51-58 (also on reverse) (CIM 71) CIMP: (501): n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5305
   name: Tax Or Fee. Category.Code
   description: Code specifying a duty or tax or fee category.
@@ -1877,18 +1637,14 @@ elements:
   status: active
   old_name: Duty/tax/fee category, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5306
   change_tag: x
   status: retired
   old_name: Minimum amount due
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5310
   name: Price. Basis.Quantity
   description: Quantity expressed in another unit than the Quantity delivered, and
@@ -1902,18 +1658,14 @@ elements:
   status: active
   old_name: Price determining quantity
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5312
   change_tag: x
   status: retired
   old_name: Carriage deductions, sender
   notes: DE to use instead - 5264
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5314
   name: Remuneration. Type.Text
   description: Name of a type of remuneration.
@@ -1925,9 +1677,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: high
 - tag: 5315
   name: Remuneration. Type.Code
   description: Code specifying the name of a type of remuneration.
@@ -1939,9 +1689,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: high
 - tag: 5316
   name: Consignment. Customs Value Basis.Amount
   description: Invoice or other price (e.g. selling price, price of identical goods)
@@ -1957,9 +1705,7 @@ elements:
   status: active
   old_name: Customs value basis
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5320
   name: Consignment. Total Collect Carrier Other Charge.Amount
   description: Total amount due carrier of individual charges and fees, other than
@@ -1974,9 +1720,7 @@ elements:
   old_name: Total other charges due carrier, to collect
   bridges: 'AWB: L 56, P 23-36 CIMP: (501): n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5322
   name: Consignment. Sender Other Charge.Amount
   description: Amount of ancillary charges payable to the carrier by the sender.
@@ -1990,9 +1734,7 @@ elements:
   old_name: Other charges, sender
   bridges: 'CMR: L 56, P 54-63'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5325
   name: Payment. Discrepancy Reason.Code
   description: Code giving reason for difference between the actual amount of payment
@@ -2006,9 +1748,7 @@ elements:
   status: active
   old_name: Reason for payment discrepancy, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5328
   name: Consignment. Collect Weight Charge.Indicator
   description: Indication that weight and valuation charges are wholly to collect.
@@ -2022,9 +1762,7 @@ elements:
   old_name: Weight/Valuation charge, to collect
   bridges: 'AWB: Checkmark L 24, P 53-54 CIMP: (403): a1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 95
-    confidence: medium
 - tag: 5332
   name: Consignment. Consignee Section.Amount
   description: Total amount for the tariff section to be paid by the consignee in
@@ -2039,9 +1777,7 @@ elements:
   old_name: Section totalamount, consignee
   bridges: 'CIM: L 49, P 74-82 and L 55, P 74-82 and L 61, P 74-82 (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5336
   name: Consignment. Agent Prepaid Other Charge.Amount
   description: Total amount due agent of prepaid individual charges and fees, other
@@ -2056,18 +1792,14 @@ elements:
   old_name: Total other charges due agent, prepaid
   bridges: 'AWB: L 54, P 09-22 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5338
   change_tag: x
   status: retired
   old_name: Amount subject to tax
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5346
   name: Consignment. Other Cost.Amount
   description: Costs, other than packing, freight, and insurance costs, specified
@@ -2082,18 +1814,14 @@ elements:
   old_name: Other costs
   bridges: 'UNLK: L 56, P 62-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: high
 - tag: 5348
   change_tag: x
   status: retired
   old_name: Amount subject to payment discount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5350
   name: Consignment. Prepaid Weight Charge.Amount
   description: Amount of wholly prepaid weight or volume charges.
@@ -2107,9 +1835,7 @@ elements:
   old_name: Weight charge, prepaid
   bridges: 'AWB: L 48, P 09-22 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5352
   name: Consignment. Consignor Section.Amount
   description: Total amount of transport and other charges for the tariff section,
@@ -2124,45 +1850,35 @@ elements:
   old_name: Section total charges amount, consignor
   bridges: 'CIM: L 49, P 59-66 and L 55, P 59-66 and L 61, P 59-66 (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5354
   change_tag: x
   status: retired
   old_name: Alternative currency amount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5356
   change_tag: x
   status: retired
   old_name: Message monetary amount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5358
   change_tag: x
   status: retired
   old_name: Message additional monetary amount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5360
   change_tag: x
   status: retired
   old_name: Message line item total monetary
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5362
   change_tag: x
   status: retired
@@ -2170,9 +1886,7 @@ elements:
   notes: DE to use instead - 5332
   bridges: 'CIM: L 49, P 66-73 and L 55, P 66-73 and L 61, P 66-73 (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 96
-    confidence: medium
 - tag: 5364
   name: Consignment. Collect Weight Charge.Amount
   description: Amount of weight or volume charges wholly to be collected.
@@ -2186,9 +1900,7 @@ elements:
   old_name: Weight charge, to collect
   bridges: 'AWB: L 48, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5372
   name: Consignment. Consignor Total Tariff Charge.Amount
   description: Total charges paid by the consignor.
@@ -2202,9 +1914,7 @@ elements:
   old_name: Total charges, consignor
   bridges: 'CIM: (reverse of CIM form)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5375
   name: Price. Type.Code
   description: Code specifying the type of price.
@@ -2217,9 +1927,7 @@ elements:
   status: active
   old_name: Price type, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5377
   name: Price. Change Type.Code
   description: Code specifying the type of price change.
@@ -2232,9 +1940,7 @@ elements:
   status: active
   old_name: Price changeindicator, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5379
   name: Product. Group Type.Code
   description: Code specifying the type of product group.
@@ -2247,9 +1953,7 @@ elements:
   status: active
   old_name: Price/tariff type, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5380
   name: Order. Undelivered Quantity.Quantity
   description: Quantity noted by the seller for subsequent delivery.
@@ -2263,27 +1967,21 @@ elements:
   old_name: Remaining ordered quantity
   business_term: Non-delivered ordered quantity
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5383
   change_tag: x
   status: retired
   old_name: Amount typecode
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5384
   change_tag: x
   status: retired
   old_name: Total amount prepaid
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5387
   name: Price. Specification.Code
   description: Code identifying pricing specification.
@@ -2296,9 +1994,7 @@ elements:
   status: active
   old_name: Price type qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5388
   name: Product. Pricing Group Name.Text
   description: Name of a group of goods and or services grouped together for pricing
@@ -2313,9 +2009,7 @@ elements:
   old_name: Pricing group
   business_term: Service group name
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5389
   name: Product. Pricing Group.Code
   description: Code specifying a group of goods and or services grouped together for
@@ -2330,9 +2024,7 @@ elements:
   old_name: Pricing group, coded
   business_term: Service group code
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5390
   name: Order. Amount
   description: Total amount of an order.
@@ -2345,9 +2037,7 @@ elements:
   status: active
   old_name: Order amount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: low
 - tag: 5393
   name: Price. Multiplier Function.Code
   description: Code specifying the function of a price multiplier.
@@ -2360,9 +2050,7 @@ elements:
   status: active
   old_name: Price multiplier qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5394
   name: Price. Multiplier Rate.Numeric
   description: To specify the rate of a price multiplier.
@@ -2375,9 +2063,7 @@ elements:
   status: active
   old_name: Price multiplier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5398
   name: Consignment. Total Collect Freight Charge .Amount
   description: Monetary amount of all of the consignment charges which are to be collected
@@ -2392,9 +2078,7 @@ elements:
   old_name: Total collect charges
   bridges: 'AWB: L 64, P 37-50 AWB: L 62, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 97
-    confidence: medium
 - tag: 5402
   name: Currency. Exchange Rate.Numeric
   description: The rate at which one specified currency is expressed in another specified
@@ -2412,9 +2096,7 @@ elements:
     P 51-18 and L 47, P 75-82 and L 53, P 51-58 and L 53, P 75-82 and L 59 CIMP: (607):n..11
     SAD: (SAD 23)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5408
   name: Invoice Document. Exemption.Amount
   description: Invoice amount free from an obligation or liability such as Value Added
@@ -2428,9 +2110,7 @@ elements:
   status: active
   old_name: Amount exempt from value added tax
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5410
   change_tag: x
   status: retired
@@ -2438,9 +2118,7 @@ elements:
   notes: No business requirement identified
   bridges: 'AWB: Checkmark L 24, P 57-58'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5414
   change_tag: x
   status: retired
@@ -2448,9 +2126,7 @@ elements:
   notes: DE to use instead - 5416
   bridges: 'CIM: n..24; L 39-40, P 50- 73 (CIM 30)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5416
   name: Consignment. Disbursement.Amount
   description: Amount of disbursements to be collected by the carrier according to
@@ -2460,9 +2136,7 @@ elements:
   old_name: Disburseme nt amount in currency of collection
   bridges: 'CIM: L40, P 75-82 (CIM 74)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5419
   name: Rate. Type.Code
   description: Code specifying the type of rate.
@@ -2475,9 +2149,7 @@ elements:
   status: active
   old_name: Rate type qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5420
   name: Unit Price. Rate Basis.Numeric
   description: To specify the rate per unit specified in the unit price basis.
@@ -2492,36 +2164,28 @@ elements:
   bridges: 'CIM: n..6; L 44-45, P 45- 50 and L 50-51, P 45-50 and L 56-57, P 45-50
     (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5422
   change_tag: x
   status: retired
   old_name: Allowance/charge totalamount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5424
   change_tag: x
   status: retired
   old_name: Allowance/charge percentage
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5427
   change_tag: x
   status: retired
   old_name: Allowance/charge percent basis
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 98
-    confidence: medium
 - tag: 5428
   name: Consignment. Total Paid To Carrier Sender Charge.Amount
   description: By Total amount of charges payable to the carrier by the sender.
@@ -2535,9 +2199,7 @@ elements:
   old_name: Total charges, sender
   bridges: 'CIM: n..8; L 62, P 50-57 CMR: L 57, P 54-63'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5430
   name: Consignment. Tariff.Text
   description: Free text specification of tariff applied to a consignment.
@@ -2550,9 +2212,7 @@ elements:
   status: active
   old_name: Tariff applied
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: high
 - tag: 5431
   name: Consignment. Tariff.Code
   description: Code specifying a tariff applied to a consignment.
@@ -2567,9 +2227,7 @@ elements:
   bridges: 'CIM: n4 (6); L 44-45, P 21-26 and L 50-51, P 21- 26 and L 56-57, P 21-26
     (also on reverse)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5432
   name: Consignment. Tariff Class.Amount
   description: Freight charge for that part of consignment which is liable under the
@@ -2584,9 +2242,7 @@ elements:
   old_name: Freight item amount
   bridges: 'AWB: L 33-44, P 48-59 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5436
   name: Consignment. Destination Charge.Amount
   description: Handling, storage, etc. charges incurred at destination, in destination
@@ -2601,9 +2257,7 @@ elements:
   old_name: Charges at destination
   bridges: 'AWB: L 64, P 23-36 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5440
   name: Transport Service. Tariff Class.Code
   description: Specification of a tariff class applicable to a transport service.
@@ -2618,9 +2272,7 @@ elements:
   bridges: 'CIM: n4 (5); L 44-45, P 34-38 and L 50-51, P 34- 38 and L 56-57, P 34-38
     (also on reverse) (CIM 57)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5444
   name: Consolidated Invoice. Amount
   description: Total monetary amount charged in respect of one or more invoices.
@@ -2634,9 +2286,7 @@ elements:
   old_name: Total Invoiceamount
   bridges: 'SAD: n..13 (SAD 22) UNLK: L 68, P 58-72'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5446
   change_tag: x
   status: retired
@@ -2644,9 +2294,7 @@ elements:
   notes: DE to use instead - 5000
   bridges: 'UNLK: L 48, P 69-78 to be moved'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5448
   name: Transport Equipment. Total For Customs Packing Cost.Amount
   description: Costs incurred for all containers and coverings of whatever nature
@@ -2661,9 +2309,7 @@ elements:
   status: active
   old_name: Packing cost (Customs)
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5450
   name: Documentary Credit. Amount
   description: Amount of the documentary credit.
@@ -2677,9 +2323,7 @@ elements:
   old_name: Documentary Credit. Amount
   bridges: 'ICC: L 16, P 45-80 SWIFT: (a3) :n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: low
 - tag: 5452
   name: Valuation. Prepaid Charge.Amount
   description: Amount of valuation charge wholly prepaid.
@@ -2693,9 +2337,7 @@ elements:
   old_name: Valuation charge, prepaid
   bridges: 'AWB: L 50, P 09-22 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5454
   name: Prompt Payment. Discount.Amount
   description: Amount deductible from the total goods or services value if payment
@@ -2709,9 +2351,7 @@ elements:
   status: active
   old_name: Payment discountamount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5458
   name: Account. Balance.Amount
   description: Amount of the account balance.
@@ -2724,9 +2364,7 @@ elements:
   status: active
   old_name: Account balance
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5460
   name: Documentary Credit. Charge Instruction.Text
   description: Instructions regarding charges for Documentary credit.
@@ -2740,9 +2378,7 @@ elements:
   old_name: Documentary credit charges
   bridges: 'SWIFT: an..35x6'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 99
-    confidence: medium
 - tag: 5463
   name: Monetary Amount Adjustment. Function.Code
   description: Code specifying the function of an adjustment to a monetary amount.
@@ -2755,9 +2391,7 @@ elements:
   status: active
   old_name: Allowance or charge qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5464
   change_tag: x
   status: retired
@@ -2765,9 +2399,7 @@ elements:
   notes: DE to use instead - 5398
   bridges: 'AWB: L 62, P 23-36 and CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5474
   change_tag: x
   status: retired
@@ -2775,9 +2407,7 @@ elements:
   notes: DE to use instead - 5022
   bridges: 'CMR: L 54, P 71-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5479
   representation:
     raw: an..3
@@ -2789,9 +2419,7 @@ elements:
   old_name: Relation, coded
   notes: DE to use instead - 9143
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5480
   name: Tax. Prepaid.Amount
   description: Amount of prepaid tax.
@@ -2805,9 +2433,7 @@ elements:
   old_name: Tax, prepaid
   bridges: 'AWB: L 52, P 09-22 CIMP: (501):n..12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5482
   name: Percentage. Percentage.Numeric
   description: To specify a percentage.
@@ -2820,18 +2446,14 @@ elements:
   status: active
   old_name: Percentage
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: high
 - tag: 5484
   change_tag: x
   status: retired
   old_name: Percent of invoice payable
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5486
   name: Consignment. Insurance.Amount
   description: Amount of premium payable to the insurance company for insuring the
@@ -2846,9 +2468,7 @@ elements:
   old_name: Insurance cost
   bridges: UNLK:L 52, P 62-80
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5488
   name: Consignment. To Importation Location Insurance.Amount
   description: Amount of premium payable to the insurance company to insure the goods
@@ -2862,9 +2482,7 @@ elements:
   status: active
   old_name: Insurance cost (Customs)
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5490
   name: Value Added Tax. Amount
   description: Amount in national currency resulting from the application, at the
@@ -2879,18 +2497,14 @@ elements:
   status: active
   old_name: Value-added tax amount
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5492
   change_tag: x
   status: retired
   old_name: Tax amount
   notes: Deleted in TDED 93
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5495
   name: Sub Line Item. Level.Code
   description: Code indicating a sub-line item.
@@ -2903,18 +2517,14 @@ elements:
   status: active
   old_name: Sub-line indicator, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5496
   change_tag: x
   status: retired
   old_name: Number of persons onboard
   bridges: 'MAR: IMO/FAL 3'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: medium
 - tag: 5504
   name: Tax Or Fee. Assessed.Amount
   description: Self assessed amount of duty/tax/fee (includes all types of charges
@@ -2929,9 +2539,7 @@ elements:
   status: active
   bridges: 'SAD: (SAD 47(4))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 100
-    confidence: high
 - tag: 5506
   name: Exit To Entry. Charge.Amount
   description: Aggregate cost of freight, insurance and all other costs and expenses
@@ -2945,9 +2553,7 @@ elements:
   status: active
   business_term: Charges
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 101
-    confidence: high
 - tag: 5509
   name: Customs Valuation. Method.Code
   description: Indicates the method on which the Customs value is determined.
@@ -2959,9 +2565,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 101
-    confidence: high
 - tag: 5510
   name: Valuation. Adjustment Percentage.Numeric
   description: Percentage adjustment made to the valuation
@@ -2973,9 +2577,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 101
-    confidence: high
 - tag: 5513
   name: Freight Charge. Apportion Method.Code
   description: Method of the proportional allocation of freight charges for each consignment
@@ -2988,9 +2590,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 101
-    confidence: high
 - tag: 5514
   name: Valuation. Adjustment.Amount
   description: Monetary amount by which the valuation was adjusted.
@@ -3002,6 +2602,4 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 101
-    confidence: high

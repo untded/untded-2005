@@ -43,6 +43,5 @@ RSpec.describe Untded::Extractor do
 
   it "records provenance with the PDF page" do
     expect(by_tag[1066].provenance.page).to eq(30)
-    expect(by_tag[1000].provenance.pdf).to eq("UNTDED2005_Redacted.pdf")
   end
 end

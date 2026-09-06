@@ -80,7 +80,7 @@ module Untded
         "@type" => "Dataset",
         "name" => "UNTDED 2005 — United Nations Trade Data Elements Directory",
         "description" => "1504 trade data elements of the 2005 edition " \
-          "(ECE/TRADE/362, ISO 7372:2005), digitized with verifiable provenance. " \
+          "(ECE/TRADE/362, ISO 7372:2005). " \
           "Operated on behalf of UN/CEFACT (UNECE) and ISO/TC 154.",
         "source" => "ECE/TRADE/362 (ISO 7372:2005), © United Nations / UNECE, reproduced with attribution",
         "elementCount" => @elements.size,
@@ -152,8 +152,7 @@ module Untded
         "oldName" => ["TradeDataElement", "The data element name in the 1993 edition."],
         "businessTerm" => ["TradeDataElement", "The printed business term (synonym)."],
         "bridges" => ["TradeDataElement", "Printed locations on aligned trade documents (UNLK, SAD, CIMP, CIM, MAR)."],
-        "sourcePage" => ["TradeDataElement", "Page of the source PDF the entry was transcribed from."],
-        "extractionConfidence" => ["TradeDataElement", "Transcription confidence: high, medium or low."],
+        "sourcePage" => ["TradeDataElement", "Page of the source publication the entry appears on."],
         "category" => ["TradeDataElement", "The tag-range category the element belongs to."],
         "tagRange" => ["Category", "The tag interval of the category, e.g. 1000-1699."],
         "elementCount" => "The number of member elements.",
@@ -181,7 +180,6 @@ module Untded
         "changeTag" => e.change_tag,
         "status" => e.status,
         "sourcePage" => e.provenance.page,
-        "extractionConfidence" => e.provenance.confidence,
       }
       node["name"] = e.name if e.name
       node["description"] = e.description if e.description

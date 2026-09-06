@@ -7,9 +7,7 @@ elements:
   old_name: Exchangeable equipment, type
   notes: DE to use instead - 8155
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8012
   name: Consignment. Transport.Text
   description: Transport information for commercial purposes (generic term).
@@ -25,9 +23,7 @@ elements:
   bridges: 'CIMP: (314, 404, 405, 406, 407, 408, 415, 418):an..65 UNLK: an..35x3 L
     20-22, P 09-44'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8015
   name: Traffic Restriction. Code
   description: Code specifying a traffic restriction.
@@ -39,9 +35,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: high
 - tag: 8017
   name: Traffic Restriction. Application.Code
   description: Code specifying the application of a restriction to traffic.
@@ -53,18 +47,14 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: high
 - tag: 8020
   change_tag: x
   status: retired
   old_name: Loading tackle/containers, Category
   notes: DE to use instead - 8053
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8021
   name: Attached Transport Equipment. Category.Code
   description: Code specifying a type of equipment attached to another piece of transport
@@ -79,9 +69,7 @@ elements:
   business_term: Loading tackle category
   bridges: 'CIM: L 09, P 45-51 and 64-70'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8022
   name: Charge. Text
   description: Free form description of a charge such as freight and other charges.
@@ -96,9 +84,7 @@ elements:
   business_term: Charge type
   bridges: 'UNLK: L53-66, P 28-65'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8023
   name: Charge. Code
   description: Code specifying a charge such as freight and other charges.
@@ -111,9 +97,7 @@ elements:
   status: active
   old_name: Freight and charges identification
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8024
   name: Transport Means. Call Purpose.Text
   description: Free form description of the purpose of the conveyance call.
@@ -125,9 +109,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: high
 - tag: 8025
   name: Transport Means. Call Purpose.Code
   description: Code specifying the purpose of the conveyance call.
@@ -140,9 +122,7 @@ elements:
   status: active
   bridges: 'MAR: IMO/FAL 1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: high
 - tag: 8028
   name: Transport Means. Journey.Identifier
   description: To identify a journey of a means of transport, for example voyage number,
@@ -159,9 +139,7 @@ elements:
   bridges: 'CIMP: (201):a3; (202):n2; (312):an2;(800):n3(n1)(a 1) MAR: IMO/FAL 1,
     5-7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 118
-    confidence: medium
 - tag: 8030
   name: Attached Transport Equipment. Shipping Marks.Text
   description: To identify the marks and numbers on a piece of transport equipment
@@ -177,18 +155,14 @@ elements:
   business_term: Loading tackle marks and numbers
   bridges: 'CIM: L 09, P 52-63 and P 71082'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8032
   change_tag: x
   status: retired
   old_name: Exchangeable equipment, number
   notes: DE to use instead - 8046
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8035
   name: Traffic Restriction. Function.Code
   description: Code specifying the function of a traffic restriction.
@@ -200,9 +174,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: high
 - tag: 8036
   name: Transport Equipment. Returnability.Indicator
   description: Indication as to whether or not a particular item of transport equipment
@@ -216,9 +188,7 @@ elements:
   status: active
   old_name: Returnable equipment indicator
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8040
   name: Transport Means. Axle.Quantity
   description: Count of the number of axles on a means of transport.
@@ -232,9 +202,7 @@ elements:
   old_name: Vehicle axles
   bridges: 'CIM: L 13-14, P 80-82 (CIM 45)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8042
   name: Transport Means. Stowage Location.Text
   description: Textual description of a location on board a means of transport where
@@ -250,9 +218,7 @@ elements:
   business_term: Cell location
   bridges: 'MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8043
   name: Transport Means. Stowage Location.Identifier
   description: To identify a location on board a means of transport where specified
@@ -267,9 +233,7 @@ elements:
   old_name: Stowage place onboard, coded
   bridges: 'CIMP: (807):a1 MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8044
   name: Transport Means. Stores Stowage Location.Text
   description: Textual description of a location on board a means of transport where
@@ -285,9 +249,7 @@ elements:
   business_term: Ships Stores
   bridges: 'MAR: IMO/FAL 3'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8045
   name: Transport Means. Stores Stowage Location.Identifier
   description: To identify a location on board a means of transport where specified
@@ -302,9 +264,7 @@ elements:
   business_term: Ships Stores
   bridges: 'MAR: IMO/FAL 3'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8046
   name: Consignment. Transport Equipment.Quantity
   description: Count of the number of pieces of transport equipment in a consignment,
@@ -321,9 +281,7 @@ elements:
   bridges: 'AWB: L 46, P 09-12 CIM: L 12, P 57-59 or L 12, P 63-65 CIMP: (702): n..2
     CMR: L 28-42, P 27-33 (CMR 7) UNLK: L 28-50, P 27-33 MAR: IMO/FAL 2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8051
   name: Transport Movement. Stage.Identifier
   description: Code specifying a specific stage of transport.
@@ -336,9 +294,7 @@ elements:
   status: active
   old_name: Transport stage qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8053
   name: Transport Equipment. Category.Code
   description: Code specifying a type of equipment.
@@ -352,18 +308,14 @@ elements:
   old_name: Equipment qualifier
   bridges: 'CIM: L 09, P 45-51 and 64-70'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 119
-    confidence: medium
 - tag: 8056
   change_tag: x
   status: retired
   old_name: Vehicle length
   notes: DE to use instead - 6168
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8066
   name: Transport Movement. Mode.Text
   description: Name of a mode of transport.
@@ -376,9 +328,7 @@ elements:
   status: active
   old_name: Mode of transport
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8067
   name: Transport Movement. Mode.Code
   description: Code specifying a mode of transport.
@@ -392,18 +342,14 @@ elements:
   old_name: Mode of transport, coded
   bridges: 'SAD: (SAD 26)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8072
   change_tag: x
   status: retired
   old_name: Vehicle height
   notes: DE to use instead - 6008
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8077
   name: Transport Equipment. Supplier Party Type.Code
   description: Code identifying a type of party that is the supplier of transport
@@ -417,9 +363,7 @@ elements:
   status: active
   old_name: Equipment supplier, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8078
   name: Additional Hazard. Class.Identifier
   description: To identify an additional hazard class.
@@ -432,9 +376,7 @@ elements:
   status: active
   old_name: Hazard substance/item/page number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8082
   name: Transport Movement. On-carriage Means Type.Text
   description: Means of transport by which goods are moved after the main transport.
@@ -449,9 +391,7 @@ elements:
   business_term: On-carriage by, Onward inland routing,
   bridges: 'UNLK: L 26, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8083
   name: Transport Movement. On-carriage Means Type.Code
   description: Code specifying the means of transport by which goods are moved after
@@ -466,9 +406,7 @@ elements:
   old_name: On-carriage transport means, coded
   bridges: 'UNLK: L 25, P 18-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8092
   name: Hazard Code. Version.Identifier
   description: To identify the version number of a hazard code.
@@ -481,9 +419,7 @@ elements:
   status: active
   old_name: Hazard code version number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8101
   name: Transport Means. Direction.Code
   description: Code specifying the direction of transport.
@@ -496,18 +432,14 @@ elements:
   status: active
   old_name: Transit direction, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8110
   change_tag: x
   status: retired
   old_name: Flight identification
   notes: DE to use instead - 8028
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 120
-    confidence: medium
 - tag: 8112
   name: Transport Equipment. Exclusive Use.Indicator
   description: Indication of whether or not a consignor requires exclusive use of
@@ -523,27 +455,21 @@ elements:
   business_term: FCL / LCL indicator; FTL / LTL indicator; Wagon exclusive /non-exclusive
     useindicator
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8114
   change_tag: x
   status: retired
   old_name: Transport equipment identification prefix number
   notes: No business requirement identified
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8120
   change_tag: x
   status: retired
   old_name: Feeder vessel
   notes: DE to use instead - 8212
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8122
   change_tag: x
   status: retired
@@ -551,9 +477,7 @@ elements:
   notes: DE to use instead - 8212
   bridges: 'MAR: IMO/FAL 1-7 and UNLK: L 24, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8123
   change_tag: x
   status: retired
@@ -561,9 +485,7 @@ elements:
   notes: DE to use instead - 8213
   bridges: 'MAR: IMO/FAL 1-3,5-7 and UNLK: L 23, P 19-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8126
   name: Dangerous Goods. Transport Emergency Card.Identifier
   description: To identify a dangerous goods TRansport EMergency (TREM) card.
@@ -576,54 +498,42 @@ elements:
   status: active
   old_name: Trem card number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8130
   change_tag: x
   status: retired
   old_name: Container status
   notes: DE to use instead - 8168
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8131
   change_tag: x
   status: retired
   old_name: Container status, coded
   notes: DE to use instead - 8169
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8136
   change_tag: x
   status: retired
   old_name: Container status, coded
   notes: DE to use instead - 6080
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 121
-    confidence: medium
 - tag: 8142
   change_tag: x
   status: retired
   old_name: Goods/container movement service
   notes: DE deleted in 1993, use instead - 8334
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 122
-    confidence: medium
 - tag: 8143
   change_tag: x
   status: retired
   old_name: Goods/container movement service, coded
   notes: DE deleted in 1993, use instead - 8335
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 122
-    confidence: medium
 - tag: 8148
   change_tag: x
   status: retired
@@ -631,9 +541,7 @@ elements:
   notes: Use appropriate dimensio nal elements, such as 6168 (Length), 6140 (Width),
     6008 (Height).
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 122
-    confidence: medium
 - tag: 8149
   change_tag: x
   status: retired
@@ -641,9 +549,7 @@ elements:
   notes: Use appropriate dimensio nal elements, such as 6168 (Length), 6140 (Width),
     6008 (Height).
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 122
-    confidence: medium
 - tag: 8154
   name: Transport Equipment. Characteristic.Text
   description: Free form description of the characteristics, I.e. size and type of
@@ -658,9 +564,7 @@ elements:
   old_name: Equipment size and type
   bridges: 'UNLK: L 28-50, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 122
-    confidence: medium
 - tag: 8155
   name: Transport Equipment. Characteristic.Code
   description: Code specifying the characteristics, i.e. size and type of a piece
@@ -675,9 +579,7 @@ elements:
   old_name: Equipment size and type identification
   bridges: 'CIM: L 12, P 60-62 or L 12, P 66-67 MAR: IMO/FAL 2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8158
   name: Dangerous Goods. Upper Part Orange Hazard Placard.Identifier
   description: To specify the identity number for the upper part of the orange hazard
@@ -691,27 +593,21 @@ elements:
   status: active
   old_name: Hazard identification number, upper part
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8162
   change_tag: x
   status: retired
   old_name: Road motor vehicle number
   notes: DE to use instead - 8212
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8164
   change_tag: x
   status: retired
   old_name: Trailer number
   notes: DE to use instead - 8260
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8168
   name: Transport Equipment. Fullness.Text
   description: Free format text specifying how full a piece of transport equipment
@@ -724,9 +620,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: high
 - tag: 8169
   name: Transport Equipment. Fullness.Code
   description: Code specifying how full a piece of transport equipment is.
@@ -741,9 +635,7 @@ elements:
   business_term: Full or Empty Indicator
   bridges: 'CIMP: (803):n1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8170
   name: Transport Movement. Pre-carriage Mode.Text
   description: Mode of transport by which goods are moved prior to their main transport.
@@ -757,9 +649,7 @@ elements:
   old_name: Pre-carriage transport mode
   bridges: 'UNLK: L 22, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8171
   name: Transport Movement. Pre-carriage Mode.Code
   description: Code specifying the mode of transport by which goods are moved prior
@@ -774,9 +664,7 @@ elements:
   old_name: Pre-carriage transport mode, coded
   bridges: 'UNLK: L 21, P 17-18'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8178
   name: Transport Means. Type.Text
   description: Free form description of a type of means of transport.
@@ -791,9 +679,7 @@ elements:
   business_term: Vehicle type, Vessel type
   bridges: 'MAR: IMO/FAL 1 SAD: (SAD 21)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8179
   name: Transport Means. Type.Code
   description: Code specifying a type of means of transport.
@@ -807,18 +693,14 @@ elements:
   old_name: Type of means of transport identification
   bridges: 'MAR: IMO/FAL 1 SAD: (SAD 26)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8182
   change_tag: x
   status: retired
   old_name: Vehicle width
   notes: DE to use instead - 6140
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 123
-    confidence: medium
 - tag: 8186
   name: Dangerous Goods. Lower Part Orange Hazard Placard.Identifier
   description: To specify the identity number for the lower part of the orange hazard
@@ -832,18 +714,14 @@ elements:
   status: active
   old_name: Substance identification number, lower part
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8190
   change_tag: x
   status: retired
   old_name: Free text, transport
   notes: DE to use instead - 8012
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8193
   name: Transport Equipment. Legal Status.Code
   description: Legal status of the transport equipment with respect to the Container
@@ -856,9 +734,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: high
 - tag: 8211
   name: Dangerous Goods. Transport Authorisation.Code
   description: Code specifying the authorisation for the transportation of hazardous
@@ -872,9 +748,7 @@ elements:
   status: active
   old_name: Permission for transport, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8212
   name: Transport Means. Identifier.Text
   description: Name of a specific means of transport such as the vessel name
@@ -888,9 +762,7 @@ elements:
   old_name: Id of the means of transport
   bridges: 'CIMP: (808): an..10 MAR: IMO/FAL 1-7 UNLK: L 24, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8213
   name: Transport Means. Identifier
   description: To identify a specific means of transport such as the International
@@ -906,9 +778,7 @@ elements:
   business_term: Vehicle registration number
   bridges: 'MAR: IMO/FAL 1-3,5-7 UNLK: L 23, P 19-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8214
   name: Transport Means. Change.Indicator
   description: Indicator whether or not a change of means of transport has taken,
@@ -921,9 +791,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: high
 - tag: 8216
   name: Journey. Stop.Quantity
   description: To specify the number of stops in a journey.
@@ -935,9 +803,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: high
 - tag: 8218
   name: Traveller. Accompanied By Infant.Indicator
   description: Code indicating whether a traveller is accompanied by an infant or
@@ -950,27 +816,21 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: high
 - tag: 8228
   change_tag: x
   status: retired
   old_name: Voyage number
   notes: DE to use instead - 8028
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8243
   change_tag: x
   status: retired
   old_name: Equipment restriction code
   notes: DE to use instead - 4079
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8246
   name: Dangerous Goods. Marking.Identifier
   description: To identify the marking of dangerous goods.
@@ -984,9 +844,7 @@ elements:
   old_name: Dangerous goods label marking
   bridges: 'MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8249
   name: Transport Equipment. Status.Code
   description: Code specifying the status of a piece of transport equipment.
@@ -999,9 +857,7 @@ elements:
   status: active
   old_name: Equipment status, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 124
-    confidence: medium
 - tag: 8250
   name: Transport Means. At Presentation.Identifier
   description: To identify the means of transport used at the time of presentation
@@ -1017,9 +873,7 @@ elements:
   old_name: Identification of means of transport at departure/arrival
   bridges: 'SAD: (SAD 18)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8255
   name: Packing Instruction. Type.Code
   description: Code specifying a type of packing instruction.
@@ -1032,9 +886,7 @@ elements:
   status: active
   old_name: Packing instruction, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8260
   name: Transport Equipment. Identifier
   description: To identify a piece of transport equipment e.g. container or unit load
@@ -1049,36 +901,28 @@ elements:
   old_name: Equipment identification number
   bridges: 'MAR: IMO/FAL 2, 7 UNLK: L 13-14, P 45-68'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8262
   change_tag: x
   status: retired
   old_name: Container identifier qualifier
   notes: No business requirement identified
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8264
   change_tag: x
   status: retired
   old_name: Means of transport
   notes: DE deleted in 1993, use instead - 8212
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8265
   change_tag: x
   status: retired
   old_name: Means of transport, coded
   notes: DE deleted in 1993, use instead - 8213
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8270
   name: Transport Means. At Border Crossing.Identifier
   description: To identify the means of transport used in crossing the border out
@@ -1094,9 +938,7 @@ elements:
   old_name: Identification of active means of transport crossing the border
   bridges: 'SAD: (SAD 21)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8273
   name: Dangerous Goods. Regulation.Code
   description: Code specifying a dangerous goods regulation.
@@ -1110,18 +952,14 @@ elements:
   old_name: Dangerous goods regulations, coded
   bridges: 'MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8275
   change_tag: x
   status: retired
   old_name: Container/package status, coded
   notes: DE to use instead - 8169
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 125
-    confidence: medium
 - tag: 8281
   name: Transport Means. Ownership.Code
   description: Code specifying the ownership of a means of transport.
@@ -1134,18 +972,14 @@ elements:
   status: active
   old_name: Transport ownership, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8320
   change_tag: x
   status: retired
   old_name: Railway wagon number
   notes: DE to use instead - 8260
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8323
   name: Goods Item. For Government Transport Movement.Code
   description: Code specifying a particular transport movement.
@@ -1158,36 +992,28 @@ elements:
   status: active
   old_name: Transport movement, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8325
   change_tag: x
   status: retired
   old_name: Category of means of transport, coded
   notes: DE to use instead - 8179
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8328
   change_tag: x
   status: retired
   old_name: Number of vehicles
   notes: DE to use instead - 8046
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8332
   change_tag: x
   status: retired
   old_name: Equipment plan
   notes: DE to use instead - 8335
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8334
   name: Goods Item. Transport Movement Type.Text
   description: Free form description of a type of transport movement.
@@ -1201,9 +1027,7 @@ elements:
   old_name: Movement type
   bridges: 'CIMP: (804): an..53 UNLK: L 28, P 12-38'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8335
   name: Goods Item. Transport Movement Type.Code
   description: Code specifying a type of transport movement.
@@ -1217,9 +1041,7 @@ elements:
   old_name: Movement type, coded
   bridges: 'UNLK: L 28, P 09-ll'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8339
   name: Packaging. Danger Level.Code
   description: Code specifying the level of danger for which the packaging must cater.
@@ -1233,9 +1055,7 @@ elements:
   old_name: Packing group, coded
   bridges: 'MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8341
   name: Goods Item. Haulage Arrangement.Code
   description: Code specifying the arrangement for the haulage of goods.
@@ -1248,9 +1068,7 @@ elements:
   status: active
   old_name: Haulage arrangements, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8351
   name: Dangerous Goods. Hazard Class. Identifier
   description: To identify a hazard class applicable to dangerous goods as defined
@@ -1267,9 +1085,7 @@ elements:
   business_term: IMDG Class Number, ADR/RID Class Number
   bridges: 'CMR: L 44, P 09-44 MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: medium
 - tag: 8364
   name: Dangerous Goods. Transport Emergency Procedure.Identifier
   description: 'To identify an emergency procedure for the transportation of dangerous
@@ -1284,9 +1100,7 @@ elements:
   old_name: EMS number
   bridges: 'MAR: IMO/FAL 7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 126
-    confidence: high
 - tag: 8393
   name: Returnable Package. Load Content.Code
   description: Code specifying the load contents for a returnable package.
@@ -1299,9 +1113,7 @@ elements:
   status: active
   old_name: Returnable package load contents, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8395
   name: Returnable Package. Freight Payment Responsibility.Code
   description: Code specifying the responsibility for the freight payment for a returnable
@@ -1315,9 +1127,7 @@ elements:
   status: active
   old_name: Returnable package freight payment responsibility, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8410
   name: Hazardous Material. Medical First Guide.Identifier
   description: Aid To identify a Medical First Aid Guide (MFAG) for hazardous goods.
@@ -1330,9 +1140,7 @@ elements:
   status: active
   old_name: MFAG
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: high
 - tag: 8428
   name: Transport Movement. Pre-carriage Means Type.Text
   description: Means of transport by which goods are moved prior to their main transport.
@@ -1347,9 +1155,7 @@ elements:
   business_term: Despatched by
   bridges: 'UNLK: L 22, P 09-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8429
   name: Transport Movement. Pre-carriage Means Type.Code
   description: Code specifying the means of transport by which goods are moved prior
@@ -1364,9 +1170,7 @@ elements:
   old_name: Pre-carriage transport means, coded
   bridges: 'UNLK: L 21, P 18-26'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8442
   name: Transport Movement. On-carriage Mode.Text
   description: Mode of transport by which goods are moved after their main transport.
@@ -1379,9 +1183,7 @@ elements:
   status: active
   old_name: On-carriage transport mode
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8443
   name: Transport Movement. On-carriage Mode.Code
   description: Code specifying the mode of transport by which goods are moved after
@@ -1395,9 +1197,7 @@ elements:
   status: active
   old_name: On-carriage transport mode, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8452
   name: Transport Means. Registration Nationality.Text
   description: Name of the country in which a means of transport is registered
@@ -1412,9 +1212,7 @@ elements:
   business_term: Flag of vessel, Nationality of ship
   bridges: 'MAR: IMO/FAL 1-7 SAD: (SAD 55)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8453
   name: Transport Means. Registration Nationality.Identifier
   description: Code specifying the country in which a means of transport is registered
@@ -1428,18 +1226,14 @@ elements:
   old_name: Nationality of means of transport, coded
   bridges: 'MAR: IMO/FAL 1-7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8454
   change_tag: x
   status: retired
   old_name: Freight/charges indicator
   notes: DE to use instead - 4237
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 127
-    confidence: medium
 - tag: 8457
   name: Excess Transport Movement. Reason.Code
   description: Code specifying a reason for excess transportation.
@@ -1452,9 +1246,7 @@ elements:
   status: active
   old_name: Excess transportation reason, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 128
-    confidence: medium
 - tag: 8459
   name: Excess Transport Movement. Responsible Party.Code
   description: Code specifying the party responsible for excess transportation.
@@ -1467,6 +1259,4 @@ elements:
   status: active
   old_name: Excess transportation responsibility, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 128
-    confidence: medium

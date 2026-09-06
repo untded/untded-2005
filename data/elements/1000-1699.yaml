@@ -16,9 +16,7 @@ elements:
   business_term: Document/message name
   bridges: 'UNLK: L 02, P 45-80 MAR: IMO/FAL 1-7'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1001
   name: Document. Type.Code
   description: Code specifying the name of a document such as 352 for proforma invoice,
@@ -34,18 +32,14 @@ elements:
   business_term: Document/message name code
   bridges: 'UNLK: L 04, P 41-45 CIMP: (120): a1 SAD: (SAD 1(first to third subdivision))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1002
   change_tag: x
   status: retired
   old_name: Message name
   notes: DE to use instead - 1000
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1003
   name: Document. Type.Identifier
   description: Document type identifier such as INVOIC. See also 0065
@@ -60,9 +54,7 @@ elements:
   business_term: Message name code
   bridges: 'CIMP: (101): a3'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1004
   name: Document. Identifier
   description: Reference number identifying a specific document.
@@ -78,9 +70,7 @@ elements:
   bridges: 'CIMP: (112) n3 and (114) an6 or (805) n8 and (118) n6 MAR: IMO/FAL 2 UNLK:
     an..17 L 04, P 63- 80 SAD:'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1007
   name: Event. Identifier
   description: Reference number identifying an event.
@@ -92,9 +82,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: high
 - tag: 1008
   name: Event. Sequence.Identifier
   description: Sequence number differentiating a specific event amongst others
@@ -106,9 +94,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: high
 - tag: 1010
   name: Additional Document. Identifier
   description: Identifier of a document providing additional information.
@@ -122,9 +108,7 @@ elements:
   old_name: Additional document reference
   bridges: 'SAD: (SAD 44)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1012
   name: Packing List Document. Item Sequence.Identifier
   description: Sequence number differentiating a specific packing list item within
@@ -137,9 +121,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: high
 - tag: 1014
   name: Packing List Document. Identifier
   description: Reference number to identify a packing list
@@ -153,9 +135,7 @@ elements:
   old_name: Packing List number
   bridges: 'UNLK: an..17, L 04 P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1016
   name: Consignment. Carrier Assigned.Identifier
   description: Reference number assigned by a carrier or its agent to identify a specific
@@ -172,9 +152,7 @@ elements:
   business_term: Reservation number of shipment
   bridges: 'CIMP: (117): an..15 MAR: IMO/FAL 7 UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1018
   name: Order Acknowledgement Document. Identifier
   description: Reference number identifying the acknowledgement of an order.
@@ -189,9 +167,7 @@ elements:
   business_term: Purchase order response number
   bridges: 'UNLK: L 04, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1022
   name: Order Document. Buyer Assigned.Identifier
   description: Identifier assigned by the buyer to an order.
@@ -206,9 +182,7 @@ elements:
   business_term: Purchase Order Number
   bridges: 'UNLK: L 04, P 63-80 CIM: n..7; L 62, P 13-19'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: medium
 - tag: 1024
   name: Additional Document. Name.Text
   description: Free text name of an additional document.
@@ -220,9 +194,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 28
-    confidence: high
 - tag: 1025
   name: Additional Document. Name.Code
   description: Code specifying the name of an additional document.
@@ -234,9 +206,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1027
   name: Invoice Document. Type.Code
   description: Code specifying a type of invoice.
@@ -248,9 +218,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1029
   name: Document. Rule Section.Identifier
   description: To identify a section of a rule within a document.
@@ -262,9 +230,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1030
   name: Collection Advice Document. Identifier
   description: Reference number to identify a collection advice document
@@ -278,9 +244,7 @@ elements:
   old_name: Advice of collection number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1033
   name: Delivery Note Document. Identifier
   description: Reference number to identify a delivery note document
@@ -293,9 +257,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1035
   name: Despatch Advice Document. Identifier
   description: Reference number to identify a despatch advice document
@@ -308,9 +270,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1037
   name: Manifest Document. Identifier
   description: Reference number to identify a manifest.
@@ -323,9 +283,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1039
   name: House Waybill Document. Identifier
   description: Reference number to identify a house waybill.
@@ -339,9 +297,7 @@ elements:
   business_term: House bill, House bill of lading
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1041
   name: Excess Transport Movement. Service.Identifier
   description: Reference number identifying a transport service which is additional
@@ -354,9 +310,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1043
   name: Job. Identifier
   description: Reference number identifying a piece of work.
@@ -368,9 +322,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1045
   name: Consolidation. Load Plan.Identifier
   description: Reference number identifying a plan which defines how and in which
@@ -383,9 +335,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1046
   name: Document. Total Page.Quantity
   description: Total number of pages in a document
@@ -399,9 +349,7 @@ elements:
   old_name: Number of pages
   bridges: 'UNLK: L 02, P 76-80 SAD: (SAD 3(2))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1049
   name: Document. Section.Code
   description: Code specifying a section of a document.
@@ -415,9 +363,7 @@ elements:
   old_name: Message section, coded
   business_term: Message sectioncode
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1050
   name: Sequence. Position.Identifier
   description: To identify a position within a sequence.
@@ -431,9 +377,7 @@ elements:
   old_name: Sequence number
   bridges: 'MAR: IMO/FAL 4-5'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1052
   name: Document. Item.Identifier
   description: To identify an item within a document.
@@ -447,9 +391,7 @@ elements:
   old_name: Message item number
   business_term: Message item number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1054
   name: Document. Sub-Item.Identifier
   description: To identify a sub-item within a document.
@@ -463,9 +405,7 @@ elements:
   old_name: Message sub-item number
   business_term: Message sub-item number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1057
   name: Version. Identifier
   description: To identify a version.
@@ -477,9 +417,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1059
   name: Release. Identifier
   description: To identify a release.
@@ -491,9 +429,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1061
   name: Revision. Identifier
   description: To identify a revision.
@@ -505,9 +441,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: high
 - tag: 1065
   name: Shipment. Identifier
   description: Reference number to identify a shipment
@@ -520,9 +454,7 @@ elements:
   status: active
   business_term: Shipment Reference Number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 29
-    confidence: medium
 - tag: 1066
   name: Document. Originals Issued Quantity.Text
   description: Total number, in words, of the originals of a document issued
@@ -536,9 +468,7 @@ elements:
   old_name: Number of original Bills of Lading, in words
   bridges: 'UNLK: L 64, P 36-54'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1067
   name: Document. Originals Issued.Quantity
   description: Total number, in figures, of the originals of a document issued
@@ -553,9 +483,7 @@ elements:
   business_term: Number of original Bills of Lading
   bridges: 'UNLK: L 64, P 36-40'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1068
   name: Document. Copies Issued Quantity.Text
   description: Total number, in words, of the copies of a document issued
@@ -567,9 +495,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: high
 - tag: 1069
   name: Document. Copies Issued.Quantity
   description: Total number, in figures, of the copies of a document issued
@@ -583,9 +509,7 @@ elements:
   business_term: Number of original Bills of Lading
   bridges: 'UNLK: L 64, P 45-49'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1070
   name: Charges Note Document. Attachment.Indicator
   description: Indication that a charges note has been established and attached to
@@ -600,9 +524,7 @@ elements:
   old_name: Charges Note
   bridges: 'CIM: Checkmark L 62, P 47'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1073
   name: Document. Line Action.Code
   description: Code identifying an action associated with a line of a document.
@@ -615,9 +537,7 @@ elements:
   status: active
   old_name: Document line indicator,
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1077
   name: Conveyance Arrival Declaration Document. Identifier
   description: Declaration made to a public authority upon the arrival of a means
@@ -631,9 +551,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80 MAR: IMO/FAL 1-3, 5-6'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1079
   name: Conveyance Departure Declaration Document. Identifier
   description: Declaration made to a public authority upon the departure of a means
@@ -647,9 +565,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80 MAR: IMO/FAL 1-3, 5-6'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1082
   name: Line Item. Sequence.Identifier
   description: An identifier differentiating an individual line item from within a
@@ -665,9 +581,7 @@ elements:
   business_term: Line Item Number
   bridges: 'UNLK: L 36-46, P 00-08'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1088
   name: Proforma Invoice Document. Identifier
   description: Reference number to identify a proforma invoice
@@ -681,9 +595,7 @@ elements:
   old_name: Proforma Invoice number
   bridges: 'UNLK: an..17, L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1091
   name: Previous Customs Document. Identifier
   description: The identifier of a previous Customs document.
@@ -696,9 +608,7 @@ elements:
   status: active
   bridges: 'SAD: (SAD 40)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: high
 - tag: 1095
   name: Export Permit. Control Classification.Identifier
   description: Export licence classification for control purposes, for example as
@@ -712,9 +622,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: high
 - tag: 1097
   name: Customs Declaration Document. Trader Assigned.Identifier
   description: Reference assigned by a trader to identify a declaration.
@@ -726,9 +634,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: high
 - tag: 1099
   name: Transport Means. Stay.Identifier
   description: Identifier of the stay of a means of transport in a port or airport
@@ -741,9 +647,7 @@ elements:
   status: active
   business_term: Ship Stay Reference
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1103
   name: Split Consignment. Carrier Assigned.Identifier
   description: Identifier assigned by the carrier for each load of a split consignment
@@ -755,18 +659,14 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: high
 - tag: 1106
   change_tag: x
   status: retired
   old_name: Import Licence number
   notes: Use DE 1107
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 30
-    confidence: medium
 - tag: 1107
   name: Import Permit. Identifier
   description: Reference number to identify an import licence or permit.
@@ -780,9 +680,7 @@ elements:
   business_term: Import licence permit number
   bridges: 'UNLK: L 04, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1109
   name: Certificate Of Shipment Document. Identifier
   description: Reference number to identify a Certificate of Shipment.
@@ -795,9 +693,7 @@ elements:
   status: active
   bridges: 'UNLK: L 04, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1111
   name: Commission Note Document. Identifier
   description: Reference number to identify a Commission Note.
@@ -810,9 +706,7 @@ elements:
   status: active
   bridges: 'UNLK: L 04, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1113
   name: Credit Note Document. Identifier
   description: Reference number to identify a Credit Note.
@@ -825,9 +719,7 @@ elements:
   status: active
   bridges: 'UNLK: L 04, P 63-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1115
   name: Dangerous Goods Declaration Document. Identifier
   description: Reference number to identify a Dangerous Goods Declaration.
@@ -841,9 +733,7 @@ elements:
   business_term: Dangerous Goods Note
   bridges: 'MAR: IMO/FAL 7 UNLK: L 04, P 45-62'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1117
   name: Debit Note Document. Identifier
   description: Reference number to identify a Debit Note.
@@ -856,9 +746,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1121
   name: Shipping Instruction Document. Identifier
   description: Reference number to identify a Shipping Instruction.
@@ -873,9 +761,7 @@ elements:
     (SLI)
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1123
   name: Shipping Note Document. Identifier
   description: Reference number to identify a Shipping Note.
@@ -888,9 +774,7 @@ elements:
   status: active
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1125
   name: Status Report Document. Identifier
   description: Reference number to identify a Transport Status Report.
@@ -902,9 +786,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1127
   name: Status Request Document. Identifier
   description: Reference number to identify a Transport Status Request.
@@ -916,9 +798,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1128
   name: Despatch Note Document. Identifier
   description: Reference number to identify a Despatch Note
@@ -932,9 +812,7 @@ elements:
   old_name: Despatch Note number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1131
   name: Code List. Identifier.Code
   description: Code identifying a user or association maintained code list.
@@ -947,9 +825,7 @@ elements:
   status: active
   old_name: Code list qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1140
   name: Consignment. Consignor Assigned Identifier.Identifier
   description: Reference number assigned by the consignor to identify a particular
@@ -964,9 +840,7 @@ elements:
   old_name: Consignor's Reference number
   bridges: 'UNLK: an..17 L 06, P 63- 80 SAD: (SAD 7)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1142
   name: Carrier Agent. Carrier Assigned Identifier.Identifier
   description: Reference number assigned to identify an agent account by an carrier.
@@ -980,9 +854,7 @@ elements:
   old_name: Agent's account number
   bridges: 'AWB: L 20, P 27-44 CIMP: (108): n..14'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1145
   name: Traveller. Reference.Identifier
   description: To identify a reference to a traveller.
@@ -994,9 +866,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1146
   name: Account. Name.Text
   description: Name of an account.
@@ -1008,9 +878,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1147
   name: Account. Identifier
   description: To identify an account.
@@ -1022,9 +890,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1148
   name: Account. Abbreviated Name.Text
   description: Abbreviated name of an account.
@@ -1036,9 +902,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: high
 - tag: 1150
   name: Consignment. Receipt.Identifier
   description: Reference number assigned to identify a consignment upon its arrival
@@ -1054,9 +918,7 @@ elements:
   business_term: Received number
   bridges: 'CIM: n..4; L 69, P 76-82'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1153
   name: Reference. Type.Code
   description: Code specifying a type of reference.
@@ -1069,9 +931,7 @@ elements:
   status: active
   old_name: Reference qualifier
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 31
-    confidence: medium
 - tag: 1154
   name: Reference. Identifier
   description: Identifies a reference.
@@ -1085,9 +945,7 @@ elements:
   old_name: Reference number
   bridges: 'UNLK: an..35x2; L 06- 07, P 45-80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1156
   name: Document Line. Identifier
   description: To identify a line of a document.
@@ -1100,9 +958,7 @@ elements:
   status: active
   old_name: Line number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: high
 - tag: 1159
   name: Sequence Identifier. Source.Code
   description: Code specifying the source of a sequence identifier.
@@ -1115,9 +971,7 @@ elements:
   status: active
   old_name: Sequence number source, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1160
   name: Required Document. Function Name.Text
   description: Name of the function of a required document
@@ -1131,9 +985,7 @@ elements:
   old_name: Document required
   bridges: 'SWIFT: an..65x12'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1161
   name: Required Document. Function.Identifier
   description: Identifier of the function of a required document
@@ -1146,9 +998,7 @@ elements:
   status: active
   old_name: Document required, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1166
   name: Loading List Document. Quantity
   description: The number of loading lists, manifests or similar documents
@@ -1162,9 +1012,7 @@ elements:
   old_name: Number of loading lists
   bridges: 'SAD: (SAD 4)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1168
   name: Tax. Payment.Identifier
   description: Reference number identifying a payment of a duty or tax e.g. under
@@ -1179,9 +1027,7 @@ elements:
   old_name: Deferred payment reference
   bridges: 'SAD: (SAD 48)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1170
   name: Accounting Journal. Name.Text
   description: Name of an accounting journal.
@@ -1193,9 +1039,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: high
 - tag: 1171
   name: Accounting Journal. Identifier
   description: To identify an accounting journal.
@@ -1207,9 +1051,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: high
 - tag: 1172
   name: Documentary Credit. Identifier
   description: Reference number to identify a documentary credit
@@ -1224,9 +1066,7 @@ elements:
   business_term: Letter of credit number
   bridges: 'SWIFT: an..16 UNLK: an..17, L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1174
   name: Delivery Instruction. Identifier
   description: Reference number to identify a delivery instructions document
@@ -1240,9 +1080,7 @@ elements:
   old_name: Delivery instruction number
   bridges: 'UNLK: an..17, L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1176
   name: Financial Transaction. Buyer Assigned.Identifier
   description: Reference number assigned by a buyer to identify a financial transaction
@@ -1255,9 +1093,7 @@ elements:
   status: active
   old_name: Buyer's financial transaction reference
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1188
   name: Transport Contract Document. Identifier
   description: Reference number to identify a document evidencing a transport contract.
@@ -1274,27 +1110,21 @@ elements:
     n8 or (119): n8 CMR: L 59, P 20-26 INV: L 36-64, P 09-26 Inland Waterways B/L:
     L 02, P 45-62 UNLK: an..17, L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 32
-    confidence: medium
 - tag: 1190
   change_tag: x
   status: retired
   old_name: Transport document type
   notes: DE to use instead - 1000
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1191
   change_tag: x
   status: retired
   old_name: Transport document type, coded
   notes: DE to use instead - 1001
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1194
   name: Person. Document.Identifier
   description: Registration number of document identifying an individual.
@@ -1308,9 +1138,7 @@ elements:
   old_name: Personal identity document
   bridges: 'MAR: IMO/FAL 5'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1198
   name: Document. Exemplar.Quantity
   description: Total number of originals and copies of a document enclosed
@@ -1323,9 +1151,7 @@ elements:
   status: active
   old_name: Number of copies of document enclosed
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1202
   name: Consignment. Identifier
   description: Unique reference identifying a particular consignment of goods.
@@ -1340,9 +1166,7 @@ elements:
   business_term: Unique Consignment reference (UCR)
   bridges: 'UNLK: an..17, L 06, P 63- 80 CIM: L 64, P 69-79 and n7; L 66, P 73-82'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1208
   name: Export Permit. Identifier
   description: Reference number to identify an export licence or permit.
@@ -1357,9 +1181,7 @@ elements:
   business_term: Export licence permit number
   bridges: 'UNLK: an..17, L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1212
   name: Document. Page.Identifier
   description: To identify a page number
@@ -1373,9 +1195,7 @@ elements:
   old_name: Page number
   bridges: 'UNLK: L 02, P 72-75 SAD: (SAD(3(1))'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1218
   name: Document. Originals Required.Quantity
   description: Quantity of document originals required.
@@ -1389,9 +1209,7 @@ elements:
   old_name: Number of originals of document required
   bridges: 'UNLK: L 63, P 36-40'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1220
   name: Document. Copies Required.Quantity
   description: Quantity of document copies required.
@@ -1405,9 +1223,7 @@ elements:
   old_name: Number of copies of document required
   bridges: 'SWIFT: an..65x12 UNLK: L 63, P 45-49 MAR: IMO/FAL 1'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1222
   name: Configuration. Level .Identifier
   description: To identify a level within a configuration.
@@ -1421,9 +1237,7 @@ elements:
   old_name: Configuration level
   business_term: Configuration level number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1225
   name: Document . Function.Code
   description: Code indicating the function of a document.
@@ -1438,9 +1252,7 @@ elements:
   business_term: Message functioncode
   bridges: 'SAD: (SAD 40)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 33
-    confidence: medium
 - tag: 1227
   name: Calculation. Sequence.Code
   description: Code specifying a calculation sequence.
@@ -1453,9 +1265,7 @@ elements:
   status: active
   old_name: Calculation sequence indicator, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1228
   name: Action. Text
   description: Free form description of the action to be taken or already taken.
@@ -1467,9 +1277,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: high
 - tag: 1229
   name: Action. Code
   description: Code specifying the action to be taken or already taken.
@@ -1483,9 +1291,7 @@ elements:
   old_name: Action request/notification, coded
   bridges: 'CIMP: (409)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1230
   name: Monetary Amount Adjustment. Identifier
   description: To identify an adjustment to a monetary amount such as an allowance
@@ -1499,9 +1305,7 @@ elements:
   status: active
   old_name: Allowance or charge number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1236
   name: Freight Charge. Sequence.Identifier
   description: Serial number differentiating each separate freight charge.
@@ -1516,27 +1320,21 @@ elements:
   business_term: Freight charge number
   bridges: 'UNLK: L 54-60, P 00-08'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1241
   change_tag: x
   status: retired
   old_name: Information status, coded
   notes: DE to use instead - 4405
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1245
   change_tag: x
   status: retired
   old_name: Status indicator, coded
   notes: DE to use instead - 4405
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1246
   name: Rejection Report Document. Identifier
   description: Reference number to identify a rejection report
@@ -1549,9 +1347,7 @@ elements:
   status: active
   old_name: Rejection report number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1274
   name: Conference Contract Document. Identifier
   description: Reference number to identify a contract with a conference
@@ -1566,9 +1362,7 @@ elements:
   business_term: Contract of affreightment, Contract number for freight
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1296
   name: Contract Document. Identifier
   description: Identifier of a contract concluded between parties such as between
@@ -1584,9 +1378,7 @@ elements:
   business_term: Contract number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1310
   name: Partial Shipment. Identifier
   description: Identifier of a shipment which is part of an order.
@@ -1601,9 +1393,7 @@ elements:
   business_term: Part consignment number
   bridges: 'CIMP: (703): a1; (905): n2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1312
   name: Consignment. Loading Sequence.Identifier
   description: The sequence of the loading of a consignment or consignments.
@@ -1616,9 +1406,7 @@ elements:
   status: active
   old_name: Consignment load sequence number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 34
-    confidence: medium
 - tag: 1318
   name: Contract Document Addendum. Identifier
   description: Reference number to identify an addendum to a contract
@@ -1632,9 +1420,7 @@ elements:
   old_name: Contract Addendum number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1332
   name: Quotation Document. Identifier
   description: Reference number to identify a quotation.
@@ -1649,9 +1435,7 @@ elements:
   business_term: Quote number, Bid number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1334
   name: Invoice Document. Identifier
   description: Reference number to identify an invoice
@@ -1666,9 +1450,7 @@ elements:
   business_term: Invoice number
   bridges: 'UNLK: an..17 L 04, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1346
   name: Enclosed Document. Function Name.Text
   description: Name of an enclosed document function
@@ -1682,9 +1464,7 @@ elements:
   old_name: Document enclosed
   bridges: 'CIM: an..47x4; L 39-42, P 02-49 CMR: an..35x3; L 24-26, P 09-44'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1347
   name: Enclosed Document. Function.Code
   description: Code specifying an enclosed document function
@@ -1697,27 +1477,21 @@ elements:
   status: active
   old_name: Document enclosed, coded
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1348
   change_tag: x
   status: retired
   old_name: Equipment Interchange Report indication
   notes: No business requirement identified
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1349
   change_tag: x
   status: retired
   old_name: Equipment Interchange Report indication, coded
   notes: No business requirement identified
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1362
   name: Consignment. Consignee Assigned.Identifier
   description: Reference number assigned by the consignee to identify a particular
@@ -1732,9 +1506,7 @@ elements:
   old_name: Consignee's shipment reference number
   bridges: 'UNLK: an..17 L 06, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1366
   name: Document. Source.Text
   description: Free form description of the source of a document.
@@ -1748,9 +1520,7 @@ elements:
   old_name: Document/message source
   business_term: Document/message source
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1370
   name: Document. Recipient Name.Text
   description: Name of party who is to receive or has received a document
@@ -1763,9 +1533,7 @@ elements:
   status: active
   old_name: Document recipient
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1373
   name: Document. Status.Code
   description: Code specifying the status of a document.
@@ -1779,9 +1547,7 @@ elements:
   old_name: Document/message status, coded
   business_term: Document/message status code
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1376
   name: Engineering. Change.Identifier
   description: Identifier of an engineering change
@@ -1794,9 +1560,7 @@ elements:
   status: active
   old_name: Engineering change number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 35
-    confidence: medium
 - tag: 1420
   name: Kanban Card. Identifier
   description: Reference number to identify a kanban card
@@ -1809,9 +1573,7 @@ elements:
   status: active
   old_name: Kanban card number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1426
   name: Goods Declaration Document. Customs.Identifier
   description: Reference number, assigned or accepted by Customs, to identify a goods
@@ -1827,18 +1589,14 @@ elements:
   business_term: Goods declaration number
   bridges: 'CIMP: (904): an..17 UNLK: an..17 L 04, P 63- 80 SAD: (SAD A and SAD C)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1430
   change_tag: x
   status: retired
   old_name: Reference to highest quantity previously scheduled
   notes: No business requirement identified
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1438
   name: Package. Buyer Assigned.Identifier
   description: Unique number allocated by the buyer to identify an individual package.
@@ -1851,9 +1609,7 @@ elements:
   status: active
   old_name: Buyer's package identification number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1460
   name: Consignment. Freight Forwarder Assigned.Identifier
   description: Reference number assigned by the freight forwarder to identify a particular
@@ -1868,27 +1624,21 @@ elements:
   old_name: Freight forwarder's reference number
   bridges: 'UNLK: an..17 L 06, P 63- 80'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1472
   change_tag: x
   status: retired
   old_name: Reference data
   notes: DE to use instead - 1154
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1478
   change_tag: x
   status: retired
   old_name: Number of copies of document
   notes: DE to use instead - 1218 /1220
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1481
   name: Controlling Agency. Identifier
   description: To identify a controlling agency.
@@ -1900,9 +1650,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: high
 - tag: 1490
   name: Consignment. Sequence.Identifier
   description: Sequence number differentiating a specific consignment amongst others
@@ -1915,9 +1663,7 @@ elements:
   status: active
   old_name: Consolidation item number
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1492
   name: Transport Equipment. Sequence.Identifier
   description: Sequence number differentiating a specific piece of transport equipment
@@ -1932,18 +1678,14 @@ elements:
   old_name: Container item number
   bridges: 'CIMP: (115): an1n3 UNLK: L 28-50, P 00-08 MAR: IMO/FAL 2'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1494
   change_tag: x
   status: retired
   old_name: Transport item number
   notes: DE to use instead - 8260
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1496
   name: Goods Item. Sequence.Identifier
   description: Sequence number differentiating a specific goods item within a consignment
@@ -1957,18 +1699,14 @@ elements:
   old_name: Goods item number
   bridges: 'UNLK: L 28-50, P 00-08 SAD (SAD 32)'
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 36
-    confidence: medium
 - tag: 1498
   change_tag: x
   status: retired
   old_name: Packed in transport item number
   notes: DE to use instead - 8260
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: medium
 - tag: 1501
   name: Computer Environment. Type.Code
   description: Code specifying a type of computer environment details.
@@ -1980,9 +1718,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1502
   name: Data. Format.Text
   description: Free form description of a data format.
@@ -1994,9 +1730,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1503
   name: Data. Format.Code
   description: Code specifying a data format.
@@ -2008,9 +1742,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1505
   name: Value List. Type.Code
   description: Code specifying a type of value list.
@@ -2022,9 +1754,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1507
   name: Designated Class. Code
   description: Code specifying a designated class.
@@ -2036,9 +1766,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1508
   name: File. Name.Text
   description: Name of a file.
@@ -2050,9 +1778,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1510
   name: Computer Environment. Name.Text
   description: Name of a computer environment.
@@ -2064,9 +1790,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1511
   name: Computer Environment. Code
   description: Code specifying a computer environment.
@@ -2078,9 +1802,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1514
   name: Value List. Name.Text
   description: Name of a coded or non-coded list of values.
@@ -2092,9 +1814,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1516
   name: File. Format Name.Text
   description: Name of a file format.
@@ -2106,9 +1826,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1519
   name: Value List. Identifier
   description: To identify a coded or non-coded list of values.
@@ -2120,9 +1838,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1521
   name: Data Set. Identifier
   description: To identify a data set.
@@ -2134,9 +1850,7 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high
 - tag: 1523
   name: Message Implementation. Identifier
   description: Code identifying an implementation of a message.
@@ -2148,6 +1862,4 @@ elements:
   change_tag: add
   status: active
   provenance:
-    pdf: UNTDED2005_Redacted.pdf
     page: 37
-    confidence: high

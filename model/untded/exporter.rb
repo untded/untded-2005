@@ -30,7 +30,7 @@ module Untded
       CSV.open(File.join(@out_dir, "elements.csv"), "w") do |csv|
         csv << %w[tag change_tag status name name_fr description repr_raw repr_charset
                   repr_min_length repr_max_length old_name business_term notes bridges
-                  code_list page confidence pdf]
+                  code_list page]
         elements.each do |e|
           csv << [
             e.tag, e.change_tag, e.status, e.name, e.name_fr, e.description,
@@ -38,7 +38,7 @@ module Untded
             e.representation&.min_length, e.representation&.max_length,
             e.old_name, e.business_term, e.notes, e.bridges,
             e.code_list&.reference,
-            e.provenance.page, e.provenance.confidence, e.provenance.pdf,
+            e.provenance.page,
           ]
         end
       end
@@ -47,7 +47,7 @@ module Untded
     def write_json(elements)
       doc = {
         "source" => "UNTDED 2005 (United Nations Trade Data Elements Directory, ECE/TRADE/362)",
-        "extracted_from" => "UNTDED2005_Redacted.pdf, pages 28-132",
+        "pages" => "28-132",
         "element_count" => elements.size,
         "elements" => elements.map(&:to_hash),
       }
@@ -58,7 +58,7 @@ module Untded
       rows = elements.map do |e|
         "<tr><td>#{e.tag}</td><td>#{esc(e.change_tag)}</td><td>#{esc(e.status)}</td>" \
           "<td>#{esc(e.name)}</td><td>#{esc(e.description)}</td><td>#{esc(e.representation&.raw)}</td>" \
-          "<td>#{e.provenance.page}</td><td>#{esc(e.provenance.confidence)}</td></tr>"
+          "<td>#{e.provenance.page}</td></tr>"
       end.join("\n")
       html = <<~HTML
         <!DOCTYPE html>
@@ -78,7 +78,7 @@ module Untded
         <h1>UNTDED 2005 — data elements</h1>
         <p>#{elements.size} elements, generated from the YAML SSOT in <code>data/elements/</code>.</p>
         <table>
-        <thead><tr><th>Tag</th><th>Change</th><th>Status</th><th>Name</th><th>Description</th><th>Repr</th><th>Page</th><th>Conf.</th></tr></thead>
+        <thead><tr><th>Tag</th><th>Change</th><th>Status</th><th>Name</th><th>Description</th><th>Repr</th><th>Page</th></tr></thead>
         <tbody>
         #{rows}
         </tbody>
