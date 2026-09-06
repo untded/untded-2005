@@ -6,7 +6,7 @@ ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
 require "bundler/setup"
 require "untded"
 
-pdf = ARGV[0] || File.expand_path("../references/UNTDED2005_Redacted.pdf", __dir__)
+pdf = ARGV[0] || Untded.source_pdf
 data_dir = ARGV[1] || File.expand_path("../data", __dir__)
 
 abort "PDF not found: #{pdf}" unless File.file?(pdf)

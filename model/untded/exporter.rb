@@ -58,7 +58,7 @@ module Untded
     # the website via sync-data (single category writer).
     def write_categories
       File.write(File.join(@out_dir, "categories.json"),
-        JSON.pretty_generate(Untded::CATEGORIES))
+        JSON.pretty_generate(Untded::Categories::ALL))
     end
 
     # Regenerates the committed YAML-LD context from the vocabulary

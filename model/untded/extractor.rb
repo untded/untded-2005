@@ -90,8 +90,8 @@ module Untded
       require "fileutils"
       FileUtils.mkdir_p(File.join(dir, "elements"))
       elements.group_by { |e| format("%d000", e.tag / 1000) }.each do |range, els|
-        cat = Untded.category_for_base(range)
-        category = cat ? Untded.category_header(cat) : "#{range} uncategorized"
+        cat = Untded::Categories.for_base(range)
+        category = cat ? Untded::Categories.header(cat) : "#{range} uncategorized"
         file = ElementFile.new(category: category, elements: els.sort_by(&:tag))
         path = File.join(dir, "elements", "#{range}-#{range.to_i + 699}.yaml")
         File.write(path, file.to_yaml)
@@ -240,8 +240,10 @@ module Untded
           text = rest_words.empty? ? text + piece : text + first_word + " " + rest_words.join(" ")
         elsif first_word.match?(/\A[,.;:)]/) && !text.end_with?(" ")
           text = text + piece
-        elsif text.end_with?("-") && piece.match?(/\A[a-z]/)
+        elsif text.match?(/[^[:space:]]-\z/) && piece.match?(/\A[a-z0-9]/)
           text = rest_words.empty? ? text + piece : text + first_word + " " + rest_words.join(" ")
+        elsif piece.match?(/\A-\d/) && text.match?(/\d\z/)
+          text = text + piece
         elsif first_word.match?(/\A[b-hj-z][,.]?\z/) && text.match?(/[a-z]\z/)
           text = rest_words.empty? ? text + first_word : text + first_word + " " + rest_words.join(" ")
         elsif piece.match?(/\A[a-z]/) && text.match?(/[a-z]\z/) && vocab_join?(text, piece, vocab)

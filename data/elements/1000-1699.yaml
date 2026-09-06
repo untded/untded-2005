@@ -68,7 +68,7 @@ elements:
   old_name: Document/message number
   business_term: Document/message number
   bridges: 'CIMP: (112) n3 and (114) an6 or (805) n8 and (118) n6 MAR: IMO/FAL 2 UNLK:
-    an..17 L 04, P 63- 80 SAD:'
+    an..17 L 04, P 63-80 SAD:'
   provenance:
     page: 28
 - tag: 1007
@@ -133,7 +133,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Packing List number
-  bridges: 'UNLK: an..17, L 04 P 63- 80'
+  bridges: 'UNLK: an..17, L 04 P 63-80'
   provenance:
     page: 28
 - tag: 1016
@@ -150,7 +150,7 @@ elements:
   status: active
   old_name: Booking reference number
   business_term: Reservation number of shipment
-  bridges: 'CIMP: (117): an..15 MAR: IMO/FAL 7 UNLK: an..17 L 04, P 63- 80'
+  bridges: 'CIMP: (117): an..15 MAR: IMO/FAL 7 UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 28
 - tag: 1018
@@ -242,7 +242,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Advice of collection number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 29
 - tag: 1033
@@ -255,7 +255,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 29
 - tag: 1035
@@ -268,7 +268,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 29
 - tag: 1037
@@ -281,7 +281,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 29
 - tag: 1039
@@ -295,7 +295,7 @@ elements:
   change_tag: add
   status: active
   business_term: House bill, House bill of lading
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 29
 - tag: 1041
@@ -549,7 +549,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80 MAR: IMO/FAL 1-3, 5-6'
+  bridges: 'UNLK: an..17 L 04, P 63-80 MAR: IMO/FAL 1-3, 5-6'
   provenance:
     page: 30
 - tag: 1079
@@ -563,7 +563,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80 MAR: IMO/FAL 1-3, 5-6'
+  bridges: 'UNLK: an..17 L 04, P 63-80 MAR: IMO/FAL 1-3, 5-6'
   provenance:
     page: 30
 - tag: 1082
@@ -593,7 +593,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Proforma Invoice number
-  bridges: 'UNLK: an..17, L 04, P 63- 80'
+  bridges: 'UNLK: an..17, L 04, P 63-80'
   provenance:
     page: 30
 - tag: 1091
@@ -744,7 +744,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 31
 - tag: 1121
@@ -759,7 +759,7 @@ elements:
   status: active
   business_term: Freight forwarding instruction (FFI), Shippers letter of instruction
     (SLI)
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 31
 - tag: 1123
@@ -772,7 +772,7 @@ elements:
     max_length: 35
   change_tag: add
   status: active
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 31
 - tag: 1125
@@ -810,7 +810,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Despatch Note number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 31
 - tag: 1131
@@ -838,7 +838,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Consignor's Reference number
-  bridges: 'UNLK: an..17 L 06, P 63- 80 SAD: (SAD 7)'
+  bridges: 'UNLK: an..17 L 06, P 63-80 SAD: (SAD 7)'
   provenance:
     page: 31
 - tag: 1142
@@ -943,7 +943,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Reference number
-  bridges: 'UNLK: an..35x2; L 06- 07, P 45-80'
+  bridges: 'UNLK: an..35x2; L 06-07, P 45-80'
   provenance:
     page: 32
 - tag: 1156
@@ -1064,7 +1064,7 @@ elements:
   status: active
   old_name: Documentary credit number
   business_term: Letter of credit number
-  bridges: 'SWIFT: an..16 UNLK: an..17, L 04, P 63- 80'
+  bridges: 'SWIFT: an..16 UNLK: an..17, L 04, P 63-80'
   provenance:
     page: 32
 - tag: 1174
@@ -1078,7 +1078,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Delivery instruction number
-  bridges: 'UNLK: an..17, L 04, P 63- 80'
+  bridges: 'UNLK: an..17, L 04, P 63-80'
   provenance:
     page: 32
 - tag: 1176
@@ -1108,7 +1108,7 @@ elements:
   business_term: Bill of Lading number, Master waybill number
   bridges: 'AWB: L 01, P 09-11; P 15-22; P 66-67; L 64; P 66-77 CIMP: (112): n3; (113):
     n8 or (119): n8 CMR: L 59, P 20-26 INV: L 36-64, P 09-26 Inland Waterways B/L:
-    L 02, P 45-62 UNLK: an..17, L 04, P 63- 80'
+    L 02, P 45-62 UNLK: an..17, L 04, P 63-80'
   provenance:
     page: 32
 - tag: 1190
@@ -1164,7 +1164,7 @@ elements:
   status: active
   old_name: Common access reference (CAR)
   business_term: Unique Consignment reference (UCR)
-  bridges: 'UNLK: an..17, L 06, P 63- 80 CIM: L 64, P 69-79 and n7; L 66, P 73-82'
+  bridges: 'UNLK: an..17, L 06, P 63-80 CIM: L 64, P 69-79 and n7; L 66, P 73-82'
   provenance:
     page: 33
 - tag: 1208
@@ -1179,7 +1179,7 @@ elements:
   status: active
   old_name: Export Licence number
   business_term: Export licence permit number
-  bridges: 'UNLK: an..17, L 04, P 63- 80'
+  bridges: 'UNLK: an..17, L 04, P 63-80'
   provenance:
     page: 33
 - tag: 1212
@@ -1360,7 +1360,7 @@ elements:
   status: active
   old_name: Conference Contract number
   business_term: Contract of affreightment, Contract number for freight
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 34
 - tag: 1296
@@ -1376,7 +1376,7 @@ elements:
   status: active
   old_name: Contract number
   business_term: Contract number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 34
 - tag: 1310
@@ -1418,7 +1418,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Contract Addendum number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 35
 - tag: 1332
@@ -1433,7 +1433,7 @@ elements:
   status: active
   old_name: Offer number
   business_term: Quote number, Bid number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 35
 - tag: 1334
@@ -1448,7 +1448,7 @@ elements:
   status: active
   old_name: Invoice number
   business_term: Invoice number
-  bridges: 'UNLK: an..17 L 04, P 63- 80'
+  bridges: 'UNLK: an..17 L 04, P 63-80'
   provenance:
     page: 35
 - tag: 1346
@@ -1504,7 +1504,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Consignee's shipment reference number
-  bridges: 'UNLK: an..17 L 06, P 63- 80'
+  bridges: 'UNLK: an..17 L 06, P 63-80'
   provenance:
     page: 35
 - tag: 1366
@@ -1587,7 +1587,7 @@ elements:
   status: active
   old_name: Goods declaration number (Customs)
   business_term: Goods declaration number
-  bridges: 'CIMP: (904): an..17 UNLK: an..17 L 04, P 63- 80 SAD: (SAD A and SAD C)'
+  bridges: 'CIMP: (904): an..17 UNLK: an..17 L 04, P 63-80 SAD: (SAD A and SAD C)'
   provenance:
     page: 36
 - tag: 1430
@@ -1622,7 +1622,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Freight forwarder's reference number
-  bridges: 'UNLK: an..17 L 06, P 63- 80'
+  bridges: 'UNLK: an..17 L 06, P 63-80'
   provenance:
     page: 36
 - tag: 1472

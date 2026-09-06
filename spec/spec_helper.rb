@@ -16,5 +16,5 @@ def data_dir
 end
 
 def source_pdf
-  File.join(ENV.fetch("UNTDED_REFERENCES_DIR", File.join(project_root, "..", "references")), "UNTDED2005_Redacted.pdf")
+  ENV["UNTDED_PDF"] || File.join(ENV.fetch("UNTDED_REFERENCES_DIR", File.join(project_root, "..", "references")), "UNTDED2005_Redacted.pdf")
 end

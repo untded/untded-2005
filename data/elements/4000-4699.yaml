@@ -1185,8 +1185,8 @@ elements:
   change_tag: cnd
   status: active
   old_name: Prepaid/Collect indicator, coded
-  bridges: 'AWB: L 24, P 51-52 or 52-53 and P 55-56 or 57- 58 CIMP: (403):a1 CMR:
-    a1 P = prepaid, C = collect'
+  bridges: 'AWB: L 24, P 51-52 or 52-53 and P 55-56 or 57-58 CIMP: (403):a1 CMR: a1
+    P = prepaid, C = collect'
   provenance:
     page: 78
 - tag: 4240
@@ -1273,7 +1273,7 @@ elements:
   change_tag: cn
   status: active
   old_name: Documentary credit amount qualification
-  bridges: 'SWIFT: an..35x4 UNLK: an..35x4; L 28- 52, P 09-44'
+  bridges: 'SWIFT: an..35x4 UNLK: an..35x4; L 28-52, P 09-44'
   provenance:
     page: 79
 - tag: 4276
@@ -1288,7 +1288,7 @@ elements:
   change_tag: cnd
   status: active
   old_name: Terms of payment
-  bridges: 'UNLK: an..35x10; L 29- 54, P 45-80'
+  bridges: 'UNLK: an..35x10; L 29-54, P 45-80'
   provenance:
     page: 79
 - tag: 4277
@@ -1402,7 +1402,7 @@ elements:
   status: retired
   old_name: Documentary credit draft tenor
   notes: No business requirement identified
-  bridges: 'SWIFT: an..35x2 and UNLK: an..35x2; L 23- 24, P 45-80'
+  bridges: 'SWIFT: an..35x2 and UNLK: an..35x2; L 23-24, P 45-80'
   provenance:
     page: 80
 - tag: 4308

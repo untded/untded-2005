@@ -106,7 +106,7 @@ module Untded
     # Structured category records (Untded::CATEGORIES) with display-
     # capitalised labels; the single category source for the graph.
     def categories
-      @categories ||= Untded::CATEGORIES.map do |c|
+      @categories ||= Untded::Categories::ALL.map do |c|
         { k: c[:k], section: c[:section], range: c[:range],
           label: c[:label][0].upcase + c[:label][1..] }
       end

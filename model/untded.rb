@@ -1,7 +1,13 @@
 require "lutaml/model"
 
 module Untded
-  autoload :CATEGORIES, "untded/categories"
+  # Path of the working-copy PDF the pipeline extracts from: the
+  # UNTDED_PDF environment variable, else the sibling references repo.
+  def self.source_pdf
+    ENV["UNTDED_PDF"] ||
+      File.expand_path(File.join(__dir__, "..", "..", "references", "UNTDED2005_Redacted.pdf"))
+  end
+  autoload :Categories, "untded/categories"
   autoload :Provenance, "untded/provenance"
   autoload :Representation, "untded/representation"
   autoload :Element, "untded/element"

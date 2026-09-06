@@ -68,7 +68,7 @@ elements:
   change_tag: cnr
   status: active
   old_name: Warehouse depositor
-  bridges: 'UNLK: an..35x5; L 10- 18, P 09-44'
+  bridges: 'UNLK: an..35x5; L 10-18, P 09-44'
   provenance:
     page: 50
 - tag: 3006
@@ -250,7 +250,7 @@ elements:
 - tag: 3021
   name: Importer. Party.Identifier
   description: Identifier of party who makes - or on whose behalf a Customs clearing
-    agent or other authorised person makes -an import declaration. This may include
+    agent or other authorised person makes - an import declaration. This may include
     a person who has possession of the goods or to whom the goods are consigned.
   representation:
     raw: an..17
@@ -275,7 +275,7 @@ elements:
   change_tag: cnr
   status: active
   old_name: Warehouse keeper
-  bridges: 'UNLK: an..35x5; L 10- 14, P 45-80'
+  bridges: 'UNLK: an..35x5; L 10-14, P 45-80'
   provenance:
     page: 50
 - tag: 3024
@@ -357,7 +357,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Exporter
-  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44 SAD: (SAD 14)'
+  bridges: 'UNLK: an..35x5; L 04-08, P 09-44 SAD: (SAD 14)'
   provenance:
     page: 51
 - tag: 3031
@@ -897,8 +897,8 @@ elements:
   change_tag: cndr
   status: active
   old_name: Freight from, coded
-  bridges: 'CIM: (nn-nnnnn,n); L 47, P 04-12 and L 53, P 04- 12 and L 59, P 04-12
-    and on reverse of CIM form (CIM 63, top part)'
+  bridges: 'CIM: (nn-nnnnn,n); L 47, P 04-12 and L 53, P 04-12 and L 59, P 04-12 and
+    on reverse of CIM form (CIM 63, top part)'
   provenance:
     page: 54
 - tag: 3092
@@ -1001,8 +1001,8 @@ elements:
   change_tag: cndr
   status: active
   old_name: Freight to, coded
-  bridges: 'CIM: (nn-nnnnn,n); L 49, P 04-12 and L 55, P 04- 12 and L 61, P 04-12
-    and on reverse of CIM form (CIM 63, bottom part)'
+  bridges: 'CIM: (nn-nnnnn,n); L 49, P 04-12 and L 55, P 04-12 and L 61, P 04-12 and
+    on reverse of CIM form (CIM 63, bottom part)'
   provenance:
     page: 54
 - tag: 3105
@@ -1197,7 +1197,7 @@ elements:
   change_tag: cnd
   status: active
   old_name: Carrier identification
-  bridges: 'AWB: L 24, P 13-29, 34- 36, 41-43 CIM: L 04-08, P 02-07 CIMP: (312):an2
+  bridges: 'AWB: L 24, P 13-29, 34-36, 41-43 CIM: L 04-08, P 02-07 CIMP: (312):an2
     CMR: L 09, P 63-80 MAR: L 13, P 63-80 UNLK: L 09, P 63-80 MAR: IMO/FAL 1,7'
   provenance:
     page: 56
@@ -1233,7 +1233,7 @@ elements:
   old_name: Consignee
   business_term: Consigned to order of
   bridges: 'AWB: L 11-14, P 09-44 CIMP: (109):an..14; (300):an..35; (301):an..35;(302):an..17;
-    (303):an..9 ; (304):a2; (305):an..9 UNLK: an..35x5 L 10- 14, P 09-44 CIM: (CIM
+    (303):an..9 ; (304):a2; (305):an..9 UNLK: an..35x5 L 10-14, P 09-44 CIM: (CIM
     14; CMR 2) MAR: IMO/FAL 2 SAD: (SAD 8)'
   provenance:
     page: 56
@@ -1264,7 +1264,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Insured
-  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  bridges: 'UNLK: an..35x5; L 04-08, P 09-44'
   provenance:
     page: 57
 - tag: 3139
@@ -1293,7 +1293,7 @@ elements:
   change_tag: cnr
   status: active
   old_name: Declarant
-  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  bridges: 'UNLK: an..35x5; L 04-08, P 09-44'
   provenance:
     page: 57
 - tag: 3141
@@ -1326,7 +1326,7 @@ elements:
   status: active
   old_name: Delivery party
   business_term: Positioning Party, Delivery address
-  bridges: 'CMR: an..35x3; L 16-18, P 09-44 (CMR 3) UNLK: an..35x5; L 16- 20, P 09-44'
+  bridges: 'CMR: an..35x3; L 16-18, P 09-44 (CMR 3) UNLK: an..35x5; L 16-20, P 09-44'
   provenance:
     page: 57
 - tag: 3145
@@ -1410,7 +1410,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Warehouse
-  bridges: 'CIMP: (321): an..7 UNLK: an..35x3; L 16- 18, P 45-80'
+  bridges: 'CIMP: (321): an..7 UNLK: an..35x3; L 16-18, P 45-80'
   provenance:
     page: 57
 - tag: 3157
@@ -1497,7 +1497,7 @@ elements:
   old_name: Freight forwarder
   business_term: Forwarder
   bridges: 'CIMP: (109):an..14; (300):an..35; (301):an..35; (302):an..17; (303):an..9;
-    (304):a2; (305):an..9 UNLK: an..35x5; L 16- 18, P 09-44'
+    (304):a2; (305):an..9 UNLK: an..35x5; L 16-18, P 09-44'
   provenance:
     page: 58
 - tag: 3171
@@ -1570,7 +1570,7 @@ elements:
   business_term: Notify address, Notify party 1
   bridges: 'AWB: L 28-30, P 09-81 CIMP: (109):an..14; (300):an..35; (301):an..35;
     (302):an..17; (303):an..9; (304):a2; (305):an..9 MAR: IMO/FAL 2 UNLK: an..35x3;
-    L 16- 18, P 09-44 SAD: (SAD 50)'
+    L 16-18, P 09-44 SAD: (SAD 50)'
   provenance:
     page: 58
 - tag: 3181
@@ -2180,7 +2180,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Seller's representative
-  bridges: 'UNLK: an..35x5; L 16- 18, P 09-44'
+  bridges: 'UNLK: an..35x5; L 16-18, P 09-44'
   provenance:
     page: 62
 - tag: 3255
@@ -2360,7 +2360,7 @@ elements:
   status: retired
   old_name: Supplier, coded
   notes: DE to use instead - 3347
-  bridges: 'UNLK: an..35x5; L 04- 08, P 09-44'
+  bridges: 'UNLK: an..35x5; L 04-08, P 09-44'
   provenance:
     page: 64
 - tag: 3282
@@ -2442,7 +2442,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Documentary credit drawee
-  bridges: 'SWIFT: an..35x2 UNLK: an..35x2; L 25- 26, P 45-80'
+  bridges: 'SWIFT: an..35x2 UNLK: an..35x2; L 25-26, P 45-80'
   provenance:
     page: 64
 - tag: 3292
@@ -2701,7 +2701,7 @@ elements:
   old_name: Consignor
   business_term: Sender, Shipper
   bridges: 'AWB: L 05-08, P 09-44 CIMP: (109):an..14; (300):an..35; (301):an..35;
-    (302):an..17; (303):an..9; (304):a2; (305):an..9 UNLK: an..35x5; L 04- 08, P 09-44
+    (302):an..17; (303):an..9; (304):a2; (305):an..9 UNLK: an..35x5; L 04-08, P 09-44
     (CIM 10; CMR 1) SAD: (SAD 2)'
   provenance:
     page: 65
@@ -2826,7 +2826,7 @@ elements:
   change_tag: x
   status: retired
   old_name: Accepting party
-  notes: DE to use instead -the appropriate such as Consignor (3336/7)
+  notes: DE to use instead - the appropriate such as Consignor (3336/7)
   provenance:
     page: 66
 - tag: 3356
@@ -2901,7 +2901,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Insurance claims adjuster
-  bridges: 'UNLK: an..35x5; L 56- 60, P 09-44'
+  bridges: 'UNLK: an..35x5; L 56-60, P 09-44'
   provenance:
     page: 67
 - tag: 3363
@@ -3151,7 +3151,7 @@ elements:
   change_tag: cn
   status: active
   old_name: Name of person
-  bridges: 'MAR: (IMO FAL Forms 4- 6)'
+  bridges: 'MAR: (IMO FAL Forms 4-6)'
   provenance:
     page: 68
 - tag: 3408
@@ -3166,7 +3166,7 @@ elements:
   status: active
   old_name: Master
   business_term: Vessel master, Driver, Pilot
-  bridges: 'MAR: (IMO FAL Forms 1- 2)'
+  bridges: 'MAR: (IMO FAL Forms 1-2)'
   provenance:
     page: 68
 - tag: 3410
@@ -3349,7 +3349,7 @@ elements:
   status: active
   old_name: Insurer's Agent at destination
   business_term: Insurer's Agent at destination
-  bridges: 'UNLK: an..35x5; L 50- 54, P 09-44'
+  bridges: 'UNLK: an..35x5; L 50-54, P 09-44'
   provenance:
     page: 69
 - tag: 3432

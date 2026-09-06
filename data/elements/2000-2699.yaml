@@ -197,7 +197,7 @@ elements:
 - tag: 2020
   change_tag: x
   status: retired
-  old_name: Forwarding date (day -month)
+  old_name: Forwarding date (day - month)
   notes: DE to use instead - 2126
   provenance:
     page: 38

@@ -1111,7 +1111,7 @@ elements:
   change_tag: cn
   status: active
   old_name: Other charges amount
-  bridges: 'AWB: Included in L 48- 52, P 37-81 CIMP: (501): n..12'
+  bridges: 'AWB: Included in L 48-52, P 37-81 CIMP: (501): n..12'
   provenance:
     page: 92
 - tag: 5209
@@ -1353,7 +1353,7 @@ elements:
   status: active
   old_name: Charge description, coded
   business_term: Accessorial charges
-  bridges: 'AWB: Included in L 48- 52, P 37-81 CIMP: (504):an2'
+  bridges: 'AWB: Included in L 48-52, P 37-81 CIMP: (504):an2'
   provenance:
     page: 93
 - tag: 5261
@@ -1491,7 +1491,7 @@ elements:
   status: active
   old_name: Additional charges
   bridges: 'CIM: (n..3-n..8); L 47-49, P 23-48 and L 53-55, P 23-48 and L 59-61, P
-    23- 48 (also on reverse)'
+    23-48 (also on reverse)'
   provenance:
     page: 94
 - tag: 5283
@@ -1621,8 +1621,8 @@ elements:
   change_tag: cndr
   status: active
   old_name: Prepaidamount
-  bridges: 'AWB: L 60, P 09-22 CIM: n..12; L 49, P 51- 58 and L 55, P 51-58 and L
-    61, P 51-58 (also on reverse) (CIM 71) CIMP: (501): n..12'
+  bridges: 'AWB: L 60, P 09-22 CIM: n..12; L 49, P 51-58 and L 55, P 51-58 and L 61,
+    P 51-58 (also on reverse) (CIM 71) CIMP: (501): n..12'
   provenance:
     page: 95
 - tag: 5305
@@ -2124,7 +2124,7 @@ elements:
   status: retired
   old_name: Disburseme nt amount
   notes: DE to use instead - 5416
-  bridges: 'CIM: n..24; L 39-40, P 50- 73 (CIM 30)'
+  bridges: 'CIM: n..24; L 39-40, P 50-73 (CIM 30)'
   provenance:
     page: 98
 - tag: 5416
@@ -2161,7 +2161,7 @@ elements:
   change_tag: cndr
   status: active
   old_name: Rate per unit
-  bridges: 'CIM: n..6; L 44-45, P 45- 50 and L 50-51, P 45-50 and L 56-57, P 45-50
+  bridges: 'CIM: n..6; L 44-45, P 45-50 and L 50-51, P 45-50 and L 56-57, P 45-50
     (also on reverse)'
   provenance:
     page: 98
@@ -2224,7 +2224,7 @@ elements:
   change_tag: cnd
   status: active
   old_name: Tariff applied, coded
-  bridges: 'CIM: n4 (6); L 44-45, P 21-26 and L 50-51, P 21- 26 and L 56-57, P 21-26
+  bridges: 'CIM: n4 (6); L 44-45, P 21-26 and L 50-51, P 21-26 and L 56-57, P 21-26
     (also on reverse)'
   provenance:
     page: 99
@@ -2269,7 +2269,7 @@ elements:
   change_tag: cnd
   status: active
   old_name: Tariff class specifier
-  bridges: 'CIM: n4 (5); L 44-45, P 34-38 and L 50-51, P 34- 38 and L 56-57, P 34-38
+  bridges: 'CIM: n4 (5); L 44-45, P 34-38 and L 50-51, P 34-38 and L 56-57, P 34-38
     (also on reverse) (CIM 57)'
   provenance:
     page: 99

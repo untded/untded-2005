@@ -27,7 +27,7 @@ elements:
   old_name: Description of goods
   business_term: Nature of goods
   bridges: 'CIM: L 28-38, P 09-49 CIMP: (708):an..15 CMR: L 29-52, P 34-60 (CMR 9)
-    MAR: IMO/FAL 7 SWIFT: an..65x4 (an..65x24) UNLK: an..26xn; L 28- 50, P 34-60 SAD:
+    MAR: IMO/FAL 7 SWIFT: an..65x4 (an..65x24) UNLK: an..26xn; L 28-50, P 34-60 SAD:
     (SAD 31)'
   provenance:
     page: 109
@@ -1104,7 +1104,7 @@ elements:
   business_term: Carrier's commodity code
   bridges: 'AWB: L 33-44, P 23-29 CIM: L 44-45, P 38-32 and L 50-51, P 28-32 and L
     56-57,P 28-32 (also on reverse) CIMP: (707):n4..7 and (900):n4..8 CMR: n5; L 28-32,
-    P 75- 82 CIM: n5; L 28-32, P 75-82 MAR: IMO/FAL 2 SAD: (SAD 33) UNLK: L 28-50,
+    P 75-82 CIM: n5; L 28-32, P 75-82 MAR: IMO/FAL 2 SAD: (SAD 33) UNLK: L 28-50,
     P 52-62'
   provenance:
     page: 115
