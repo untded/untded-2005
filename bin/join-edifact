@@ -17,9 +17,7 @@ xml_path = ENV["UNTDED_EDIFACT_MIRROR"] ||
 
 abort "mirror not found: #{xml_path}" unless File.exist?(xml_path)
 
-elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-  Untded::ElementFile.from_yaml(File.read(path)).elements
-end
+elements = Untded.elements_from(data_dir)
 mirror = Untded::EdifactJoin.mirror(xml_path)
 links = Untded::EdifactJoin.links(elements, mirror)
 

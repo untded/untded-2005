@@ -62,9 +62,7 @@ module Untded
     end
 
     def elements
-      @elements ||= Dir.glob(File.join(@data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-        ElementFile.from_yaml(File.read(path)).elements
-      end
+      @elements ||= Untded.elements_from(@data_dir)
     end
 
     def words

@@ -21,9 +21,7 @@ module Untded
     end
 
     def call
-      elements = Dir.glob(File.join(@data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-        ElementFile.from_yaml(File.read(path)).elements
-      end
+      elements = Untded.elements_from(@data_dir)
       pool = elements.reject { |el| el.name.nil? }
       sample = pool.sample(@sample_size, random: @rng)
 

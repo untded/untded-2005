@@ -26,4 +26,14 @@ module Untded
   autoload :UnclCoverage, "untded/uncl_coverage"
   autoload :LinkedData, "untded/linked_data"
   autoload :Vocabulary, "untded/vocabulary"
+
+  # The one definition of corpus loading: the YAML SSOT's element files,
+  # sorted by path, flat-mapped to element objects. Bins, the exporter,
+  # the verifier and the specs all load through here — ordering rules
+  # have a single owner.
+  def self.elements_from(data_dir)
+    Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
+      ElementFile.from_yaml(File.read(path)).elements
+    end
+  end
 end

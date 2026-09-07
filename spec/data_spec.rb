@@ -1,10 +1,9 @@
 require "spec_helper"
 
 RSpec.describe "YAML SSOT" do
+  let(:elements) { Untded.elements_from(data_dir) }
+  # this spec is about the files themselves (one per category), not corpus loading
   let(:files) { Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort }
-  let(:elements) do
-    files.flat_map { |f| Untded::ElementFile.from_yaml(File.read(f)).elements }
-  end
   let(:by_tag) { elements.to_h { |e| [e.tag, e] } }
 
   it "has one file per TDED tag-range category" do

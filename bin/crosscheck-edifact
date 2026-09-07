@@ -20,9 +20,7 @@ mirror = Untded::EdifactJoin.mirror(xml_path).transform_values do |m|
   { name: m.name, desc: m.desc, type: m.type, max: m.max_length }
 end
 
-ours = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-  Untded::ElementFile.from_yaml(File.read(path)).elements
-end
+ours = Untded.elements_from(data_dir)
 active = ours.select { |e| e.status == "active" }
 matched = active.select { |e| mirror.key?(e.tag) }
 
