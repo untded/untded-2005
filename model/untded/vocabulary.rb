@@ -14,6 +14,7 @@ module Untded
       "skos" => "http://www.w3.org/2004/02/skos/core#",
       "rdfs" => "http://www.w3.org/2000/01/rdf-schema#",
       "owl" => "http://www.w3.org/2002/07/owl#",
+      "rdf" => "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "xsd" => "http://www.w3.org/2001/XMLSchema#",
     }.freeze
 
@@ -75,10 +76,8 @@ module Untded
                        comment: "The printed change indicator against the 1993 edition." },
       "status" => { group: "element-level", iri: "utd:status", domain: "TradeDataElement",
                     comment: "active or retired, per the printed change indicator." },
-      "oldName" => { group: "element-level", iri: "utd:oldName", domain: "TradeDataElement",
-                     comment: "The data element name in the 1993 edition." },
-      "businessTerm" => { group: "element-level", iri: "utd:businessTerm", domain: "TradeDataElement",
-                          comment: "The printed business term (synonym)." },
+      # oldName/businessTerm are carried as skos:altLabel literals; the
+      # closed-vocabulary spec fails if a declaration goes unused
       "altLabel" => { group: "element-level", iri: "skos:altLabel" },
       "replacedBy" => { group: "element-level", iri: "utd:replacedBy", domain: "TradeDataElement",
                         comment: "The element to use instead, per the printed pointer on retired entries." },
