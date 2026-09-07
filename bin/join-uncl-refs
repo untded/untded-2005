@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+# Section-4.1.5 cross-references from the full-text UNCL D.01B mirror
+# (references/edifact-D01B/uncl/) → derived/uncl-refs.json. The short-
+# names-only coverage join is bin/join-uncl; this is the deep join.
+$LOAD_PATH.unshift File.expand_path("../model", __dir__)
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+require "bundler/setup"
+require "untded"
+require "json"
+require "fileutils"
+
+data_dir = ARGV[0] || File.expand_path("../data", __dir__)
+out_path = ARGV[1] || File.expand_path("../derived/uncl-refs.json", __dir__)
+uncl_dir = ENV["UNTDED_UNCL_DIR"] ||
+  File.expand_path("../../references/edifact-D01B/uncl", __dir__)
+
+abort "UNCL mirror not found: #{uncl_dir}" unless Dir.exist?(uncl_dir)
+
+elements = Untded.elements_from(data_dir)
+refs = Untded::UnclRefs.parse_dir(uncl_dir)
+result = Untded::UnclRefs.links(elements, refs)
+
+FileUtils.mkdir_p(File.dirname(out_path))
+File.write(out_path, JSON.pretty_generate({
+  "source" => "UN/EDIFACT D.01B UNCL full-text mirror (fretlink/edi-parser BSD conversion of the UNECE publication)",
+  "vintage" => "D.01B — one release before the edition's D.02A resource; labeled as such",
+  "coverage" => "section 4.1.5 cross-references: [nnnn] equals-rule and (nnnn) related-rule",
+  "elements" => result["links"].size,
+  "refs" => result["links"].sum { |l| l["refs"].size },
+  "equals" => result["links"].sum { |l| l["refs"].count { |r| r["kind"] == "equals" } },
+  "related" => result["links"].sum { |l| l["refs"].count { |r| r["kind"] == "related" } },
+  "unknown_tags" => result["unknown_tags"],
+  "links" => result["links"],
+}) + "\n")
+puts "uncl-refs: #{result["links"].size} TDED elements referenced by " \
+  "#{result["links"].sum { |l| l["refs"].size }} code values" \
+  " (#{result["unknown_tags"].size} unknown tags skipped) -> #{out_path}"

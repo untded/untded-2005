@@ -67,7 +67,10 @@ tag join against the D05B segments mirror (rule shared with
 `uncl-coverage.json` — which active elements are code-qualified in
 the D05B UNCL (references/edifact-D05B/codes.xml) and with how many
 values; the mirror carries short names only, so the section-4.1.5
-bracket cross-references are not derivable from it. Both joins carry
+bracket cross-references are not derivable from it. `bin/join-uncl-refs` writes `uncl-refs.json` — the section-4.1.5
+cross-references ([nnnn] equals-rule, (nnnn) related-rule) from the
+full-text D.01B UNCL mirror (one release before the edition's D.02A;
+labeled as such). Both coverage joins carry
 the D05B vintage caveat: this edition was built on D.02A (see the
 Foreword); D05B is the cross-check vintage. One entry prints its scheme without the
 colon (element 5010, verbatim from the source); the parser accepts that
