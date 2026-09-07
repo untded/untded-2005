@@ -3,9 +3,7 @@ require "tmpdir"
 
 RSpec.describe Untded::LinkedData do
   let(:elements) do
-    Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-      Untded::ElementFile.from_yaml(File.read(path)).elements
-    end
+    Untded.elements_from(data_dir)
   end
   subject(:linked) { described_class.new(elements: elements, origin: "https://example.untded.test") }
 
@@ -118,9 +116,7 @@ end
 
 RSpec.describe Untded::LinkedData, "#write_element_files" do
   it "writes dereferenceable JSON-LD and Turtle per element" do
-    elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-      Untded::ElementFile.from_yaml(File.read(path)).elements
-    end
+    elements = Untded.elements_from(data_dir)
     linked = described_class.new(elements: elements, origin: "https://example.untded.test")
     Dir.mktmpdir do |tmp|
       linked.write_element_files(tmp)

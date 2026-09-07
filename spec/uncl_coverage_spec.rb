@@ -2,9 +2,7 @@ require "spec_helper"
 
 RSpec.describe Untded::UnclCoverage do
   let(:elements) do
-    Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-      Untded::ElementFile.from_yaml(File.read(path)).elements
-    end
+    Untded.elements_from(data_dir)
   end
   let(:mirror_path) do
     File.join(ENV.fetch("UNTDED_REFERENCES_DIR", File.join(project_root, "..", "references")),

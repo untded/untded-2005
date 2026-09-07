@@ -18,9 +18,7 @@ xml_path = ENV["UNTDED_EDIFACT_CODES"] ||
 
 abort "codes mirror not found: #{xml_path}" unless File.exist?(xml_path)
 
-elements = Dir.glob(File.join(data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-  Untded::ElementFile.from_yaml(File.read(path)).elements
-end
+elements = Untded.elements_from(data_dir)
 counts = Untded::UnclCoverage.counts(xml_path)
 links = Untded::UnclCoverage.links(elements, counts)
 skipped = Untded::UnclCoverage.skipped_ids(counts, elements.map(&:tag))

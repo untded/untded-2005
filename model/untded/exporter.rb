@@ -24,10 +24,10 @@ module Untded
 
     private
 
+    # the corpus is tag-ordered already; the sort makes the export's
+    # tag-order contract independent of file order
     def load_elements
-      Dir.glob(File.join(@data_dir, "elements", "*.yaml")).sort.flat_map do |path|
-        ElementFile.from_yaml(File.read(path)).elements
-      end.sort_by(&:tag)
+      Untded.elements_from(@data_dir).sort_by(&:tag)
     end
 
     def write_csv(elements)
