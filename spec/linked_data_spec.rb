@@ -100,6 +100,24 @@ RSpec.describe Untded::LinkedData do
     targets.each { |t| expect(ids).to include(t) }
   end
 
+  it "uses a closed vocabulary: graph terms are exactly the declaration" do
+    require "json/ld"
+    statements = JSON::LD::API.toRdf(graph)
+    ns = Untded::Vocabulary::NAMESPACE
+    utd_declared = Untded::Vocabulary::TERMS.select { |_, d| d[:iri].to_s.start_with?("utd:") }.keys +
+                   Untded::Vocabulary::CLASSES.keys
+    declared = utd_declared.map { |term| RDF::URI("#{ns}#{term}") }.to_set
+    prefixes = Untded::Vocabulary::PREFIXES.except("utd").values.map(&:to_s)
+    ok_external = ->(uri) { prefixes.any? { |p| uri.to_s.start_with?(p) } }
+    rdf_type = RDF::URI("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+    used = statements.flat_map { |s| [s.predicate, *([s.object] if s.predicate == rdf_type)] }.uniq
+    used.each do |uri|
+      raise "undeclared graph term: #{uri}" unless declared.include?(uri) || ok_external.call(uri)
+    end
+    dead = (declared - used).reject { |u| ok_external.call(u) }
+    expect(dead.map(&:to_s)).to eq([])
+  end
+
   it "round-trips JSON-LD and Turtle through the RDF gems" do
     require "json/ld"
     require "rdf/turtle"
