@@ -18,6 +18,7 @@ module Untded
       write_vocabulary
       write_context
       write_context_json
+      write_parser_fixtures(elements)
       elements.size
     end
 
@@ -99,6 +100,41 @@ module Untded
         end,
       }
       File.write(File.join(@out_dir, "vocabulary.json"), JSON.pretty_generate(doc))
+    end
+
+    # Parser parity fixtures: the Ruby parse of a fixed sample of real
+    # elements (every edge case the specs pin: colon-less scheme, zero
+    # position clamp, lowercase position tokens, zones, replacement
+    # pointers). The website's TypeScript ports must reproduce these
+    # exactly — its suite diffs against this file (the 5010 class of
+    # one-sided drift becomes a red test at the next sync).
+    FIXTURE_TAGS = [1002, 1004, 1082, 1128, 1188, 2025, 5010].freeze
+
+    def write_parser_fixtures(elements)
+      require "json"
+      tags = elements.map(&:tag)
+      cases = elements.select { |e| FIXTURE_TAGS.include?(e.tag) }.map do |e|
+        zone = ->(z) do
+          node = { "lineFrom" => z.line_from, "lineTo" => z.line_to,
+                   "posFrom" => z.pos_from, "posTo" => z.pos_to }
+          node["format"] = z.format if z.format
+          node
+        end
+        {
+          "tag" => e.tag,
+          "status" => e.status,
+          "notes" => e.notes,
+          "bridges" => e.bridges,
+          "entries" => Bridges.entries(e.bridges).map { |en| { "scheme" => en.scheme, "detail" => en.detail } },
+          "zones" => UnlkZones.of(e.bridges).map { |z| zone.call(z) },
+          "replacement" => Replacement.of(e, tags),
+        }
+      end
+      File.write(File.join(@out_dir, "parser-fixtures.json"),
+        JSON.pretty_generate({
+          "source" => "untded-2005: Untded::Bridges / UnlkZones / Replacement",
+          "cases" => cases,
+        }) + "\n")
     end
 
     # The context as plain JSON-LD, served by the registry at
