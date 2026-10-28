@@ -145,4 +145,30 @@ RSpec.describe Untded::LinkedData, "#write_element_files" do
       expect(File.read(File.join(tmp, "1000.ttl"))).to include("<https://example.untded.test/elements/1000> a utd:TradeDataElement")
     end
   end
+
+  it "keeps the nested structures of an element through the Turtle round trip" do
+    elements = Untded.elements_from(data_dir)
+    linked = described_class.new(elements: elements, origin: "https://example.untded.test")
+    Dir.mktmpdir do |tmp|
+      linked.write_element_files(tmp)
+      ttl = RDF::Graph.new << RDF::Turtle::Reader.new(File.read(File.join(tmp, "1004.ttl")))
+      utd = Untded::Vocabulary::NAMESPACE
+      expect(ttl.query([nil, RDF::URI("#{utd}printedForm"), nil]).objects).to eq(["an..35"])
+      expect(ttl.query([nil, RDF::URI("#{utd}scheme"), nil]).objects.map(&:to_s))
+        .to contain_exactly("CIMP", "MAR", "UNLK", "SAD")
+      expect(ttl.query([nil, RDF::URI("#{utd}posFrom"), nil]).objects.map(&:to_i)).to eq([63])
+      doc = JSON.parse(File.read(File.join(tmp, "1004.jsonld")))
+      expect(ttl.statements.size).to eq(JSON::LD::API.toRdf(doc).size)
+    end
+  end
+
+  it "states each alternative name once even when the source repeats it" do
+    elements = Untded.elements_from(data_dir)
+    linked = described_class.new(elements: elements, origin: "https://example.untded.test")
+    Dir.mktmpdir do |tmp|
+      linked.write_element_files(tmp)
+      doc = JSON.parse(File.read(File.join(tmp, "1004.jsonld")))
+      expect(doc["altLabel"]).to eq(["Document/message number"])
+    end
+  end
 end

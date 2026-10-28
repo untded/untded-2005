@@ -10,9 +10,13 @@ RSpec.describe Untded::Exporter do
       expect(count).to eq(1504)
 
       # all artifacts written
-      %w[elements.csv elements.json categories.json vocabulary.json parser-fixtures.json].each do |f|
+      %w[elements.csv elements.json categories.json vocabulary.json parser-fixtures.json context.jsonld].each do |f|
         expect(File.exist?(File.join(tmp, f))).to be_truthy, "missing #{f}"
       end
+
+      # JSON-LD context: a context document wraps the term map in @context
+      context_doc = JSON.parse(File.read(File.join(tmp, "context.jsonld")))
+      expect(context_doc["@context"]).to eq(Untded::Vocabulary.context)
 
       # CSV: one row per element + header
       rows = CSV.read(File.join(tmp, "elements.csv"))

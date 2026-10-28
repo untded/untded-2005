@@ -37,13 +37,13 @@ RSpec.describe Untded::Exporter do
 end
 
 RSpec.describe "context.jsonld export" do
-  it "is the JSON form of the single context declaration" do
+  it "is the context declaration wrapped as a JSON-LD context document" do
     require "json"
     require "tmpdir"
     Dir.mktmpdir do |tmp|
       Untded::Exporter.new(data_dir, tmp).call
       json = JSON.parse(File.read(File.join(tmp, "context.jsonld")))
-      expect(json).to eq(Untded::Vocabulary.context)
+      expect(json["@context"]).to eq(Untded::Vocabulary.context)
     end
   end
 end

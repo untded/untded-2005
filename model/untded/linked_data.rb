@@ -52,20 +52,23 @@ module Untded
     end
 
     # Per-element dereferenceable files: for each element IRI, a standalone
-    # JSON-LD document and a Turtle serialization of just that element's
-    # statements. The registry serves these at /elements/<tag>/data.*.
+    # JSON-LD document and a Turtle serialization of that element's
+    # statements together with every blank-node description reachable from
+    # them (representation, bridges, zones), so the standalone Turtle
+    # carries the structures the graph states. The registry serves these
+    # at /elements/<tag>/data.*.
     def write_element_files(dir)
       require "fileutils"
       require "rdf/turtle"
       require "json/ld"
       FileUtils.mkdir_p(dir)
-      statements = JSON::LD::API.toRdf(graph).group_by(&:subject)
+      by_subject = JSON::LD::API.toRdf(graph).group_by(&:subject)
       @elements.each do |e|
         iri = RDF::URI("#{origin}/elements/#{e.tag}")
         node = element_node(e)
         File.write(File.join(dir, "#{e.tag}.jsonld"),
           JSON.pretty_generate({ "@context" => context }.merge(node)))
-        sub = RDF::Graph.new.insert(*(statements[iri] || []))
+        sub = RDF::Graph.new.insert(*element_statements(by_subject, iri))
         File.write(File.join(dir, "#{e.tag}.ttl"),
           sub.dump(:ttl, prefixes: ttl_prefixes, base: "#{origin}/"))
       end
@@ -73,14 +76,35 @@ module Untded
 
     private
 
+    # The statements whose subject is the element IRI, plus, transitively,
+    # the statements that describe each blank node those statements reach,
+    # because a Turtle writer serializes a blank node whose description is
+    # absent from the graph as an empty [] and loses the data.
+    def element_statements(by_subject, iri)
+      included = {}
+      queue = (by_subject[iri] || []).dup
+      until queue.empty?
+        st = queue.shift
+        next if included.key?(st)
+        included[st] = true
+        queue.concat(by_subject[st.object]) if st.object.is_a?(RDF::Node) && by_subject.key?(st.object)
+      end
+      included.keys
+    end
+
     def dataset_node
       {
         "@id" => dataset_iri,
         "@type" => "Dataset",
         "name" => "UNTDED 2005 — United Nations Trade Data Elements Directory",
-        "description" => "1504 trade data elements of the 2005 edition " \
-          "(ECE/TRADE/362, ISO 7372:2005). " \
-          "Operated on behalf of UN/CEFACT (UNECE) and ISO/TC 154.",
+        "description" => "The 1504 trade data elements of the 2005 edition " \
+          "(ECE/TRADE/362, ISO 7372:2005) as structured, machine-readable " \
+          "records. The digitization and the registry that publishes it are " \
+          "a member contribution and a pilot project to UN/CEFACT (UNECE) " \
+          "and ISO/TC 154, and are not an official publication of, and are " \
+          "not endorsed by, either organization. The Directory itself is the " \
+          "official publication ECE/TRADE/362, published in parallel as " \
+          "ISO 7372:2005.",
         "source" => "ECE/TRADE/362 (ISO 7372:2005), © United Nations / UNECE, reproduced with attribution",
         "elementCount" => @elements.size,
         "distribution" => [
@@ -147,7 +171,7 @@ module Untded
       node["name"] = e.name if e.name
       node["description"] = e.description if e.description
       node["representation"] = representation_node(e) if e.representation
-      alt = [e.old_name, e.business_term].compact
+      alt = [e.old_name, e.business_term].compact.uniq
       node["altLabel"] = alt unless alt.empty?
       replacement = Replacement.of(e, @tags)
       node["replacedBy"] = { "@id" => "#{origin}/elements/#{replacement}" } if replacement
