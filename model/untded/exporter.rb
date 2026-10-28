@@ -137,12 +137,14 @@ module Untded
         }) + "\n")
     end
 
-    # The context as plain JSON-LD, served by the registry at
-    # /ns/untded-context.jsonld (the website copies it in sync-data;
-    # one writer, same declaration).
+    # The context as a JSON-LD context document — a term map wrapped in
+    # "@context", as JSON-LD 1.1 requires of a served context — served by
+    # the registry at /ns/untded-context.jsonld (the website copies it in
+    # sync-data; one writer, same declaration).
     def write_context_json
       require "json"
-      File.write(File.join(@out_dir, "context.jsonld"), JSON.pretty_generate(Vocabulary.context) + "\n")
+      File.write(File.join(@out_dir, "context.jsonld"),
+        JSON.pretty_generate({ "@context" => Vocabulary.context }) + "\n")
     end
   end
 end
